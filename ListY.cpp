@@ -13,69 +13,42 @@ public:
         primero = NULL;
         ultimo = NULL;
     }
-    bool esVacia() {
-        if (primero == NULL) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
     void insertar(Node_Y *nuevo) {
-        if (esVacia()) {
+        if (primero==NULL) {
             primero = ultimo = nuevo;
         }
         else {
             if (nuevo->y < primero->y) {
-                insertarAlInicio(nuevo);
+                primero->anterior = nuevo;
+                nuevo->siguiente = primero;
+                primero = primero->anterior;
             }
             else if (nuevo->y > ultimo->y) {
-                insertarAlFinal(nuevo);
+                ultimo->siguiente = nuevo;
+                nuevo->anterior = ultimo;
+                ultimo = ultimo->siguiente;
             }
             else {
-                insertarMedio(nuevo);
+                Node_Y *temp1;
+                Node_Y *temp2;
+                temp1 = primero;
+                while (temp1->y < nuevo->y)
+                {
+
+                    temp1 = temp1->siguiente;
+                }
+                temp2 = temp1->anterior;
+                temp2->siguiente = nuevo;
+                temp1->anterior = nuevo;
+                nuevo->siguiente = temp1;
+                nuevo->anterior = temp2;
             }
         }
     }
-    void insertarAlInicio(Node_Y *nuevo) {
-        primero->anterior = nuevo;
-        nuevo->siguiente = primero;
-        primero = primero->anterior;
-    }
-    void insertarAlFinal(Node_Y *nuevo) {
-        ultimo->siguiente = nuevo;
-        nuevo->anterior = ultimo;
-        ultimo = ultimo->siguiente;
-    }
-    void insertarMedio(Node_Y *nuevo) {
-        Node_Y *temp1;
-        Node_Y *temp2;
-        temp1 = primero;
-        while (temp1->y < nuevo->y)
-        {
 
-            temp1 = temp1->siguiente;
-        }
-        temp2 = temp1->anterior;
-        temp2->siguiente = nuevo;
-        temp1->anterior = nuevo;
-        nuevo->siguiente = temp1;
-        nuevo->anterior = temp2;
-    }
-    void mostrarDatos() {
-        if (!esVacia()) {
-            Node_Y *temp = primero;
-            while (temp != NULL)
-            {
-
-                temp = temp->siguiente;
-            }
-        }
-
-    }
     vector<int> retListaFila() {
         vector<int> y;
-        if (!esVacia()) {
+        if (primero !=NULL) {
             Node_Y *temp = primero;
             while (temp != NULL)
             {
@@ -89,7 +62,7 @@ public:
     }
 
     bool buscar(int y) {
-        if (esVacia()) {
+        if (primero == NULL) {
 
             return false;
         }

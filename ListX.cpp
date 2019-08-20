@@ -13,67 +13,41 @@ public:
         first = NULL;
         last = NULL;
     }
-    bool esVacia() {
-        if (first == NULL) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
+
     void insertar(Node_X *nuevo) {
-        if (esVacia()) {
+        if (first==NULL) {
             first = last = nuevo;
         }
         else {
             if (nuevo->x < first->x) {
-                insertarAlInicio(nuevo);
+                first->anterior = nuevo;
+                nuevo->siguiente = first;
+                first = first->anterior;
             }
             else if (nuevo->x > last->x) {
-                insertarAlFinal(nuevo);
+                last->siguiente = nuevo;
+                nuevo->anterior = last;
+                last = last->siguiente;
             }
             else {
-                insertarMedio(nuevo);
+                Node_X *temp1;
+                Node_X *temp2;
+                temp1 = first;
+                while (temp1->x < nuevo->x)
+                {
+
+                    temp1 = temp1->siguiente;
+                }
+                temp2 = temp1->anterior;
+                temp2->siguiente = nuevo;
+                temp1->anterior = nuevo;
+                nuevo->siguiente = temp1;
+                nuevo->anterior = temp2;
             }
         }
-    }
-    void insertarAlInicio(Node_X *nuevo) {
-        first->anterior = nuevo;
-        nuevo->siguiente = first;
-        first = first->anterior;
-    }
-    void insertarAlFinal(Node_X *nuevo) {
-        last->siguiente = nuevo;
-        nuevo->anterior = last;
-        last = last->siguiente;
-    }
-    void insertarMedio(Node_X *nuevo) {
-        Node_X *temp1;
-        Node_X *temp2;
-        temp1 = first;
-        while (temp1->x < nuevo->x)
-        {
-
-            temp1 = temp1->siguiente;
-        }
-        temp2 = temp1->anterior;
-        temp2->siguiente = nuevo;
-        temp1->anterior = nuevo;
-        nuevo->siguiente = temp1;
-        nuevo->anterior = temp2;
-    }
-    void mostrarDatos() {
-        if (!esVacia()) {
-            Node_X *temp = first;
-            while (temp != NULL)
-            {
-                temp = temp->siguiente;
-            }
-        }
-
     }
     bool buscar(int x) {
-        if (esVacia()) {
+        if (first==NULL) {
             return false;
         }
         else {
@@ -107,7 +81,6 @@ public:
             }
             temp = temp->siguiente;
         }
-
         return (new Node_X(-1));
     }
 };

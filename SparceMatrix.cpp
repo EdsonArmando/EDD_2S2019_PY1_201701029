@@ -16,23 +16,22 @@ public:
     List_Y_Matrix *ver;
     Node_X *temp1;
     Node_Y *temp2;
-    ListX *listaCab;
-    ListY *listlat;
+    ListX *ejeX;
+    ListY *ejeY;
     SparceMatrix() {
-        listaCab = new ListX();
-        listlat = new ListY();
+        ejeX = new ListX();
+        ejeY = new ListY();
     }
-    void insertar(int x, int y, int r, int g, int b) {
+    void add(int x, int y, int r, int g, int b) {
         NodeContent *nuevo = new NodeContent(x,y,r,g,b);
-        if (listaCab->buscar(x)==false) {
-            listaCab->insertar(new Node_X(x));
+        if (ejeX->buscar(x)==false) {
+            ejeX->insertar(new Node_X(x));
         }
-        if (listlat->buscar(y)==false) {
-            listlat->insertar(new Node_Y(y));
+        if (ejeY->buscar(y)==false) {
+            ejeY->insertar(new Node_Y(y));
         }
-
-        temp1 = listaCab->buscarNodo(x);
-        temp2 = listlat->buscarNodo(y);
+        temp1 = ejeX->buscarNodo(x);
+        temp2 = ejeY->buscarNodo(y);
         temp1->listaY->insertar(nuevo);
         temp2->listX->insertar(nuevo);
         cout << "Inserto " << r << " en " << x << " ," << y << endl;
