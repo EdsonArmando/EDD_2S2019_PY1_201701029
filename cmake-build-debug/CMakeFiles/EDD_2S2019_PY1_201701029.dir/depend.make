@@ -8,6 +8,6 @@ CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../List_Y_Matrix.cpp
 CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../NodeContent.cpp
 CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../Node_X.cpp
 CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../Node_Y.cpp
-CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../SparceMatrix.cpp
+CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../SparseMatrix.cpp
 CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o: ../main.cpp
 

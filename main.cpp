@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SparceMatrix.cpp"
+#include "SparseMatrix.cpp"
 #include "Node_Y.cpp"
 #include "NodeContent.cpp"
 #pragma once
@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 
-    SparceMatrix *matrix = new SparceMatrix();
+    SparseMatrix *matrix = new SparseMatrix();
     matrix->add(15,10,255,229,204);
     matrix->add(3,6,255,229,204);
     matrix->add(5,2,255,229,204);
@@ -20,6 +20,6 @@ int main() {
     matrix->add(15,2,255,229,204);
     matrix->add(15,3,255,229,204);
     Node_Y *temp= matrix->ejeY->primero;
-
+    matrix->imageSpaseMatrix();
     return  0;
 }
