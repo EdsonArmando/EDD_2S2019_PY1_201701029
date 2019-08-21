@@ -76,10 +76,9 @@ public:
         cout<<linksY<<endl;
         cout<<rank<<endl;
         ofstream file;
-        file.open("Sparse.dot");
+        file.open("matrix.dot");
         file <<header+listaX+links+listay+linksY+rank+"}\n}";
         file.close();
-        system("dot -Tpng Sparse.dot -o matrix.png");
-        system("/cmake-build-debug/matrix.png");
+        system("dot -Tpng matrix.dot -o matrixx.png\nmatrixx.png");
     }
 };
