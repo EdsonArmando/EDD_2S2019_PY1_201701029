@@ -1,6 +1,7 @@
 //
 // Created by EG on 20/08/2019.
 //
+#include <stdlib.h>
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -79,6 +80,7 @@ public:
         file.open("matrix.dot");
         file <<header+listaX+links+listay+linksY+rank+"}\n}";
         file.close();
-        system("dot -Tpng matrix.dot -o matrixx.png\nmatrixx.png");
+        system("dot -Tpng matrix.dot -o matiz.png");
+        system("matiz.png");
     }
 };

@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o"
+  "CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.obj"
   "EDD_2S2019_PY1_201701029.pdb"
   "EDD_2S2019_PY1_201701029.exe"
-  "libEDD_2S2019_PY1_201701029.dll.a"
+  "EDD_2S2019_PY1_201701029.exe.manifest"
+  "EDD_2S2019_PY1_201701029.lib"
 )
 
 # Per-language clean rules from dependency scanning.
