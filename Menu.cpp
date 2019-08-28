@@ -30,6 +30,21 @@ public:
                 cout<<"Enter name"<<endl;
                 cin>>nameImage;
                 tree.insertarNodo(raiz,nameImage);
+                IniciarMenu();
+                break;
+            case 6:
+                cout<<"1. Imported Images "<<endl;
+                cout<<"2. Traversal "<<endl;
+                cout<<"3. Image Layer"<<endl;
+                cout<<"4. Linear Matrix "<<endl;
+                cout<<"5. Filters"<<endl;
+                cin>>opcion;
+                switch (opcion){
+                    case 1:
+                        tree.graficarArbol(raiz);
+                        tree.mostrarArbol();
+                        break;
+                }
                 break;
         }
     }

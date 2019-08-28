@@ -82,6 +82,6 @@ public:
         file <<header+listaX+links+listay+linksY+rank+"}\n}";
         file.close();
         system("dot -Tpng matrix.dot -o matiz.png");
-        system("matiz.png");
+        //system("matiz.png");
     }
 };
