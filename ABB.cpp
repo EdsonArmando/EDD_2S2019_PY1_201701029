@@ -11,7 +11,12 @@ static NodeImage *raiz;
 class ABB {
 public:
     string inicio = "digraph grafica{\nrankdir=TB;\n subgraph cluster_0{\n label=\"Arbol Binario de Imagenes\"; \n node [shape = record, style=filled, fillcolor=seashell2];\n";
-    string nodes,rela;
+    string nodes,rela,rela2;
+    string recorrido=" digraph{\n"
+                     " rankdir=LR;  \n"
+                     " node [shape=record];\n";
+
+
     void insertarNodo(NodeImage *&raiz,string n) {
         if (raiz ==NULL) {
             NodeImage *nuevo = new NodeImage(n);
@@ -48,5 +53,62 @@ public:
             graficarArbol(raiz->dere);
         }
 
+    }
+    void grafReco(string reco){
+        ofstream file;
+        recorrido+="label=\""+reco+"\"\n";
+        rela2.erase(rela2.length()-2);
+        file.open("recorrido.dot");
+
+        file <<recorrido+rela2+"\n}";
+        file.close();
+        system("dot -Tpng recorrido.dot -o reco.png");
+        system("reco.png");
+        nodes="";
+        rela2="";
+
+    }
+    void recoPost(NodeImage *raiz) {
+
+        if (raiz == NULL) {
+
+        }
+        else {
+            recoPost(raiz->izq);
+            recoPost(raiz->dere);
+            rela2+=raiz->valor;
+            rela2+="->";
+        }
+    }
+    void recoOrdenAlfa(NodeImage *raiz){
+        if (raiz == NULL) {
+        }
+        else {
+            recoOrdenAlfa(raiz->izq);
+            cout<<raiz->valor<<endl;
+            recoOrdenAlfa(raiz->dere);
+        }
+    }
+    void recoIn(NodeImage *raiz) {
+        if (raiz == NULL) {
+
+        }
+        else {
+            recoIn(raiz->izq);
+            rela2+=raiz->valor;
+            rela2+="->";
+            recoIn(raiz->dere);
+        }
+    }
+    void recoPre(NodeImage *raiz) {
+        if (raiz == NULL) {
+
+        }
+        else {
+            rela2+=raiz->valor;
+            rela2+="->";
+            recoPre(raiz->izq);
+            recoPre(raiz->dere);
+        }
     }
 };
