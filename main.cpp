@@ -1,12 +1,13 @@
 #include <iostream>
 #include "SparseMatrix.cpp"
 #include "Node_Y.cpp"
+#include "Menu.cpp"
 #include "NodeContent.cpp"
 #pragma once
 using namespace std;
 
 int main() {
-
+    Menu *menu = new Menu();
     SparseMatrix *matrix = new SparseMatrix();
     matrix->add(15,10,255,229,204);
     matrix->add(3,6,255,229,204);
@@ -21,5 +22,6 @@ int main() {
     matrix->add(15,3,255,229,204);
     Node_Y *temp= matrix->ejeY->primero;
     matrix->imageSpaseMatrix();
+    menu->IniciarMenu();
     return  0;
 }
