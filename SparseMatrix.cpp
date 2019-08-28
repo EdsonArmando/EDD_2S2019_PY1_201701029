@@ -72,11 +72,11 @@ public:
             }
             temp1=temp1->siguiente;
         }
-        cout<<listaX<<endl;
+      /*cout<<listaX<<endl;
         cout<<links<<endl;
         cout<<listay<<endl;
         cout<<linksY<<endl;
-        cout<<rank<<endl;
+        cout<<rank<<endl;*/
         ofstream file;
         file.open("matrix.dot");
         file <<header+listaX+links+listay+linksY+rank+"}\n}";
