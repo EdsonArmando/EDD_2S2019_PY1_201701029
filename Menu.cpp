@@ -11,9 +11,10 @@ using  namespace std;
 
 class Menu {
 private:
+    ifstream archivoEntrada;
     ABB tree;
     int opcion=0;
-    string nameImage;
+    string nameImage,linea,texto;
 public:
     void IniciarMenu(){
         cout<<"----------Menu----------"<<endl;
@@ -30,6 +31,7 @@ public:
                 system("cls");
                 cout<<"Enter name"<<endl;
                 cin>>nameImage;
+                leerArchivo(nameImage);
                 tree.insertarNodo(raiz,nameImage);
                 IniciarMenu();
                 break;
@@ -81,5 +83,25 @@ public:
                 }
                 break;
         }
+    }
+
+    void leerArchivo(string ruta) {
+        system("dir");
+
+        archivoEntrada.open(ruta);
+        if (archivoEntrada.is_open()) {
+            while (archivoEntrada.good())
+            {
+                getline(archivoEntrada, linea);
+                texto += linea + "\n";
+            }
+        }
+        archivoEntrada.close();
+        leerDatosArchivo(texto);
+    }
+
+    void leerDatosArchivo(string text){
+
+        cout<<text<<endl;
     }
 };

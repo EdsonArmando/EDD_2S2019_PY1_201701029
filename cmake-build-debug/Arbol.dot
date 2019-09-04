@@ -1,0 +1,9 @@
+digraph grafica{
+rankdir=TB;
+ subgraph cluster_0{
+ label="Arbol Binario de Imagenes"; 
+ node [shape = record, style=filled, fillcolor=seashell2];
+nodoC:\Users\EG\Downloads\Cuadrado.csv [ label = "<C0>|C:\Users\EG\Downloads\Cuadrado.csv|<C1>"];
+
+}
+}
