@@ -13,6 +13,7 @@ using  namespace std;
 class Menu {
 private:
     ifstream archivoEntrada;
+    NodeList *nuevo;
     ABB tree;
     int opcion=0;
     string nameImage,linea,texto;
@@ -33,7 +34,7 @@ public:
                 cout<<"Enter name"<<endl;
                 cin>>nameImage;
                 tree.insertarNodo(raiz,nameImage);
-                leerArchivo(nameImage);
+                readInitialFile(nameImage);
                 IniciarMenu();
                 break;
             case 2:
@@ -85,8 +86,8 @@ public:
                 break;
         }
     }
-
-    void leerArchivo(string ruta) {
+    string devolverTexto(string ruta){
+        texto="";
         archivoEntrada.open(ruta);
         if (archivoEntrada.is_open()) {
             while (archivoEntrada.good())
@@ -94,48 +95,97 @@ public:
                 getline(archivoEntrada, linea);
                 texto += linea + "\n";
             }
+        }else{
+            return "";
         }
         archivoEntrada.close();
-        leerDatosArchivo(texto);
+        return texto;
     }
-
-    void leerDatosArchivo(string s){
+    void readInitialFile(string ruta){
+        string texto = devolverTexto(ruta);
         string de = "\n";
         string delimi = ", ";
         size_t  pos=0;
         size_t  pos2=0;
         string archivo="";
+        string nameCSV;
         string dato;
         int cont =0;
-        while ((pos = s.find(de))!= std::string::npos){
+        while ((pos = texto.find(de))!= std::string::npos){
             if(cont>0){
-                dato=s.substr(0,pos);
-                obteainName(dato);
-                s.erase(0, pos + de.length());
+                dato=texto.substr(0,pos);
+                while ((pos2 = dato.find(delimi)) != std::string::npos) {
+                    nameCSV = dato.substr(0, pos2);
+                    dato.erase(0, pos2 + delimi.length());
+                    //cout<<dato<<endl;
+                    leerArchivoCSV(dato);
+                }
+                texto.erase(0, pos + de.length());
             }else{
-                s.erase(0, pos + de.length());
+                texto.erase(0, pos + de.length());
                 cont++;
             }
         }
-    }
-    void obteainName(string text){
-        LinkesList *lista=new LinkesList();
-        NodeList *nuevo;
-        std::string s = text;
-        std::string delimiter = ", ";
 
-        size_t pos = 0;
-        std::string config;
-        while ((pos = s.find(delimiter)) != std::string::npos) {
-            config = s.substr(0, pos);
-            s.erase(0, pos + delimiter.length());
-            leerArchivoCSV(s);
+    }
+    void leerArchivoCSV(string fileName){
+        fileName.erase(fileName.length()-1);
+        string texto = devolverTexto(fileName);
+        string de = "\n";
+        string delimi = ", ";
+        size_t  pos=0;
+        size_t  pos2=0;
+        string archivo="";
+        string nameCSV;
+        string dato;
+        int cont =0;
+        if(texto!=""){
+            while ((pos = texto.find(de))!= std::string::npos){
+                if(cont>0){
+                    dato=texto.substr(0,pos);
+                    while ((pos2 = dato.find(delimi)) != std::string::npos) {
+                        nameCSV = dato.substr(0, pos2);
+                        dato.erase(0, pos2 + delimi.length());
+                        cout<<nameCSV<<endl;
+                        cout<<dato<<endl;
+                    }
+                    texto.erase(0, pos + de.length());
+                }else{
+                    texto.erase(0, pos + de.length());
+                    cont++;
+                }
+            }
         }
     }
-
-    void leerArchivoCSV(string nombreArchivo){
-        nombreArchivo.erase(nombreArchivo.length()-4);
+  /*  void leerArchivoCSV(string nombreArchivo){
+        nombreArchivo.erase(nombreArchivo.length()-5);
         NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
+        nuevo = new NodeList(nombreArchivo);
+        string textoConfi = devolverTexto(nombreArchivo+".csv");
+        std::string de = "\n";
+        string dato;
+        std::string delimiter = ", ";
+        size_t pos2 = 0;
+        std::string config;
+        int cont=0;
+        size_t pos = 0;
+        while ((pos = textoConfi.find(de))!= std::string::npos){
+            if(cont>0){
+                dato=textoConfi.substr(0,pos);
+                while ((pos2 = dato.find(delimiter)) != std::string::npos) {
+                    config = dato.substr(0, pos2);
+                    dato.erase(0, pos2 + delimiter.length());
+                    cout<<config<<endl;
+                    cout<<dato<<endl;
+                    nuevo->matrix->add(10,2,5,6,41);
+                }
+                textoConfi.erase(0, pos + de.length());
+            }else{
+                textoConfi.erase(0, pos + de.length());
+                cont++;
+            }
+        }
+        temp->list->insertarImg(nuevo);
 
-    }
+    }*/
 };

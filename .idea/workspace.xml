@@ -13,28 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1fd79e73-853b-4d8e-a37a-91bdacbf18d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ABB.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ABB.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeImage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/NodeImage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparseMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SparseMatrix.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe.stackdump" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Imagen.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Imagen.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrix.dot" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrix.dot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +113,8 @@
       <workItem from="1567033636476" duration="747000" />
       <workItem from="1567620543413" duration="6059000" />
       <workItem from="1567628213878" duration="885000" />
-      <workItem from="1567654312360" duration="7408000" />
+      <workItem from="1567654312360" duration="9631000" />
+      <workItem from="1567711732309" duration="3265000" />
     </task>
     <servers />
   </component>
@@ -154,8 +139,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Menu.cpp</url>
-          <line>135</line>
-          <option name="timeStamp" value="12" />
+          <line>140</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

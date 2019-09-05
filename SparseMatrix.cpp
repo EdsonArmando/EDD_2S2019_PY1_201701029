@@ -35,9 +35,41 @@ public:
         }
         temp1 = ejeX->buscarNodo(x);
         temp2 = ejeY->buscarNodo(y);
+        /*NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
+        nuevo = new NodeList(nombreArchivo);*/
         temp1->listaY->insertar(nuevo);
         temp2->listX->insertar(nuevo);
-        cout << "Inserto " << r << " en " << x << " ," << y << endl;
+        /*  void leerArchivoCSV(string nombreArchivo){
+         nombreArchivo.erase(nombreArchivo.length()-5);
+         NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
+         nuevo = new NodeList(nombreArchivo);
+         string textoConfi = devolverTexto(nombreArchivo+".csv");
+         std::string de = "\n";
+         string dato;
+         std::string delimiter = ", ";
+         size_t pos2 = 0;
+         std::string config;
+         int cont=0;
+         size_t pos = 0;
+         while ((pos = textoConfi.find(de))!= std::string::npos){
+             if(cont>0){
+                 dato=textoConfi.substr(0,pos);
+                 while ((pos2 = dato.find(delimiter)) != std::string::npos) {
+                     config = dato.substr(0, pos2);
+                     dato.erase(0, pos2 + delimiter.length());
+                     cout<<config<<endl;
+                     cout<<dato<<endl;
+                     nuevo->matrix->add(10,2,5,6,41);
+                 }
+                 textoConfi.erase(0, pos + de.length());
+             }else{
+                 textoConfi.erase(0, pos + de.length());
+                 cont++;
+             }
+         }
+         temp->list->insertarImg(nuevo);
+
+     }*/
     }
     void imageSpaseMatrix(){
         string header="digraph Sparce_Matrix {\n node [shape=box]\n  Mt[ label = \"0\", width = 1.5, style = filled, fillcolor = firebrick1, group = 1 ];"
