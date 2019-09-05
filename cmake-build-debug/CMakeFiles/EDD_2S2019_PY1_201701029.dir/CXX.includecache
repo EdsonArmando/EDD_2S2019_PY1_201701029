@@ -16,6 +16,16 @@ string
 NodeImage.cpp
 /cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/NodeImage.cpp
 
+/cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/LinkedList.cpp
+stdlib.h
+-
+iostream
+-
+SparseMatrix.cpp
+/cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/SparseMatrix.cpp
+string
+-
+
 /cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/ListX.cpp
 iostream
 -
@@ -57,6 +67,8 @@ stdlib.h
 -
 iostream
 -
+LinkedList.cpp
+/cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/LinkedList.cpp
 string
 -
 NodeImage.cpp
@@ -75,6 +87,8 @@ iostream
 -
 string
 -
+LinkedList.cpp
+/cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/LinkedList.cpp
 
 /cygdrive/c/Users/EG/Desktop/EDD_2S2019_PY1_201701029/Node_X.cpp
 iostream

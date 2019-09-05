@@ -39,6 +39,21 @@ public:
         nodes="";
         rela="";
     }
+    NodeImage *mostrarArbole(NodeImage *raiz,string n) {
+        if (raiz==NULL) {
+
+        }
+        else if (raiz->valor==n) {
+            return raiz;
+        }
+        else if (n<raiz->valor) {
+            return mostrarArbole(raiz->izq,n);
+        }
+        else {
+            return mostrarArbole(raiz->dere, n);
+        }
+
+    }
     void graficarArbol(NodeImage *raiz) {
         NodeImage *temp = raiz;
         if (raiz!=NULL) {

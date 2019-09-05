@@ -4,6 +4,7 @@
 
 #include <stdlib.h>
 #include <iostream>
+#include "LinkedList.cpp"
 #include <string>
 #include "NodeImage.cpp"
 #include "ABB.cpp"
@@ -31,8 +32,8 @@ public:
                 system("cls");
                 cout<<"Enter name"<<endl;
                 cin>>nameImage;
-                leerArchivo(nameImage);
                 tree.insertarNodo(raiz,nameImage);
+                leerArchivo(nameImage);
                 IniciarMenu();
                 break;
             case 2:
@@ -86,8 +87,6 @@ public:
     }
 
     void leerArchivo(string ruta) {
-        system("dir");
-
         archivoEntrada.open(ruta);
         if (archivoEntrada.is_open()) {
             while (archivoEntrada.good())
@@ -100,8 +99,43 @@ public:
         leerDatosArchivo(texto);
     }
 
-    void leerDatosArchivo(string text){
+    void leerDatosArchivo(string s){
+        string de = "\n";
+        string delimi = ", ";
+        size_t  pos=0;
+        size_t  pos2=0;
+        string archivo="";
+        string dato;
+        int cont =0;
+        while ((pos = s.find(de))!= std::string::npos){
+            if(cont>0){
+                dato=s.substr(0,pos);
+                obteainName(dato);
+                s.erase(0, pos + de.length());
+            }else{
+                s.erase(0, pos + de.length());
+                cont++;
+            }
+        }
+    }
+    void obteainName(string text){
+        LinkesList *lista=new LinkesList();
+        NodeList *nuevo;
+        std::string s = text;
+        std::string delimiter = ", ";
 
-        cout<<text<<endl;
+        size_t pos = 0;
+        std::string config;
+        while ((pos = s.find(delimiter)) != std::string::npos) {
+            config = s.substr(0, pos);
+            s.erase(0, pos + delimiter.length());
+            leerArchivoCSV(s);
+        }
+    }
+
+    void leerArchivoCSV(string nombreArchivo){
+        nombreArchivo.erase(nombreArchivo.length()-4);
+        NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
+
     }
 };
