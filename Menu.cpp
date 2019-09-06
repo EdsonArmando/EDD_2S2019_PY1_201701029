@@ -15,8 +15,9 @@ class Menu {
 private:
     ifstream archivoEntrada;
     NodeList *nuevo;
-    int posX=0;
-    int posY=0;
+    int posX=1;
+    int posY=1;
+    int r,g,b;
     NodeConfig *nuevos;
     ABB tree;
     int opcion=0;
@@ -167,6 +168,7 @@ public:
                 }
             }
         }else if(fileName !="Config.csv" && texto!="") {
+            nuevo = new NodeList(fileName);
             cout<<"------"+fileName+"------"<<endl;
             lon=texto.length();
             for (int i = 0; i < lon; i++) {
@@ -181,37 +183,79 @@ public:
                                 op = 0;
                                 break;
                             case '\n':
+                                nuevo->matrix->add(posX,posY,r,g,b);
+                                contNum=0;
+                                posX=1;
+                                color = "";
+                                op = 0;
+                                r=0;
+                                g=0;
+                                b=0;
+                                posY++;
                                 break;
                             case 'x':
                                 op = 0;
                                 posX++;
+                                if(posX==0){
+                                    posY++;
+                                }
+
                                 break;
                             case ',':
-                                op=0;
+                                if(r==0){
+                                    op=0;
+                                }else if(r>=0){
+                                    nuevo->matrix->add(posX,posY,r,g,b);
+                                    contNum=0;
+                                    posX++;
+                                    color = "";
+                                    op = 0;
+                                    r=0;
+                                    g=0;
+                                    b=0;
+                                    op=0;
+                                }
                                 break;
                             default:
                                 op = 1;
-                                color+=letra;
+                                r+=letra;
                                 break;
                         }
                         break;
                     case 1:
-                        if (letra == ','||letra == '\n'||letra == '\r') {
-                            posX++;
-                            cout << color << endl;
-                            cout << posX << endl;
+                       if(letra!='\r'||letra!='\n'){
+                            if(contNum==0){
+                                if(letra!='-'){
+                                    r += letra;
+                                    op = 1;
+                                } else{
+                                    contNum=1;
+                                }
 
-                            color = "";
-                            op = 0;
-                        } else if(letra!='\r'||letra!='\n'){
-                            color += letra;
-                            op = 1;
-                        }else if(letra=='\n'){
-                            posY++;
+                            }else if(contNum ==1){
+                                if(letra!='-'){
+                                    g += letra;
+                                    op = 1;
+                                }else{
+                                    contNum=2;
+                                }
+
+                            }else if(contNum==2){
+                                if(letra!=','&& letra!='\n'){
+                                    b += letra;
+                                    op = 1;
+                                }else if(letra==','||letra=='\n'||letra=='\r'){
+                                    contNum=0;
+                                    op=0;
+                                    i=i-1;
+                                }
+
+                            }
                         }
                         break;
                 }
             }
+            temp->list->insertarImg(nuevo);
             archivo = "";
             texto = "";
             linea = "";
@@ -221,7 +265,11 @@ public:
     }
 
     void obtenerNodoArbol(){
+        NodeContent *matri=NULL;
+        NodeList *tempo=NULL;
         NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
+        tempo = temp->list->primero;
+        tempo->matrix->imageSpaseMatrix();
     }
   /*  void leerArchivoCSV(string nombreArchivo){
         nombreArchivo.erase(nombreArchivo.length()-5);

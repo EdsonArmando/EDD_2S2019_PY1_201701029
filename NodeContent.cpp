@@ -7,7 +7,8 @@
 using namespace std;
 class NodeContent {
 public:
-    int x, y, r, g ,b;
+    int x,y;
+    int r,g,b;
     NodeContent *arriba;
     NodeContent *abajo;
     NodeContent *izqui;

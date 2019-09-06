@@ -83,8 +83,8 @@ public:
         Node_Y *temp1=ejeY->primero;
         NodeContent *content=NULL;
         List_X_Matrix *tempX=NULL;
-        links+="Mt -> A"+std::to_string(temp1->y)+"\n";
-        linksY+="Mt -> U"+std::to_string(temp->x)+"\n";
+        links+="Mt -> A"+std::to_string(temp->x)+"\n";
+        linksY+="Mt -> U"+std::to_string(temp1->y)+"\n";
         while(temp1!=NULL){
 
             listay+="U"+std::to_string(temp1->y) +"[label ="+"\""+std::to_string(temp1->y)+"\""+ "pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];\n";
