@@ -16,6 +16,7 @@ private:
     ifstream archivoEntrada;
     NodeList *nuevo;
     int posX=0;
+    int posY=0;
     NodeConfig *nuevos;
     ABB tree;
     int opcion=0;
@@ -166,50 +167,55 @@ public:
                 }
             }
         }else if(fileName !="Config.csv" && texto!="") {
+            cout<<"------"+fileName+"------"<<endl;
             lon=texto.length();
             for (int i = 0; i < lon; i++) {
                 letra = texto[i];
-                switch (op)
-                {
+                switch (op) {
                     case 0:
-                        switch (letra)
-                        {
-                            case '\n':
-                            case '\t':
-                            case ' ':
+                        switch (letra) {
 
+                            case '\t':
+                            case '\r':
+                            case ' ':
                                 op = 0;
                                 break;
-                            case ',':
-                                if(color!=""){
-                                    cout<<color<<endl;
-                                    color="";
-                                }
-                                op=0;
+                            case '\n':
                                 break;
                             case 'x':
-                                op=0;
+                                op = 0;
                                 posX++;
                                 break;
+                            case ',':
+                                op=0;
+                                break;
                             default:
-                                op=1;
+                                op = 1;
+                                color+=letra;
                                 break;
                         }
-                    case 1:
-                        if(letra==','){
-                            op=0;
-                        }else{
-                            color+=letra;
-                        }
                         break;
-                    default:
-                        op = 0;
+                    case 1:
+                        if (letra == ','||letra == '\n'||letra == '\r') {
+                            posX++;
+                            cout << color << endl;
+                            cout << posX << endl;
+
+                            color = "";
+                            op = 0;
+                        } else if(letra!='\r'||letra!='\n'){
+                            color += letra;
+                            op = 1;
+                        }else if(letra=='\n'){
+                            posY++;
+                        }
                         break;
                 }
             }
             archivo = "";
             texto = "";
             linea = "";
+            lon = 0;
             op = 0;
         }
     }
