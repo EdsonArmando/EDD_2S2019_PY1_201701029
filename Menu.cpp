@@ -4,8 +4,9 @@
 
 #include <stdlib.h>
 #include <iostream>
-#include "LinkedList.cpp"
 #include <string>
+#include "LinkedList.cpp"
+#include "ListLayer.cpp"
 #include "NodeImage.cpp"
 #include "ABB.cpp"
 using  namespace std;
@@ -14,9 +15,16 @@ class Menu {
 private:
     ifstream archivoEntrada;
     NodeList *nuevo;
+    int posX=0;
+    NodeConfig *nuevos;
     ABB tree;
     int opcion=0;
     string nameImage,linea,texto;
+    char letra;
+    int contNum = 0;
+    string color="";
+    int op = 0;
+    int lon;
 public:
     void IniciarMenu(){
         cout<<"----------Menu----------"<<endl;
@@ -35,6 +43,7 @@ public:
                 cin>>nameImage;
                 tree.insertarNodo(raiz,nameImage);
                 readInitialFile(nameImage);
+                obtenerNodoArbol();
                 IniciarMenu();
                 break;
             case 2:
@@ -131,6 +140,7 @@ public:
     void leerArchivoCSV(string fileName){
         fileName.erase(fileName.length()-1);
         string texto = devolverTexto(fileName);
+        NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
         string de = "\n";
         string delimi = ", ";
         size_t  pos=0;
@@ -139,15 +149,15 @@ public:
         string nameCSV;
         string dato;
         int cont =0;
-        if(texto!=""){
+        if(texto=="Config.csv"){
             while ((pos = texto.find(de))!= std::string::npos){
                 if(cont>0){
                     dato=texto.substr(0,pos);
                     while ((pos2 = dato.find(delimi)) != std::string::npos) {
                         nameCSV = dato.substr(0, pos2);
                         dato.erase(0, pos2 + delimi.length());
-                        cout<<nameCSV<<endl;
-                        cout<<dato<<endl;
+                        nuevos = new NodeConfig(nameCSV, std::stoi(dato));
+                        temp->listConfig->addConfig(nuevos);
                     }
                     texto.erase(0, pos + de.length());
                 }else{
@@ -155,7 +165,57 @@ public:
                     cont++;
                 }
             }
+        }else if(fileName !="Config.csv" && texto!="") {
+            lon=texto.length();
+            for (int i = 0; i < lon; i++) {
+                letra = texto[i];
+                switch (op)
+                {
+                    case 0:
+                        switch (letra)
+                        {
+                            case '\n':
+                            case '\t':
+                            case ' ':
+
+                                op = 0;
+                                break;
+                            case ',':
+                                if(color!=""){
+                                    cout<<color<<endl;
+                                    color="";
+                                }
+                                op=0;
+                                break;
+                            case 'x':
+                                op=0;
+                                posX++;
+                                break;
+                            default:
+                                op=1;
+                                break;
+                        }
+                    case 1:
+                        if(letra==','){
+                            op=0;
+                        }else{
+                            color+=letra;
+                        }
+                        break;
+                    default:
+                        op = 0;
+                        break;
+                }
+            }
+            archivo = "";
+            texto = "";
+            linea = "";
+            op = 0;
         }
+    }
+
+    void obtenerNodoArbol(){
+        NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
     }
   /*  void leerArchivoCSV(string nombreArchivo){
         nombreArchivo.erase(nombreArchivo.length()-5);
