@@ -75,45 +75,66 @@ public:
         string header="digraph Sparce_Matrix {\n node [shape=box]\n  Mt[ label = \"0\", width = 1.5, style = filled, fillcolor = firebrick1, group = 1 ];"
                       "\ne0[ shape = point, width = 0 ];\n e1[ shape = point, width = 0 ];";
         string listaX="";
+        int nivel=0;
+        int cont=0;
         string links="";
         string listay="";
         string linksY="";
+        string listNiveles="";
         string rank=" { rank = same; Mt;";
         Node_X *temp=ejeX->first;
         Node_Y *temp1=ejeY->primero;
         NodeContent *content=NULL;
         List_X_Matrix *tempX=NULL;
-        links+="Mt -> A"+std::to_string(temp->x)+"\n";
-        linksY+="Mt -> U"+std::to_string(temp1->y)+"\n";
-        while(temp1!=NULL){
+        listaX+="Mt->A"+std::to_string(temp->x)+"\n";
+        listaX+="A"+std::to_string(temp->x)+"->Mt"+"\n";
+        while(temp!=NULL){
+            listaX+="A"+std::to_string(temp->x)+"[label = \""+std::to_string(temp->x)+"\"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];\n";
 
-            listay+="U"+std::to_string(temp1->y) +"[label ="+"\""+std::to_string(temp1->y)+"\""+ "pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];\n";
-
-            while(temp!=NULL){
-                rank+="A"+std::to_string(temp->x)+";";
-                content = temp->listaY->first;
-
-                listaX+="A"+std::to_string(temp->x) +"[label ="+"\""+std::to_string(temp->x)+"\""+ "pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];\n";
-                if(temp->siguiente!=NULL){
-                    links+="A"+std::to_string(temp->x)+"->"+"A"+std::to_string(temp->siguiente->x)+"\n";
+            content=temp->listaY->first;
+            if(content->y==1){
+                listaX+="A"+std::to_string(temp->x)+" -> N"+std::to_string(content->x)+"_L0"+"\n";
+                listaX+="N"+std::to_string(content->x)+"_L0 -> A"+std::to_string(temp->x)+"\n";
+            }
+            if(temp->siguiente!=NULL){
+                listaX+="A"+std::to_string(temp->x)+" -> "+"A"+std::to_string(temp->siguiente->x)+"\n";
+                listaX+="A"+std::to_string(temp->siguiente->x)+" -> "+"A"+std::to_string(temp->x)+"\n";
+            }
+            if(temp1!=NULL){
+                if(temp1->y==1){
+                    listay+="Mt->U"+std::to_string(temp1->y)+"\n";
                 }
-                temp=temp->siguiente;
             }
-            if(temp1->siguiente!=NULL){
-                linksY+="U"+std::to_string(temp1->y)+"->"+"U"+std::to_string(temp1->siguiente->y)+"\n";
+
+            while(temp1!=NULL){
+                content = temp1->listX->first;
+                listay+="U"+std::to_string(temp1->y)+"[label = \""+std::to_string(temp1->y)+"\"    pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];\n";
+                listay+="U"+std::to_string(temp1->y)+" -> N"+std::to_string(content->x)+"_L"+std::to_string(nivel)+"\n";
+                if(temp1->siguiente!=NULL){
+
+                    listay+="U"+std::to_string(temp1->y)+" -> U"+std::to_string(temp1->siguiente->y)+"\n";
+                    listay+="U"+std::to_string(temp1->siguiente->y)+" -> U"+std::to_string(temp1->y)+"\n";
+                }
+
+                while(content!=NULL){
+                    listay+="N"+std::to_string(content->x)+"_L"+std::to_string(nivel)+"[label = \""+std::to_string(content->x)+"\" width = 1.5, group = 2 ];\n";
+                    if(content->derech!=NULL){
+                        listay+="N"+std::to_string(content->x)+"_L"+std::to_string(nivel)+" -> N"+std::to_string(content->derech->x)+"_L"+std::to_string(nivel)+"\n";
+                    }
+
+                    content=content->derech;
+                }
+                temp1=temp1->siguiente;
+                nivel++;
             }
-            temp1=temp1->siguiente;
+            temp=temp->siguiente;
         }
-      /*cout<<listaX<<endl;
-        cout<<links<<endl;
-        cout<<listay<<endl;
-        cout<<linksY<<endl;
-        cout<<rank<<endl;*/
         ofstream file;
         file.open("matrix.dot");
-        file <<header+listaX+links+listay+linksY+rank+"}\n}";
+        file <<header+listay+listaX+"}\n}";
         file.close();
         system("dot -Tpng matrix.dot -o matiz.png");
+        cout<<listNiveles<<endl;
         //system("matiz.png");
     }
 };
