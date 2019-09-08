@@ -183,15 +183,29 @@ public:
                                 op = 0;
                                 break;
                             case '\n':
-                                nuevo->matrix->add(posX,posY,r,g,b);
-                                contNum=0;
-                                posX=1;
-                                color = "";
-                                op = 0;
-                                r=0;
-                                g=0;
-                                b=0;
-                                posY++;
+                                if(r!=0){
+                                    cout<<posX;
+                                    cout<<posY<<endl;
+                                    nuevo->matrix->add(posX,posY,r,g,b);
+                                    contNum=0;
+                                    posX=1;
+                                    color = "";
+                                    op = 0;
+                                    r=0;
+                                    g=0;
+                                    b=0;
+                                    posY++;
+                                }else{
+                                    contNum=0;
+                                    posX=1;
+                                    color = "";
+                                    op = 0;
+                                    r=0;
+                                    g=0;
+                                    b=0;
+                                    posY++;
+                                }
+
                                 break;
                             case 'x':
                                 op = 0;
@@ -205,6 +219,8 @@ public:
                                 if(r==0){
                                     op=0;
                                 }else if(r>=0){
+                                    cout<<posX;
+                                    cout<<posY<<endl;
                                     nuevo->matrix->add(posX,posY,r,g,b);
                                     contNum=0;
                                     posX++;
