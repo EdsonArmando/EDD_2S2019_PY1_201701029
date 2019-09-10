@@ -16,11 +16,11 @@
 #pragma once
 class SparseMatrix {
 public:
-    List_Y_Matrix *ver;
-    Node_X *temp1;
-    Node_Y *temp2;
+    Node_X *temp;
+    Node_Y *temp1;
     ListX *ejeX;
     ListY *ejeY;
+    NodeContent *content=NULL;
     SparseMatrix() {
         ejeX = new ListX();
         ejeY = new ListY();
@@ -33,12 +33,12 @@ public:
         if (ejeY->buscar(y)==false) {
             ejeY->insertar(new Node_Y(y));
         }
-        temp1 = ejeX->buscarNodo(x);
-        temp2 = ejeY->buscarNodo(y);
+        temp = ejeX->buscarNodo(x);
+        temp1 = ejeY->buscarNodo(y);
         /*NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
         nuevo = new NodeList(nombreArchivo);*/
-        temp1->listaY->insertar(nuevo);
-        temp2->listX->insertar(nuevo);
+        temp->listaY->insertar(nuevo);
+        temp1->listX->insertar(nuevo);
         /*  void leerArchivoCSV(string nombreArchivo){
          nombreArchivo.erase(nombreArchivo.length()-5);
          NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
@@ -71,20 +71,39 @@ public:
 
      }*/
     }
+    string generateImage(int fila){
+        string pixel="";
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                if(content->y!=1){
+                    pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"),\n";
+                }else{
+                    pixel+=".pixel:nth-child("+std::to_string(content->x)+"),\n";
+                }
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        pixel.erase(pixel.length()-2);
+        pixel+="{\n background: #fbf19e;\n}";
+        return pixel;
+    }
+
     void imageSpaseMatrix(){
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
         string header="digraph Sparce_Matrix {\n node [shape=box]\n  Mt[ label = \"0\", width = 1.5, style = filled, fillcolor = firebrick1, group = 1 ];"
                       "\ne0[ shape = point, width = 0 ];\n e1[ shape = point, width = 0 ];\n";
         string listaX="";
-        int cont=0;
-        string links="";
         string listay="";
         string linksY="";
-        string listNiveles="";
         string rank=" { rank = same; Mt;";
-        Node_X *temp=ejeX->first;
-        Node_Y *temp1=ejeY->primero;
-        NodeContent *content=NULL;
-        List_X_Matrix *tempX=NULL;
+        temp=ejeX->first;
+        temp1=ejeY->primero;
         listaX+="Mt->A"+std::to_string(temp->x)+"\n";
         listaX+="A"+std::to_string(temp->x)+"->Mt"+"\n";
         while(temp!=NULL){
@@ -108,7 +127,7 @@ public:
                 content = temp1->listX->first;
                 listay+="U"+std::to_string(temp1->y)+"[label = \""+std::to_string(temp1->y)+"\" pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];\n";
                 listay+="U"+std::to_string(temp1->y)+" -> N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"\n";
-
+                listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+" ->U"+std::to_string(temp1->y)+"\n";
                 if(temp1->siguiente!=NULL){
 
                     listay+="U"+std::to_string(temp1->y)+" -> U"+std::to_string(temp1->siguiente->y)+"\n";
@@ -116,10 +135,16 @@ public:
 
                 }
                 while(content!=NULL){
+                    if(content->abajo!=NULL){
+                        listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+" -> "+"N"+std::to_string(content->abajo->x)+"_L"+std::to_string(content->abajo->y)+"\n";
+                        listay+="N"+std::to_string(content->abajo->x)+"_L"+std::to_string(content->abajo->y)+" -> "+"N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"\n";
+
+                    }
                     listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"[label = \""+std::to_string(content->x)+"\" width = 1.5, group = 2 ];\n";
                     listay+="{ rank = same; U"+std::to_string(temp1->y)+";N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"; }\n";
                     if(content->derech!=NULL){
                         listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+" -> N"+std::to_string(content->derech->x)+"_L"+std::to_string(temp1->y)+"\n";
+                        listay+="N"+std::to_string(content->derech->x)+"_L"+std::to_string(temp1->y)+" -> N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"\n";
                     }
 
                     content=content->derech;
@@ -133,7 +158,6 @@ public:
         file <<header+listay+listaX+rank+"}\n}";
         file.close();
         system("dot -Tpng matrix.dot -o matiz.png");
-        cout<<listNiveles<<endl;
         //system("matiz.png");
     }
 };

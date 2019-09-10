@@ -16,8 +16,9 @@ private:
     ifstream archivoEntrada;
     NodeList *nuevo;
     int posX=1;
+    string folder="";
     int posY=1;
-    int r,g,b;
+    string r,g,b;
     NodeConfig *nuevos;
     ABB tree;
     int opcion=0;
@@ -43,6 +44,7 @@ public:
                 system("cls");
                 cout<<"Enter name"<<endl;
                 cin>>nameImage;
+                folder=nameImage;
                 tree.insertarNodo(raiz,nameImage);
                 readInitialFile(nameImage);
                 obtenerNodoArbol();
@@ -50,6 +52,9 @@ public:
                 break;
             case 2:
                 tree.recoOrdenAlfa(raiz);
+                cout<<"Enter name"<<endl;
+                cin>>nameImage;
+                tree.generateImage(nameImage);
                 system("pause");
                 IniciarMenu();
                 break;
@@ -99,7 +104,12 @@ public:
     }
     string devolverTexto(string ruta){
         texto="";
-        archivoEntrada.open(ruta);
+        if(ruta==folder){
+            archivoEntrada.open(folder+"\\"+ruta+".csv");
+        }else{
+            archivoEntrada.open(folder+"\\"+ruta);
+        }
+
         if (archivoEntrada.is_open()) {
             while (archivoEntrada.good())
             {
@@ -140,7 +150,6 @@ public:
 
     }
     void leerArchivoCSV(string fileName){
-        fileName.erase(fileName.length()-1);
         string texto = devolverTexto(fileName);
         NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
         string de = "\n";
@@ -151,7 +160,7 @@ public:
         string nameCSV;
         string dato;
         int cont =0;
-        if(texto=="Config.csv"){
+        if(fileName=="Config.csv"){
             while ((pos = texto.find(de))!= std::string::npos){
                 if(cont>0){
                     dato=texto.substr(0,pos);
@@ -183,26 +192,24 @@ public:
                                 op = 0;
                                 break;
                             case '\n':
-                                if(r!=0){
-                                    cout<<posX;
-                                    cout<<posY<<endl;
-                                    nuevo->matrix->add(posX,posY,r,g,b);
+                                if(r!=""){
+                                    nuevo->matrix->add(posX,posY,std::stoi(r),std::stoi(g),std::stoi(b));
                                     contNum=0;
                                     posX=1;
                                     color = "";
                                     op = 0;
-                                    r=0;
-                                    g=0;
-                                    b=0;
+                                    r="";
+                                    g="";
+                                    b="";
                                     posY++;
                                 }else{
                                     contNum=0;
                                     posX=1;
                                     color = "";
                                     op = 0;
-                                    r=0;
-                                    g=0;
-                                    b=0;
+                                    r="";
+                                    g="";
+                                    b="";
                                     posY++;
                                 }
 
@@ -216,19 +223,17 @@ public:
 
                                 break;
                             case ',':
-                                if(r==0){
+                                if(r==""){
                                     op=0;
-                                }else if(r>=0){
-                                    cout<<posX;
-                                    cout<<posY<<endl;
-                                    nuevo->matrix->add(posX,posY,r,g,b);
+                                }else if(std::stoi(r)>=0){
+                                    nuevo->matrix->add(posX,posY,std::stoi(r),std::stoi(g),std::stoi(b));
                                     contNum=0;
                                     posX++;
                                     color = "";
                                     op = 0;
-                                    r=0;
-                                    g=0;
-                                    b=0;
+                                    r="";
+                                    g="";
+                                    b="";
                                     op=0;
                                 }
                                 break;

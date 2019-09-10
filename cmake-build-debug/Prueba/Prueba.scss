@@ -1,0 +1,22 @@
+body {
+  background: #333333;      /* Background color of the whole page */
+  height: 100vh;            /* 100 viewport heigh units */
+  display: flex;            /* defines a flex container */
+  justify-content: center;  /* centers the canvas horizontally */
+  align-items: center;      /* centers the canvas vertically */
+}.canvas {
+width: 480px;height: 480px;
+}
+.pixel {
+width: 30px;height: 30px;float: left;
+}
+.pixel:nth-child(3),
+.pixel:nth-child(4),
+.pixel:nth-child(5),
+.pixel:nth-child(8),
+.pixel:nth-child(19),
+.pixel:nth-child(20),
+.pixel:nth-child(21),
+.pixel:nth-child(24){
+ background: #fbf19e;
+}

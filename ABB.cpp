@@ -6,10 +6,16 @@
 #include <iostream>
 #include <string>
 #include "NodeImage.cpp"
+#include "NodeContent.cpp"
+#include "LinkedList.cpp"
 using  namespace std;
 static NodeImage *raiz;
 class ABB {
 public:
+    NodeImage *temp;
+    NodeContent *temp2;
+    int width,height;
+    NodeList *temp3;
     string inicio = "digraph grafica{\nrankdir=TB;\n subgraph cluster_0{\n label=\"Arbol Binario de Imagenes\"; \n node [shape = record, style=filled, fillcolor=seashell2];\n";
     string nodes,rela,rela2;
     string recorrido=" digraph{\n"
@@ -28,6 +34,55 @@ public:
 
         else if (n > raiz->valor)
             insertarNodo(raiz->dere, n);
+    }
+    void generateImage(string name){
+        temp=mostrarArbole(raiz,name);
+        string pixelImage;
+        width = temp->listConfig->ultimo->size;
+        height = temp->listConfig->ultimo->siguiente->size;
+        ofstream file;
+        file.open(name+"\\"+name+".html");
+        file<<"<!DOCTYPE html>\n"
+              "<html>\n"
+              "<head>\n"
+              "  <link rel=\"stylesheet\" href=\""+name+".scss"+"\">\n"
+              "</head>\n"
+              "<body>\n<div class=\"canvas\">";
+        for(int i=0;i<=(width*height);i++){
+            file <<"<div class=\"pixel\"></div>\n";
+        }
+
+        temp3=temp->list->ultimo;
+        do {
+            pixelImage=temp3->matrix->generateImage(width);
+
+            temp3=temp3->siguiente;
+
+        } while (temp3 != temp3->anterior);
+        cout<<pixelImage<<endl;
+        file<<"</div>\n"
+              "\n"
+              "</body>\n"
+              "</html>";
+        file.close();
+        file.open(name+"\\"+name+".scss");
+        file<<"body {\n"
+              "  background: #333333;      /* Background color of the whole page */\n"
+              "  height: 100vh;            /* 100 viewport heigh units */\n"
+              "  display: flex;            /* defines a flex container */\n"
+              "  justify-content: center;  /* centers the canvas horizontally */\n"
+              "  align-items: center;      /* centers the canvas vertically */\n"
+              "}";
+        file<<".canvas {\n";
+        file<< "width: "+ std::to_string((width)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
+        file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;";
+        file<<"\n}\n.pixel {\n";
+        file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
+        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;";
+        file<< "float: left;";
+        file<< "\n}\n";
+        file<< pixelImage;
+        file.close();
     }
     void mostrarArbol(){
         ofstream file;
