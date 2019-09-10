@@ -54,6 +54,7 @@ public:
                 tree.recoOrdenAlfa(raiz);
                 cout<<"Enter name"<<endl;
                 cin>>nameImage;
+                folder=nameImage;
                 tree.generateImage(nameImage);
                 system("pause");
                 IniciarMenu();
@@ -281,6 +282,8 @@ public:
             texto = "";
             linea = "";
             lon = 0;
+            posX=1;
+            posY=1;
             op = 0;
         }
     }

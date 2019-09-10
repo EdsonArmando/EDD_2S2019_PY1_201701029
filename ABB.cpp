@@ -54,11 +54,11 @@ public:
 
         temp3=temp->list->ultimo;
         do {
-            pixelImage=temp3->matrix->generateImage(width);
+            pixelImage+=temp3->matrix->generateImage(width);
 
             temp3=temp3->siguiente;
 
-        } while (temp3 != temp3->anterior);
+        } while (temp3!=temp->list->ultimo);
         cout<<pixelImage<<endl;
         file<<"</div>\n"
               "\n"
@@ -74,12 +74,12 @@ public:
               "  align-items: center;      /* centers the canvas vertically */\n"
               "}";
         file<<".canvas {\n";
-        file<< "width: "+ std::to_string((width)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
-        file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;";
+        file<< "width: "+ std::to_string((width)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<<"\n}\n.pixel {\n";
         file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
-        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;";
-        file<< "float: left;";
+        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
         file<< "\n}\n";
         file<< pixelImage;
         file.close();

@@ -15,16 +15,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ABB.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ABB.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparseMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SparseMatrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_2S2019_PY1_201701029.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe.stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_2S2019_PY1_201701029.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Mario2/Config.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Mario2/Config.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Mario2/Mario2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Mario2/Mario2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Mario2/Mario2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Mario2/Mario2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Prueba/Config.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Prueba/Config.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Prueba/Prueba.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Prueba/Prueba.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Prueba/Prueba.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Prueba/Prueba.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Prueba/Prueba.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Prueba/Prueba.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Prueba/puntajes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Prueba/puntajes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matiz.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matiz.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrix.dot" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrix.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matriz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/puntajes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/puntajes.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,6 +134,7 @@
       <workItem from="1568082077241" duration="6362000" />
       <workItem from="1568123869027" duration="2592000" />
       <workItem from="1568133159470" duration="7031000" />
+      <workItem from="1568149854581" duration="6251000" />
     </task>
     <servers />
   </component>
@@ -155,9 +158,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SparseMatrix.cpp</url>
-          <line>81</line>
-          <option name="timeStamp" value="77" />
+          <url>file://$PROJECT_DIR$/ABB.cpp</url>
+          <line>54</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
