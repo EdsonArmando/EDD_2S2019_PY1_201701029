@@ -46,8 +46,10 @@ public:
         lista->mostrarLista(nombre);
     }
     void aplyFilter(string nameImage, string nameFilter){
-        listFiltro = new NodeListLayerFilter(nameImage);
-
+        listFiltro=lista->returnNodo(nameImage);
+        if(listFiltro==NULL){
+            listFiltro = new NodeListLayerFilter(nameImage);
+        }
         tempo = new NodeFilter(nameImage+nameFilter);
         temp=mostrarArbole(raiz,nameImage);
         width = temp->listConfig->ultimo->size;
@@ -67,6 +69,34 @@ public:
             } while (temp3!=temp->list->ultimo);
             lista->apilarNodo(listFiltro);
             //cout<< mirrorXs->generateImages(width);
+        }else if(nameFilter=="Y-Mirror"){
+            do {
+                //temp4->matrix=temp3->matrix->mirrorX(width);
+                mirrorXs=temp3->matrix->mirrorY(height);
+
+                temp4 = new NodeList(temp3->nombre);
+                temp4->matrix=mirrorXs;
+
+                temp3=temp3->siguiente;
+                tempo->list->insertarImg(temp4);
+                listFiltro->liSta->insertarImg(tempo);
+
+            } while (temp3!=temp->list->ultimo);
+            lista->apilarNodo(listFiltro);
+        }else if(nameFilter=="DouebleMirror"){
+            do {
+                //temp4->matrix=temp3->matrix->mirrorX(width);
+                mirrorXs=temp3->matrix->DoubleMirror(width,height);
+
+                temp4 = new NodeList(temp3->nombre);
+                temp4->matrix=mirrorXs;
+
+                temp3=temp3->siguiente;
+                tempo->list->insertarImg(temp4);
+                listFiltro->liSta->insertarImg(tempo);
+
+            } while (temp3!=temp->list->ultimo);
+            lista->apilarNodo(listFiltro);
         }
     }
     void generateImage(string name){
@@ -138,13 +168,13 @@ public:
             file <<"<div class=\"pixel\"></div>\n";
         }
         tempFilter=tempoImage->liSta->devolverNodo(name+nameFilter);
-        temp4=tempFilter->list->ultimo;
+        temp3=tempFilter->list->ultimo;
         do {
-            pixelImage+=temp4->matrix->generateImages(width);
+            pixelImage+=temp3->matrix->generateImages(width);
             pixelImage+="\n";
-            temp4=temp4->siguiente;
+            temp3=temp3->siguiente;
 
-        } while (temp4!=tempFilter->list->ultimo);
+        } while (temp3!=tempFilter->list->ultimo);
         cout<<pixelImage<<endl;
         file<<"</div>\n"
               "\n"

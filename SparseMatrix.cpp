@@ -86,6 +86,36 @@ public:
         }
         return mirrorXs;
     }
+    SparseMatrix *mirrorY(int fila){
+        SparseMatrix *mirrorXs=new SparseMatrix();
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                mirrorXs->add(content->x,(fila-content->y),content->r,content->g,content->b);
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        return mirrorXs;
+    }
+    SparseMatrix *DoubleMirror(int columnas,int fila){
+        SparseMatrix *mirrorXs=new SparseMatrix();
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                mirrorXs->add((columnas-content->x)+1,(fila-content->y),content->r,content->g,content->b);
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        return mirrorXs;
+    }
 
     string generateImages(int fila){
         string pixel="";

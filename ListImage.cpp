@@ -40,15 +40,16 @@ public:
             }
             aux = aux->siguiente;
         }
+        return NULL;
     }
     void mostrarLista(string nombre) {
         NodeListLayerFilter *aux = inicio;
-        while (aux!=NULL)
+        do
         {
             if(aux->nameImage==nombre){
                 aux->liSta->mostrarLista();
             }
             aux = aux->siguiente;
-        }
+        }while (aux!=inicio);
     }
 };

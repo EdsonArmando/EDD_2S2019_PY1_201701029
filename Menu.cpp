@@ -63,9 +63,9 @@ public:
                 cout<<"----------Filters----------"<<endl;
                 cout<<"1. Negative "<<endl;
                 cout<<"2. Grayscale "<<endl;
-                cout<<"3. X- Mirror"<<endl;
-                cout<<"4. Y- Mirror "<<endl;
-                cout<<"5. Doueble Mirror"<<endl;
+                cout<<"3. X-Mirror"<<endl;
+                cout<<"4. Y-Mirror"<<endl;
+                cout<<"5. DouebleMirror"<<endl;
                 cout<<"6. Collage"<<endl;
                 cout<<"7. Mosaic"<<endl;
                 cout<<"Enter Option: "<<endl;
@@ -73,6 +73,14 @@ public:
                 switch(opcion){
                     case 3:
                         tree.aplyFilter(nameImage,"X-Mirror");
+                        IniciarMenu();
+                        break;
+                    case 4:
+                        tree.aplyFilter(nameImage,"Y-Mirror");
+                        IniciarMenu();
+                        break;
+                    case 5:
+                        tree.aplyFilter(nameImage,"DouebleMirror");
                         IniciarMenu();
                         break;
                 }
