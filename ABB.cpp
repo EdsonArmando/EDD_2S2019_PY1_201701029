@@ -8,14 +8,21 @@
 #include "NodeImage.cpp"
 #include "NodeContent.cpp"
 #include "LinkedList.cpp"
+#include "ListImage.cpp"
+
 using  namespace std;
 static NodeImage *raiz;
 class ABB {
 public:
+    NodeFilter *tempo;
+    NodeListLayerFilter *listFiltro;
+    ListLayerFilter *lista= new ListLayerFilter();
     NodeImage *temp;
     NodeContent *temp2;
     int width,height;
     NodeList *temp3;
+    NodeList *temp5;
+    NodeList *temp4;
     string inicio = "digraph grafica{\nrankdir=TB;\n subgraph cluster_0{\n label=\"Arbol Binario de Imagenes\"; \n node [shape = record, style=filled, fillcolor=seashell2];\n";
     string nodes,rela,rela2;
     string recorrido=" digraph{\n"
@@ -34,6 +41,33 @@ public:
 
         else if (n > raiz->valor)
             insertarNodo(raiz->dere, n);
+    }
+    void exportImage(string nombre){
+        lista->mostrarLista(nombre);
+    }
+    void aplyFilter(string nameImage, string nameFilter){
+        listFiltro = new NodeListLayerFilter(nameImage);
+
+        tempo = new NodeFilter(nameImage+nameFilter);
+        temp=mostrarArbole(raiz,nameImage);
+        width = temp->listConfig->ultimo->size;
+        SparseMatrix *mirrorXs;
+        if(nameFilter=="X-Mirror"){
+            do {
+                //temp4->matrix=temp3->matrix->mirrorX(width);
+                mirrorXs=temp3->matrix->mirrorX(width);
+
+                temp4 = new NodeList(temp3->nombre);
+                temp4->matrix=mirrorXs;
+
+                temp3=temp3->siguiente;
+                tempo->list->insertarImg(temp4);
+                listFiltro->liSta->insertarImg(tempo);
+
+            } while (temp3!=temp->list->ultimo);
+            lista->apilarNodo(listFiltro);
+            //cout<< mirrorXs->generateImages(width);
+        }
     }
     void generateImage(string name){
         temp=mostrarArbole(raiz,name);
@@ -54,8 +88,8 @@ public:
 
         temp3=temp->list->ultimo;
         do {
-            pixelImage+=temp3->matrix->generateImage(width);
-
+            pixelImage+=temp3->matrix->generateImages(width);
+            pixelImage+="\n";
             temp3=temp3->siguiente;
 
         } while (temp3!=temp->list->ultimo);
@@ -66,6 +100,58 @@ public:
               "</html>";
         file.close();
         file.open(name+"\\"+name+".scss");
+        file<<"body {\n"
+              "  background: #333333;      /* Background color of the whole page */\n"
+              "  height: 100vh;            /* 100 viewport heigh units */\n"
+              "  display: flex;            /* defines a flex container */\n"
+              "  justify-content: center;  /* centers the canvas horizontally */\n"
+              "  align-items: center;      /* centers the canvas vertically */\n"
+              "}";
+        file<<".canvas {\n";
+        file<< "width: "+ std::to_string((width)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<<"\n}\n.pixel {\n";
+        file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
+        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
+        file<< "\n}\n";
+        file<< pixelImage;
+        file.close();
+    }
+    void generateImage(string name, string nameFilter){
+        NodeListLayerFilter *tempoImage;
+        NodeFilter *tempFilter;
+        temp=mostrarArbole(raiz,name);
+        tempoImage = lista->returnNodo(name);
+        string pixelImage;
+        width = temp->listConfig->ultimo->size;
+        height = temp->listConfig->ultimo->siguiente->size;
+        ofstream file;
+        file.open(name+"\\"+name+nameFilter+".html");
+        file<<"<!DOCTYPE html>\n"
+              "<html>\n"
+              "<head>\n"
+              "  <link rel=\"stylesheet\" href=\""+name+nameFilter+".scss"+"\">\n"
+                                                                "</head>\n"
+                                                                "<body>\n<div class=\"canvas\">";
+        for(int i=0;i<=(width*height);i++){
+            file <<"<div class=\"pixel\"></div>\n";
+        }
+        tempFilter=tempoImage->liSta->devolverNodo(name+nameFilter);
+        temp4=tempFilter->list->ultimo;
+        do {
+            pixelImage+=temp4->matrix->generateImages(width);
+            pixelImage+="\n";
+            temp4=temp4->siguiente;
+
+        } while (temp4!=tempFilter->list->ultimo);
+        cout<<pixelImage<<endl;
+        file<<"</div>\n"
+              "\n"
+              "</body>\n"
+              "</html>";
+        file.close();
+        file.open(name+"\\"+name+nameFilter+".scss");
         file<<"body {\n"
               "  background: #333333;      /* Background color of the whole page */\n"
               "  height: 100vh;            /* 100 viewport heigh units */\n"

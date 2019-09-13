@@ -16,7 +16,7 @@ private:
     ifstream archivoEntrada;
     NodeList *nuevo;
     int posX=1;
-    string folder="";
+    string folder="",nameFilter;
     int posY=1;
     string r,g,b;
     NodeConfig *nuevos;
@@ -57,6 +57,31 @@ public:
                 folder=nameImage;
                 tree.generateImage(nameImage);
                 system("pause");
+                IniciarMenu();
+                break;
+            case 3:
+                cout<<"----------Filters----------"<<endl;
+                cout<<"1. Negative "<<endl;
+                cout<<"2. Grayscale "<<endl;
+                cout<<"3. X- Mirror"<<endl;
+                cout<<"4. Y- Mirror "<<endl;
+                cout<<"5. Doueble Mirror"<<endl;
+                cout<<"6. Collage"<<endl;
+                cout<<"7. Mosaic"<<endl;
+                cout<<"Enter Option: "<<endl;
+                cin>>opcion;
+                switch(opcion){
+                    case 3:
+                        tree.aplyFilter(nameImage,"X-Mirror");
+                        IniciarMenu();
+                        break;
+                }
+                break;
+            case 5:
+                tree.exportImage(nameImage);
+                cout<<"Enter Name: "<<endl;
+                cin>>nameFilter;
+                tree.generateImage(nameImage,nameFilter);
                 IniciarMenu();
                 break;
             case 6:

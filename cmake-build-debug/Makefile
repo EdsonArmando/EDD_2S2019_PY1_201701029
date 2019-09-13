@@ -150,6 +150,33 @@ LinkedList.cpp.s:
 	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/LinkedList.cpp.s
 .PHONY : LinkedList.cpp.s
 
+ListImage.o: ListImage.cpp.o
+
+.PHONY : ListImage.o
+
+# target to build an object file
+ListImage.cpp.o:
+	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListImage.cpp.o
+.PHONY : ListImage.cpp.o
+
+ListImage.i: ListImage.cpp.i
+
+.PHONY : ListImage.i
+
+# target to preprocess a source file
+ListImage.cpp.i:
+	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListImage.cpp.i
+.PHONY : ListImage.cpp.i
+
+ListImage.s: ListImage.cpp.s
+
+.PHONY : ListImage.s
+
+# target to generate assembly for a file
+ListImage.cpp.s:
+	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListImage.cpp.s
+.PHONY : ListImage.cpp.s
+
 ListLayer.o: ListLayer.cpp.o
 
 .PHONY : ListLayer.o
@@ -176,6 +203,33 @@ ListLayer.s: ListLayer.cpp.s
 ListLayer.cpp.s:
 	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListLayer.cpp.s
 .PHONY : ListLayer.cpp.s
+
+ListaCircularFiltros.o: ListaCircularFiltros.cpp.o
+
+.PHONY : ListaCircularFiltros.o
+
+# target to build an object file
+ListaCircularFiltros.cpp.o:
+	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListaCircularFiltros.cpp.o
+.PHONY : ListaCircularFiltros.cpp.o
+
+ListaCircularFiltros.i: ListaCircularFiltros.cpp.i
+
+.PHONY : ListaCircularFiltros.i
+
+# target to preprocess a source file
+ListaCircularFiltros.cpp.i:
+	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListaCircularFiltros.cpp.i
+.PHONY : ListaCircularFiltros.cpp.i
+
+ListaCircularFiltros.s: ListaCircularFiltros.cpp.s
+
+.PHONY : ListaCircularFiltros.s
+
+# target to generate assembly for a file
+ListaCircularFiltros.cpp.s:
+	$(MAKE) -f CMakeFiles/EDD_2S2019_PY1_201701029.dir/build.make CMakeFiles/EDD_2S2019_PY1_201701029.dir/ListaCircularFiltros.cpp.s
+.PHONY : ListaCircularFiltros.cpp.s
 
 main.o: main.cpp.o
 
@@ -216,9 +270,15 @@ help:
 	@echo "... LinkedList.o"
 	@echo "... LinkedList.i"
 	@echo "... LinkedList.s"
+	@echo "... ListImage.o"
+	@echo "... ListImage.i"
+	@echo "... ListImage.s"
 	@echo "... ListLayer.o"
 	@echo "... ListLayer.i"
 	@echo "... ListLayer.s"
+	@echo "... ListaCircularFiltros.o"
+	@echo "... ListaCircularFiltros.i"
+	@echo "... ListaCircularFiltros.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

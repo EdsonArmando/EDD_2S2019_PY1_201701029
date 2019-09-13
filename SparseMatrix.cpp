@@ -71,7 +71,23 @@ public:
 
      }*/
     }
-    string generateImage(int fila){
+    SparseMatrix *mirrorX(int fila){
+        SparseMatrix *mirrorXs=new SparseMatrix();
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                mirrorXs->add((fila-content->x)+1,content->y,content->r,content->g,content->b);
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        return mirrorXs;
+    }
+
+    string generateImages(int fila){
         string pixel="";
         Node_X *temp=NULL;
         Node_Y *temp1=NULL;
@@ -80,16 +96,14 @@ public:
             content=temp1->listX->first;
             while(content!=NULL){
                 if(content->y!=1){
-                    pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"),\n";
+                    pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"){background: #fbf19e;}\n";
                 }else{
-                    pixel+=".pixel:nth-child("+std::to_string(content->x)+"),\n";
+                    pixel+=".pixel:nth-child("+std::to_string(content->x)+"){background: #fbf19e;}\n";
                 }
                 content=content->derech;
             }
             temp1=temp1->siguiente;
         }
-        pixel.erase(pixel.length()-2);
-        pixel+="{\n background: #fbf19e;\n}";
         return pixel;
     }
 

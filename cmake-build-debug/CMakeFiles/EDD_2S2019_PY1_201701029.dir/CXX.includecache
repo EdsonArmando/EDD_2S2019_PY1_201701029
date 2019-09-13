@@ -19,6 +19,8 @@ NodeContent.cpp
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/NodeContent.cpp
 LinkedList.cpp
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/LinkedList.cpp
+ListImage.cpp
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListImage.cpp
 
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/LinkedList.cpp
 stdlib.h
@@ -29,6 +31,16 @@ SparseMatrix.cpp
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/SparseMatrix.cpp
 string
 -
+
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListImage.cpp
+string
+-
+LinkedList.cpp
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/LinkedList.cpp
+ListLayer.cpp
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListLayer.cpp
+ListaCircularFiltros.cpp
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListaCircularFiltros.cpp
 
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListLayer.cpp
 stdlib.h
@@ -73,6 +85,14 @@ string
 -
 NodeContent.cpp
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/NodeContent.cpp
+
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListaCircularFiltros.cpp
+string
+-
+LinkedList.cpp
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/LinkedList.cpp
+ListLayer.cpp
+/cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/ListLayer.cpp
 
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/Menu.cpp
 stdlib.h

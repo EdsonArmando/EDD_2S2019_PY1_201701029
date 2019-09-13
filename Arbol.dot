@@ -1,0 +1,11 @@
+digraph grafica{
+rankdir=TB;
+ subgraph cluster_0{
+ label="Arbol Binario de Imagenes"; 
+ node [shape = record, style=filled, fillcolor=seashell2];
+nodoMario2 [ label = "<C0>|Mario2|<C1>"];
+nodoPrueba [ label = "<C0>|Prueba|<C1>"];
+nodoMario2:C1->nodoPrueba
+
+}
+}
