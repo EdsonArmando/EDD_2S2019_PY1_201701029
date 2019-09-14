@@ -40,12 +40,10 @@ public:
     }
     void mostrarLista() {
         NodeFilter *aux=primero;
-
         do{
             cout << aux->valor << endl;
             aux = aux->siguiente;
         } while (aux != primero);
-
     }
     NodeFilter *devolverNodo(string Nombre) {
         NodeFilter *aux=primero;
@@ -62,16 +60,44 @@ public:
         if (esVacia()) {
             primero = nuevo;
             primero->siguiente = primero;
-            primero->anterior = primero;
+            primero->anterior = ultimo;
             ultimo = nuevo;
         }
         else {
-            primero->siguiente = nuevo;
-            nuevo->anterior = primero;
-            nuevo->siguiente = ultimo;
+            ultimo->siguiente = nuevo;
+            nuevo->siguiente = primero;
+            nuevo->anterior = ultimo;
             ultimo->anterior = nuevo;
-            primero = nuevo;
+            ultimo = nuevo;
         }
+    }
+    void generarDoc() {
+        string Cola1 = "\n digraph  List{ \n rankdir=LR;  \n node [shape=record];\n label=\"Lista Filtros\";\n";
+        string compras = "";
+        NodeFilter *aux = primero;
+
+        do {
+
+            compras += aux->valor;
+            compras += " -> ";
+            compras += aux->siguiente->valor;
+            compras += ";\n";
+            compras += aux->siguiente->valor;
+            compras += " -> ";
+            compras += aux->valor;
+            compras += ";\n";
+            aux = aux->siguiente;
+        } while (aux != primero);
+
+        if (aux == primero) {
+            compras += "\n}";
+            ofstream file;
+            file.open("Filter.dot");
+            file << Cola1+compras;
+            file.close();
+            system("dot -Tpng Filter.dot -o filter.png");
+        }
+
     }
 };
 

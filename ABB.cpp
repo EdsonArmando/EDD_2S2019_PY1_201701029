@@ -15,14 +15,10 @@ static NodeImage *raiz;
 class ABB {
 public:
     NodeFilter *tempo;
-    NodeListLayerFilter *listFiltro;
+
     ListLayerFilter *lista= new ListLayerFilter();
-    NodeImage *temp;
-    NodeContent *temp2;
     int width,height;
-    NodeList *temp3;
-    NodeList *temp5;
-    NodeList *temp4;
+
     string inicio = "digraph grafica{\nrankdir=TB;\n subgraph cluster_0{\n label=\"Arbol Binario de Imagenes\"; \n node [shape = record, style=filled, fillcolor=seashell2];\n";
     string nodes,rela,rela2;
     string recorrido=" digraph{\n"
@@ -45,16 +41,54 @@ public:
     void exportImage(string nombre){
         lista->mostrarLista(nombre);
     }
+    void imageLayerReport(string name){
+        NodeImage *temp;
+        temp=mostrarArbole(raiz,name);
+        temp->list->mostrarLista();
+
+    }
+    void linearMatrix(string name){
+        NodeImage *temp;
+        temp=mostrarArbole(raiz,name);
+        temp->list->mostrarLista();
+    }
+    void graficoLinealizarMatriz(string name,string capa,string tipo){
+        NodeImage *temp;
+        temp=mostrarArbole(raiz,name);
+        if(tipo=="filas"){
+            temp->list->linealizar(capa);
+        }else{
+            temp->list->linealizarColum(capa);
+        }
+
+    }
+    void imageLayerReport2(string name,string capa){
+        NodeImage *temp;
+        temp=mostrarArbole(raiz,name);
+        temp->list->graficar(capa);
+    }
+    void graphDoubleList(string name){
+        NodeListLayerFilter *temp=NULL;
+        temp=lista->returnNodo(name);
+        temp->liSta->generarDoc();
+    }
     void aplyFilter(string nameImage, string nameFilter,int x, int y){
+        NodeListLayerFilter *listFiltro;
+        NodeList *temp4;
+        NodeImage *temp;
+        NodeList *temp3;
+        bool esta=lista->returnBool(nameImage);
+        temp=mostrarArbole(raiz,nameImage);
+        temp3=temp->list->ultimo;
         listFiltro=lista->returnNodo(nameImage);
         if(listFiltro==NULL){
             listFiltro = new NodeListLayerFilter(nameImage);
         }
         tempo = new NodeFilter(nameImage+nameFilter);
-        temp=mostrarArbole(raiz,nameImage);
+
         width = temp->listConfig->ultimo->size;
         SparseMatrix *mirrorXs;
-        if(nameFilter=="X-Mirror"){
+        if(nameFilter=="X_Mirror"){
             do {
                 //temp4->matrix=temp3->matrix->mirrorX(width);
                 mirrorXs=temp3->matrix->mirrorX(width);
@@ -67,9 +101,14 @@ public:
                 listFiltro->liSta->insertarImg(tempo);
 
             } while (temp3!=temp->list->ultimo);
-            lista->apilarNodo(listFiltro);
+            if(esta==true){
+
+            }else{
+                lista->apilarNodo(listFiltro);
+            }
+
             //cout<< mirrorXs->generateImages(width);
-        }else if(nameFilter=="Y-Mirror"){
+        }else if(nameFilter=="Y_Mirror"){
             do {
                 //temp4->matrix=temp3->matrix->mirrorX(width);
                 mirrorXs=temp3->matrix->mirrorY(height);
@@ -82,7 +121,11 @@ public:
                 listFiltro->liSta->insertarImg(tempo);
 
             } while (temp3!=temp->list->ultimo);
-            lista->apilarNodo(listFiltro);
+            if(esta==true){
+
+            }else{
+                lista->apilarNodo(listFiltro);
+            }
         }else if(nameFilter=="DouebleMirror"){
             do {
                 //temp4->matrix=temp3->matrix->mirrorX(width);
@@ -96,7 +139,11 @@ public:
                 listFiltro->liSta->insertarImg(tempo);
 
             } while (temp3!=temp->list->ultimo);
-            lista->apilarNodo(listFiltro);
+            if(esta==true){
+
+            }else{
+                lista->apilarNodo(listFiltro);
+            }
         }else if(nameFilter=="Collage"){
             do {
                 //temp4->matrix=temp3->matrix->mirrorX(width);
@@ -110,14 +157,56 @@ public:
                 listFiltro->liSta->insertarImg(tempo);
 
             } while (temp3!=temp->list->ultimo);
-            lista->apilarNodo(listFiltro);
+            if(esta==true){
+
+            }else{
+                lista->apilarNodo(listFiltro);
+            }
+        }else if(nameFilter=="grises"){
+            do {
+                //temp4->matrix=temp3->matrix->mirrorX(width);
+                mirrorXs=temp3->matrix->escalaGrises(width,height,0,0);
+
+                temp4 = new NodeList(temp3->nombre);
+                temp4->matrix=mirrorXs;
+
+                temp3=temp3->siguiente;
+                tempo->list->insertarImg(temp4);
+                listFiltro->liSta->insertarImg(tempo);
+
+            } while (temp3!=temp->list->ultimo);
+            if(esta==true){
+
+            }else{
+                lista->apilarNodo(listFiltro);
+            }
+        }else if(nameFilter=="negative"){
+            do {
+                //temp4->matrix=temp3->matrix->mirrorX(width);
+                mirrorXs=temp3->matrix->negative(width,height,0,0);
+
+                temp4 = new NodeList(temp3->nombre);
+                temp4->matrix=mirrorXs;
+
+                temp3=temp3->siguiente;
+                tempo->list->insertarImg(temp4);
+                listFiltro->liSta->insertarImg(tempo);
+
+            } while (temp3!=temp->list->ultimo);
+            if(esta==true){
+
+            }else{
+                lista->apilarNodo(listFiltro);
+            }
         }
     }
     void generateImage(string name){
-        temp=mostrarArbole(raiz,name);
+        NodeList *temp3;
+        NodeImage *temp2;
+        temp2=mostrarArbole(raiz,name);
         string pixelImage;
-        width = temp->listConfig->ultimo->size;
-        height = temp->listConfig->ultimo->siguiente->size;
+        width = temp2->listConfig->ultimo->size;
+        height = temp2->listConfig->ultimo->siguiente->size;
         ofstream file;
         file.open(name+"\\"+name+".html");
         file<<"<!DOCTYPE html>\n"
@@ -130,13 +219,13 @@ public:
             file <<"<div class=\"pixel\"></div>\n";
         }
 
-        temp3=temp->list->ultimo;
+        temp3=temp2->list->ultimo;
         do {
             pixelImage+=temp3->matrix->generateImages(width);
             pixelImage+="\n";
             temp3=temp3->siguiente;
 
-        } while (temp3!=temp->list->ultimo);
+        } while (temp3!=temp2->list->ultimo);
         cout<<pixelImage<<endl;
         file<<"</div>\n"
               "\n"
@@ -152,30 +241,32 @@ public:
               "  align-items: center;      /* centers the canvas vertically */\n"
               "}";
         file<<".canvas {\n";
-        file<< "width: "+ std::to_string((width)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
-        file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "width: "+ std::to_string((width)*temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string((height)*temp2->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<<"\n}\n.pixel {\n";
-        file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
-        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "width: "+ std::to_string(temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;";
+        file<< "height: "+ std::to_string(temp2->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
         file<< "\n}\n";
         file<< pixelImage;
         file.close();
     }
     void generateImage(string name, string nameFilter){
+        NodeList *temp3;
+        NodeImage *temp2;
         NodeListLayerFilter *tempoImage;
         NodeFilter *tempFilter;
-        temp=mostrarArbole(raiz,name);
+        temp2=mostrarArbole(raiz,name);
         tempoImage = lista->returnNodo(name);
         string pixelImage;
-        width = temp->listConfig->ultimo->size;
-        height = temp->listConfig->ultimo->siguiente->size;
+        width = temp2->listConfig->ultimo->size;
+        height = temp2->listConfig->ultimo->siguiente->size;
         ofstream file;
         file.open(name+"\\"+name+nameFilter+".html");
         file<<"<!DOCTYPE html>\n"
               "<html>\n"
               "<head>\n"
-              "  <link rel=\"stylesheet\" href=\""+name+nameFilter+".scss"+"\">\n"
+              "  <link rel=\"stylesheet\" href=\""+name+nameFilter+".css"+"\">\n"
                                                                 "</head>\n"
                                                                 "<body>\n<div class=\"canvas\">";
         for(int i=0;i<=(width*height);i++){
@@ -195,33 +286,40 @@ public:
               "</body>\n"
               "</html>";
         file.close();
-        file.open(name+"\\"+name+nameFilter+".scss");
+        file.open(name+"\\"+name+nameFilter+".css");
         file<<"body {\n"
               "  background: #333333;      /* Background color of the whole page */\n"
               "  height: 100vh;            /* 100 viewport heigh units */\n"
               "  display: flex;            /* defines a flex container */\n"
               "  justify-content: center;  /* centers the canvas horizontally */\n"
-              "  align-items: center;      /* centers the canvas vertically */\n"
-              "}";
+              "  align-items: center;      /* centers the canvas vertically */\n";
+              if(nameFilter=="negative"){
+                  file<<"filter:invert(75%);";
+              }else if(nameFilter=="grises"){
+                  file<<"filter:grayscale(100%);";
+              }
+             file<< "}\n";
         file<<".canvas {\n";
-        file<< "width: "+ std::to_string((width)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
-        file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "width: "+ std::to_string((width)*temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string((height)*temp2->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<<"\n}\n.pixel {\n";
-        file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
-        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "width: "+ std::to_string(temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;";
+        file<< "height: "+ std::to_string(temp2->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
         file<< "\n}\n";
         file<< pixelImage;
         file.close();
     }
     void generateImage(string name, string nameFilter,int x, int y){
+        NodeList *temp3;
+        NodeImage *temp2;
         NodeListLayerFilter *tempoImage;
         NodeFilter *tempFilter;
-        temp=mostrarArbole(raiz,name);
+        temp2=mostrarArbole(raiz,name);
         tempoImage = lista->returnNodo(name);
         string pixelImage;
-        width = temp->listConfig->ultimo->size;
-        height = temp->listConfig->ultimo->siguiente->size;
+        width = temp2->listConfig->ultimo->size;
+        height = temp2->listConfig->ultimo->siguiente->size;
         ofstream file;
         file.open(name+"\\"+name+nameFilter+".html");
         file<<"<!DOCTYPE html>\n"
@@ -256,11 +354,11 @@ public:
               "  align-items: center;      /* centers the canvas vertically */\n"
               "}";
         file<<".canvas {\n";
-        file<< "width: "+ std::to_string((width*x)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
-        file<< "height: "+ std::to_string((height*y)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "width: "+ std::to_string((width*x)*temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string((height*y)*temp2->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<<"\n}\n.pixel {\n";
-        file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
-        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "width: "+ std::to_string(temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string(temp2->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
         file<< "\n}\n";
         file<< pixelImage;

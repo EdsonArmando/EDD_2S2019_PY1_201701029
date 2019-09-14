@@ -22,7 +22,7 @@ private:
     NodeConfig *nuevos;
     ABB tree;
     int opcion=0;
-    string nameImage,linea,texto;
+    string nameImage,linea,texto,capaImage,na,linealizar;
     char letra;
     int contNum = 0;
     string color="";
@@ -71,12 +71,20 @@ public:
                 cout<<"Enter Option: "<<endl;
                 cin>>opcion;
                 switch(opcion){
+                    case 1:
+                        tree.aplyFilter(nameImage,"negative",0,0);
+                        IniciarMenu();
+                        break;
+                    case 2:
+                        tree.aplyFilter(nameImage,"grises",0,0);
+                        IniciarMenu();
+                        break;
                     case 3:
-                        tree.aplyFilter(nameImage,"X-Mirror",0,0);
+                        tree.aplyFilter(nameImage,"X_Mirror",0,0);
                         IniciarMenu();
                         break;
                     case 4:
-                        tree.aplyFilter(nameImage,"Y-Mirror",0,0);
+                        tree.aplyFilter(nameImage,"Y_Mirror",0,0);
                         IniciarMenu();
                         break;
                     case 5:
@@ -114,6 +122,37 @@ public:
                 cout<<"Enter Option: "<<endl;
                 cin>>opcion;
                 switch (opcion){
+                    case 4:
+                        tree.recoOrdenAlfa(raiz);
+                        cout<<"Enter name"<<endl;
+                        cin>>na;
+                        tree.linearMatrix(na);
+                        cout<<"Enter name"<<endl;
+                        cin>>capaImage;
+                        cout<<"Tipo Linealizacion"<<endl;
+                        cout<<"1. filas"<<endl;
+                        cout<<"2. columnas"<<endl;
+                        cin>>opcion;
+                        if(opcion==1){
+                            tree.graficoLinealizarMatriz(na,capaImage,"filas");
+                        }else{
+                            tree.graficoLinealizarMatriz(na,capaImage,"columnas");
+                        }
+
+
+                        IniciarMenu();
+                        break;
+                    case 3:
+                        tree.imageLayerReport(nameImage);
+                        cout<<"Enter Name: "<<endl;
+                        cin>>capaImage;
+                        tree.imageLayerReport2(nameImage,capaImage);
+                        IniciarMenu();
+                        break;
+                    case 5:
+                        tree.graphDoubleList(nameImage);
+                        IniciarMenu();
+                        break;
                     case 1:
                         tree.graficarArbol(raiz);
                         tree.mostrarArbol();

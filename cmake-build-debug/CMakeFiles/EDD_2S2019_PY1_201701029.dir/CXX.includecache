@@ -151,6 +151,8 @@ string
 -
 fstream
 -
+sstream
+-
 List_Y_Matrix.cpp
 /cygdrive/c/Users/EG/Desktop/Proyectos/EDD_2S2019_PY1_201701029/List_Y_Matrix.cpp
 List_X_Matrix.cpp

@@ -52,4 +52,38 @@ public:
             primero = nuevo;
         }
     }
+    void mostrarLista(){
+        NodeList *temp=ultimo;
+        do{
+            cout<<temp->nombre<<endl;
+            temp=temp->siguiente;
+        }while(temp!=ultimo);
+    }
+    void linealizar(string nombre){
+        NodeList *temp=ultimo;
+        do{
+            if(temp->nombre==nombre){
+                temp->matrix->graficoLinealizarFila();
+            }
+            temp=temp->siguiente;
+        }while(temp!=ultimo);
+    }
+    void linealizarColum(string nombre){
+        NodeList *temp=ultimo;
+        do{
+            if(temp->nombre==nombre){
+                temp->matrix->graficoLinealizarColumna();
+            }
+            temp=temp->siguiente;
+        }while(temp!=ultimo);
+    }
+    void graficar(string nombre){
+        NodeList *temp=ultimo;
+        do{
+            if(temp->nombre==nombre){
+                temp->matrix->imageSpaseMatrix();
+            }
+           temp=temp->siguiente;
+        }while(temp!=ultimo);
+    }
 };

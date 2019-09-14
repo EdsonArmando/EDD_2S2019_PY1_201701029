@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <sstream>
 
 #include "List_Y_Matrix.cpp"
 #include "List_X_Matrix.cpp"
@@ -131,6 +132,102 @@ public:
         }
         return mirrorXs;
     }
+    SparseMatrix *escalaGrises(int columnas,int fila,int x, int y){
+        SparseMatrix *mirrorXs=new SparseMatrix();
+        Node_X *temp=NULL;
+        double result=0;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                mirrorXs->add(content->x,content->y,content->r,content->g,content->b);
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        return mirrorXs;
+    }
+    SparseMatrix *negative(int columnas,int fila,int x, int y){
+        SparseMatrix *mirrorXs=new SparseMatrix();
+        Node_X *temp=NULL;
+        double result=0;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                mirrorXs->add(content->x,content->y,content->r,content->g,content->b);
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        return mirrorXs;
+    }
+    void graficoLinealizarColumna(){
+        string grafico= "digraph {\n"
+                        " rankdir=LR; \n"
+                        " node [shape=record]; \n"
+                        " label=\"Liealizacion por columnas\";\n"
+                        " null [label=\"NULL\" shape=box];";
+        string relaciones="";
+        Node_X *temp=NULL;
+        double result=0;
+        Node_X *temp1=NULL;
+        temp1=ejeX->first;
+        int cont=0;
+        while (temp1!=NULL){
+            content=temp1->listaY->first;
+            while(content!=NULL){
+                relaciones+= std::to_string(cont)+"[label=\"{<data>("+std::to_string(content->x)+','+std::to_string(content->y)+") "+std::to_string(content->r)+"-"+std::to_string(content->g)+"-"+std::to_string(content->b)+ "| <ref>  }\", width=1.2]\n";
+                if(temp1->siguiente!=NULL){
+                    relaciones+= std::to_string(cont)+":ref:c->" +std::to_string(cont+1)+":data\n";
+                }
+                cont++;
+                content=content->abajo;
+            }
+            temp1=temp1->siguiente;
+        }
+        ofstream file;
+        relaciones+="null->0\n";
+        file.open("linealizarFila.dot");
+        file <<grafico+relaciones+"}";
+        file.close();
+        system("dot -Tpng linealizarFila.dot -o filas.png");
+        system("filas.png");
+    }
+    void graficoLinealizarFila(){
+        string grafico= "digraph {\n"
+                        " rankdir=LR; \n"
+                        " node [shape=record]; \n"
+                        " label=\"Liealizacion por filas\";\n"
+                        " null [label=\"NULL\" shape=box];";
+        string relaciones="";
+        Node_X *temp=NULL;
+        double result=0;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        int cont=0;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                relaciones+= std::to_string(cont)+"[label=\"{<data>("+std::to_string(content->x)+','+std::to_string(content->y)+") "+std::to_string(content->r)+"-"+std::to_string(content->g)+"-"+std::to_string(content->b)+ "| <ref>  }\", width=1.2]\n";
+                if(temp1->siguiente!=NULL){
+                    relaciones+= std::to_string(cont)+":ref:c->" +std::to_string(cont+1)+":data\n";
+                }
+                cont++;
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        ofstream file;
+        relaciones+="null->0\n";
+        file.open("linealizarFila.dot");
+        file <<grafico+relaciones+"}";
+        file.close();
+        system("dot -Tpng linealizarFila.dot -o filas.png");
+        system("filas.png");
+    }
     string generateImages(int columnas,int fila,int x, int y){
         string pixel="";
         Node_X *temp=NULL;
@@ -143,9 +240,9 @@ public:
                 content=temp1->listX->first;
                 while(content!=NULL){
                     if(content->y!=1){
-                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas*content->y-columnas*(x)+(content->x))+"){background: #fbf19e;}\n";
+                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas*content->y-columnas*(x)+(content->x))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
                     }else{
-                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas-columnas*(x)+(content->x))+"){background: #fbf19e;}\n";
+                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas-columnas*(x)+(content->x))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
                     }
                     content=content->derech;
                 }
@@ -162,9 +259,9 @@ public:
                     content=temp1->listX->first;
                     while(content!=NULL){
                         if(content->y!=1){
-                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background: #fbf19e;}\n";
+                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
                         }else{
-                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background: #fbf19e;}\n";
+                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
                         }
                         content=content->derech;
                     }
@@ -187,15 +284,22 @@ public:
             content=temp1->listX->first;
             while(content!=NULL){
                 if(content->y!=1){
-                    pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"){background: #fbf19e;}\n";
+                    pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
                 }else{
-                    pixel+=".pixel:nth-child("+std::to_string(content->x)+"){background: #fbf19e;}\n";
+                    pixel+=".pixel:nth-child("+std::to_string(content->x)+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
                 }
                 content=content->derech;
             }
             temp1=temp1->siguiente;
         }
         return pixel;
+    }
+    std::string convertToHexa(int r, int g, int b){
+        std::stringstream ss;
+        ss<< "#";
+        ss<< std::hex << (r<<16|g<<8|b);
+        return ss.str();
+
     }
 
     void imageSpaseMatrix(){
@@ -263,6 +367,6 @@ public:
         file <<header+listay+listaX+rank+"}\n}";
         file.close();
         system("dot -Tpng matrix.dot -o matiz.png");
-        //system("matiz.png");
+        system("matiz.png");
     }
 };

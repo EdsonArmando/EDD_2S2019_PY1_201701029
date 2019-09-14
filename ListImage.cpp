@@ -12,29 +12,33 @@ public:
     string nameImage;
     ListaCircularFiltors *liSta;
     NodeListLayerFilter *siguiente;
+    NodeListLayerFilter *anterior;
     NodeListLayerFilter(string name){
         this->nameImage = name;
         this->liSta = new ListaCircularFiltors();
         siguiente=NULL;
+        anterior=NULL;
     }
 };
 
 class ListLayerFilter{
 public:
     NodeListLayerFilter *inicio;
+    NodeListLayerFilter *fin;
     void apilarNodo(NodeListLayerFilter *nuevo) {
         if (inicio==NULL) {
             inicio = nuevo;
+            fin=inicio;
+            nuevo->siguiente=NULL;
         }
         else {
-            nuevo->siguiente = inicio;
-            inicio = nuevo;
+            inicio->siguiente=nuevo;
+            inicio=nuevo;
         }
     }
     NodeListLayerFilter *returnNodo(string nombre){
-        NodeListLayerFilter *aux = inicio;
-        while (aux!=NULL)
-        {
+        NodeListLayerFilter *aux = fin;
+        while (aux!=NULL){
             if(aux->nameImage==nombre){
                 return aux;
             }
@@ -42,14 +46,25 @@ public:
         }
         return NULL;
     }
+    bool returnBool(string nombre){
+        NodeListLayerFilter *aux = fin;
+        while (aux!=NULL){
+            if(aux->nameImage==nombre){
+                return true;
+            }
+            aux = aux->siguiente;
+        }
+        return false;
+    }
     void mostrarLista(string nombre) {
-        NodeListLayerFilter *aux = inicio;
-        do
+        NodeListLayerFilter *aux = fin;
+
+        while (aux!=NULL)
         {
             if(aux->nameImage==nombre){
                 aux->liSta->mostrarLista();
             }
             aux = aux->siguiente;
-        }while (aux!=inicio);
+        }
     }
 };

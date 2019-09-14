@@ -1,0 +1,15 @@
+digraph {
+ rankdir=LR; 
+ node [shape=record]; 
+ label="Liealizacion por columnas";
+ null [label="NULL" shape=box];0[label="{<data>(3,8) 255-180-0| <ref>  }", width=1.2]
+0:ref:c->1:data
+1[label="{<data>(3,10) 255-180-0| <ref>  }", width=1.2]
+1:ref:c->2:data
+2[label="{<data>(4,8) 255-180-0| <ref>  }", width=1.2]
+2:ref:c->3:data
+3[label="{<data>(4,11) 255-180-0| <ref>  }", width=1.2]
+3:ref:c->4:data
+4[label="{<data>(5,12) 255-180-0| <ref>  }", width=1.2]
+null->0
+}

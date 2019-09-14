@@ -1,0 +1,11 @@
+
+ digraph  List{ 
+ rankdir=LR;  
+ node [shape=record];
+ label="Lista Filtros";
+Pruebanegative -> PruebaX_Mirror;
+PruebaX_Mirror -> Pruebanegative;
+PruebaX_Mirror -> Pruebanegative;
+Pruebanegative -> PruebaX_Mirror;
+
+}
