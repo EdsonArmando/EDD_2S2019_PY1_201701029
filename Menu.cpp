@@ -27,7 +27,7 @@ private:
     int contNum = 0;
     string color="";
     int op = 0;
-    int lon;
+    int lon,cantidadx,cantidady;
 public:
     void IniciarMenu(){
         cout<<"----------Menu----------"<<endl;
@@ -72,15 +72,23 @@ public:
                 cin>>opcion;
                 switch(opcion){
                     case 3:
-                        tree.aplyFilter(nameImage,"X-Mirror");
+                        tree.aplyFilter(nameImage,"X-Mirror",0,0);
                         IniciarMenu();
                         break;
                     case 4:
-                        tree.aplyFilter(nameImage,"Y-Mirror");
+                        tree.aplyFilter(nameImage,"Y-Mirror",0,0);
                         IniciarMenu();
                         break;
                     case 5:
-                        tree.aplyFilter(nameImage,"DouebleMirror");
+                        tree.aplyFilter(nameImage,"DouebleMirror",0,0);
+                        IniciarMenu();
+                        break;
+                    case 6:
+                        cout<<"Repeticiones eje x"<<endl;
+                        cin>>cantidadx;
+                        cout<<"Repeticiones eje y"<<endl;
+                        cin>>cantidady;
+                        tree.aplyFilter(nameImage,"Collage",cantidadx,cantidady);
                         IniciarMenu();
                         break;
                 }
@@ -89,7 +97,11 @@ public:
                 tree.exportImage(nameImage);
                 cout<<"Enter Name: "<<endl;
                 cin>>nameFilter;
-                tree.generateImage(nameImage,nameFilter);
+                if(nameFilter=="collage"){
+                    tree.generateImage(nameImage,nameFilter,cantidadx,cantidady);
+                }else{
+                    tree.generateImage(nameImage,nameFilter);
+                }
                 IniciarMenu();
                 break;
             case 6:

@@ -45,7 +45,7 @@ public:
     void exportImage(string nombre){
         lista->mostrarLista(nombre);
     }
-    void aplyFilter(string nameImage, string nameFilter){
+    void aplyFilter(string nameImage, string nameFilter,int x, int y){
         listFiltro=lista->returnNodo(nameImage);
         if(listFiltro==NULL){
             listFiltro = new NodeListLayerFilter(nameImage);
@@ -87,6 +87,20 @@ public:
             do {
                 //temp4->matrix=temp3->matrix->mirrorX(width);
                 mirrorXs=temp3->matrix->DoubleMirror(width,height);
+
+                temp4 = new NodeList(temp3->nombre);
+                temp4->matrix=mirrorXs;
+
+                temp3=temp3->siguiente;
+                tempo->list->insertarImg(temp4);
+                listFiltro->liSta->insertarImg(tempo);
+
+            } while (temp3!=temp->list->ultimo);
+            lista->apilarNodo(listFiltro);
+        }else if(nameFilter=="Collage"){
+            do {
+                //temp4->matrix=temp3->matrix->mirrorX(width);
+                mirrorXs=temp3->matrix->Collage(width,height,x,y);
 
                 temp4 = new NodeList(temp3->nombre);
                 temp4->matrix=mirrorXs;
@@ -194,6 +208,58 @@ public:
         file<< "height: "+ std::to_string((height)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<<"\n}\n.pixel {\n";
         file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;";
+        file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
+        file<< "\n}\n";
+        file<< pixelImage;
+        file.close();
+    }
+    void generateImage(string name, string nameFilter,int x, int y){
+        NodeListLayerFilter *tempoImage;
+        NodeFilter *tempFilter;
+        temp=mostrarArbole(raiz,name);
+        tempoImage = lista->returnNodo(name);
+        string pixelImage;
+        width = temp->listConfig->ultimo->size;
+        height = temp->listConfig->ultimo->siguiente->size;
+        ofstream file;
+        file.open(name+"\\"+name+nameFilter+".html");
+        file<<"<!DOCTYPE html>\n"
+              "<html>\n"
+              "<head>\n"
+              "  <link rel=\"stylesheet\" href=\""+name+nameFilter+".scss"+"\">\n"
+                                                                           "</head>\n"
+                                                                           "<body>\n<div class=\"canvas\">";
+        for(int i=0;i<=(width*height)*(x*y);i++){
+            file <<"<div class=\"pixel\"></div>\n";
+        }
+        tempFilter=tempoImage->liSta->devolverNodo(name+nameFilter);
+        temp3=tempFilter->list->ultimo;
+        do {
+            pixelImage+=temp3->matrix->generateImages(width,height,x,y);
+            pixelImage+="\n";
+            temp3=temp3->siguiente;
+
+        } while (temp3!=tempFilter->list->ultimo);
+        cout<<"GeneradoCorrectamente"<<endl;
+        file<<"</div>\n"
+              "\n"
+              "</body>\n"
+              "</html>";
+        file.close();
+        file.open(name+"\\"+name+nameFilter+".scss");
+        file<<"body {\n"
+              "  background: #333333;      /* Background color of the whole page */\n"
+              "  height: 100vh;            /* 100 viewport heigh units */\n"
+              "  display: flex;            /* defines a flex container */\n"
+              "  justify-content: center;  /* centers the canvas horizontally */\n"
+              "  align-items: center;      /* centers the canvas vertically */\n"
+              "}";
+        file<<".canvas {\n";
+        file<< "width: "+ std::to_string((width*x)*temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
+        file<< "height: "+ std::to_string((height*y)*temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
+        file<<"\n}\n.pixel {\n";
+        file<< "width: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
         file<< "height: "+ std::to_string(temp->listConfig->ultimo->siguiente->siguiente->siguiente->size)+"px;\n";
         file<< "float: left;\nbox-shadow: 0px 0px 1px #fff;\n";
         file<< "\n}\n";

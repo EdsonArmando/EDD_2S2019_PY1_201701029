@@ -116,7 +116,68 @@ public:
         }
         return mirrorXs;
     }
-
+    SparseMatrix *Collage(int columnas,int fila,int x, int y){
+        SparseMatrix *mirrorXs=new SparseMatrix();
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
+        temp1=ejeY->primero;
+        while (temp1!=NULL){
+            content=temp1->listX->first;
+            while(content!=NULL){
+                mirrorXs->add(content->x,content->y,content->r,content->g,content->b);
+                content=content->derech;
+            }
+            temp1=temp1->siguiente;
+        }
+        return mirrorXs;
+    }
+    string generateImages(int columnas,int fila,int x, int y){
+        string pixel="";
+        Node_X *temp=NULL;
+        Node_Y *temp1=NULL;
+        int valx = x;
+        int valy = y;
+        temp1=ejeY->primero;
+        while(x!=0){
+            while (temp1!=NULL){
+                content=temp1->listX->first;
+                while(content!=NULL){
+                    if(content->y!=1){
+                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas*content->y-columnas*(x)+(content->x))+"){background: #fbf19e;}\n";
+                    }else{
+                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas-columnas*(x)+(content->x))+"){background: #fbf19e;}\n";
+                    }
+                    content=content->derech;
+                }
+                temp1=temp1->siguiente;
+            }
+            temp1=ejeY->primero;
+            x--;
+        }
+        x=valx;
+        y--;
+        while(y!=0){
+            while(x!=0){
+                while (temp1!=NULL){
+                    content=temp1->listX->first;
+                    while(content!=NULL){
+                        if(content->y!=1){
+                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background: #fbf19e;}\n";
+                        }else{
+                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background: #fbf19e;}\n";
+                        }
+                        content=content->derech;
+                    }
+                    temp1=temp1->siguiente;
+                }
+                temp1=ejeY->primero;
+                x--;
+            }
+            x=valx;
+            y--;
+        }
+        return pixel;
+    }
     string generateImages(int fila){
         string pixel="";
         Node_X *temp=NULL;

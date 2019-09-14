@@ -3,141 +3,96 @@ digraph Sparce_Matrix {
   Mt[ label = "0", width = 1.5, style = filled, fillcolor = firebrick1, group = 1 ];
 e0[ shape = point, width = 0 ];
  e1[ shape = point, width = 0 ];
-U3[label = "3" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U3 -> N2_L3
-N2_L3 ->U3
-U3 -> U4
-U4 -> U3
-N2_L3 -> N2_L4
-N2_L4 -> N2_L3
-N2_L3[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U3;N2_L3; }
-N2_L3 -> N3_L3
-N3_L3 -> N2_L3
-N3_L3[label = "3" width = 1.5, group = 2 ];
-{ rank = same; U3;N3_L3; }
-N3_L3 -> N4_L3
-N4_L3 -> N3_L3
-N4_L3[label = "4" width = 1.5, group = 2 ];
-{ rank = same; U3;N4_L3; }
 U4[label = "4" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U4 -> N2_L4
-N2_L4 ->U4
+U4 -> N3_L4
+N3_L4 ->U4
 U4 -> U5
 U5 -> U4
-N2_L4 -> N2_L5
-N2_L5 -> N2_L4
-N2_L4[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U4;N2_L4; }
-N2_L4 -> N5_L4
-N5_L4 -> N2_L4
+N3_L4 -> N3_L5
+N3_L5 -> N3_L4
+N3_L4[label = "3" width = 1.5, group = 2 ];
+{ rank = same; U4;N3_L4; }
+N3_L4 -> N4_L4
+N4_L4 -> N3_L4
+N4_L4 -> N4_L5
+N4_L5 -> N4_L4
+N4_L4[label = "4" width = 1.5, group = 2 ];
+{ rank = same; U4;N4_L4; }
+N4_L4 -> N5_L4
+N5_L4 -> N4_L4
 N5_L4 -> N5_L5
 N5_L5 -> N5_L4
 N5_L4[label = "5" width = 1.5, group = 2 ];
 { rank = same; U4;N5_L4; }
+N5_L4 -> N8_L4
+N8_L4 -> N5_L4
+N8_L4 -> N8_L5
+N8_L5 -> N8_L4
+N8_L4[label = "8" width = 1.5, group = 2 ];
+{ rank = same; U4;N8_L4; }
 U5[label = "5" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U5 -> N2_L5
-N2_L5 ->U5
+U5 -> N3_L5
+N3_L5 ->U5
 U5 -> U6
 U6 -> U5
-N2_L5 -> N2_L6
-N2_L6 -> N2_L5
-N2_L5[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U5;N2_L5; }
-N2_L5 -> N5_L5
-N5_L5 -> N2_L5
+N3_L5 -> N3_L6
+N3_L6 -> N3_L5
+N3_L5[label = "3" width = 1.5, group = 2 ];
+{ rank = same; U5;N3_L5; }
+N3_L5 -> N4_L5
+N4_L5 -> N3_L5
+N4_L5 -> N4_L6
+N4_L6 -> N4_L5
+N4_L5[label = "4" width = 1.5, group = 2 ];
+{ rank = same; U5;N4_L5; }
+N4_L5 -> N5_L5
+N5_L5 -> N4_L5
 N5_L5 -> N5_L6
 N5_L6 -> N5_L5
 N5_L5[label = "5" width = 1.5, group = 2 ];
 { rank = same; U5;N5_L5; }
+N5_L5 -> N8_L5
+N8_L5 -> N5_L5
+N8_L5 -> N8_L6
+N8_L6 -> N8_L5
+N8_L5[label = "8" width = 1.5, group = 2 ];
+{ rank = same; U5;N8_L5; }
 U6[label = "6" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U6 -> N2_L6
-N2_L6 ->U6
-U6 -> U7
-U7 -> U6
-N2_L6 -> N2_L7
-N2_L7 -> N2_L6
-N2_L6[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U6;N2_L6; }
-N2_L6 -> N5_L6
-N5_L6 -> N2_L6
-N5_L6 -> N5_L7
-N5_L7 -> N5_L6
+U6 -> N3_L6
+N3_L6 ->U6
+N3_L6[label = "3" width = 1.5, group = 2 ];
+{ rank = same; U6;N3_L6; }
+N3_L6 -> N4_L6
+N4_L6 -> N3_L6
+N4_L6[label = "4" width = 1.5, group = 2 ];
+{ rank = same; U6;N4_L6; }
+N4_L6 -> N5_L6
+N5_L6 -> N4_L6
 N5_L6[label = "5" width = 1.5, group = 2 ];
 { rank = same; U6;N5_L6; }
-U7[label = "7" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U7 -> N2_L7
-N2_L7 ->U7
-U7 -> U8
-U8 -> U7
-N2_L7 -> N2_L8
-N2_L8 -> N2_L7
-N2_L7[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U7;N2_L7; }
-N2_L7 -> N5_L7
-N5_L7 -> N2_L7
-N5_L7[label = "5" width = 1.5, group = 2 ];
-{ rank = same; U7;N5_L7; }
-U8[label = "8" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U8 -> N2_L8
-N2_L8 ->U8
-U8 -> U9
-U9 -> U8
-N2_L8 -> N2_L9
-N2_L9 -> N2_L8
-N2_L8[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U8;N2_L8; }
-U9[label = "9" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U9 -> N2_L9
-N2_L9 ->U9
-U9 -> U10
-U10 -> U9
-N2_L9 -> N2_L10
-N2_L10 -> N2_L9
-N2_L9[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U9;N2_L9; }
-U10[label = "10" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U10 -> N2_L10
-N2_L10 ->U10
-U10 -> U11
-U11 -> U10
-N2_L10 -> N2_L11
-N2_L11 -> N2_L10
-N2_L10[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U10;N2_L10; }
-U11[label = "11" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U11 -> N2_L11
-N2_L11 ->U11
-U11 -> U12
-U12 -> U11
-N2_L11 -> N2_L12
-N2_L12 -> N2_L11
-N2_L11[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U11;N2_L11; }
-U12[label = "12" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U12 -> N2_L12
-N2_L12 ->U12
-N2_L12[label = "2" width = 1.5, group = 2 ];
-{ rank = same; U12;N2_L12; }
-Mt->A2
-A2->Mt
-A2[label = "2"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
-A2 -> N2_L3
-N2_L3 -> A2
-A2 -> A3
-A3 -> A2
+N5_L6 -> N8_L6
+N8_L6 -> N5_L6
+N8_L6[label = "8" width = 1.5, group = 2 ];
+{ rank = same; U6;N8_L6; }
+Mt->A3
+A3->Mt
 A3[label = "3"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
-A3 -> N3_L3
-N3_L3 -> A3
+A3 -> N3_L4
+N3_L4 -> A3
 A3 -> A4
 A4 -> A3
 A4[label = "4"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
-A4 -> N4_L3
-N4_L3 -> A4
+A4 -> N4_L4
+N4_L4 -> A4
 A4 -> A5
 A5 -> A4
 A5[label = "5"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
 A5 -> N5_L4
 N5_L4 -> A5
- { rank = same; Mt;A2;A3;A4;A5;}
+A5 -> A8
+A8 -> A5
+A8[label = "8"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
+A8 -> N8_L4
+N8_L4 -> A8
+ { rank = same; Mt;A3;A4;A5;A8;}
 }
