@@ -1,0 +1,13 @@
+
+ digraph  List{ 
+ rankdir=LR;  
+ node [shape=record];
+ label="Lista Filtros";
+Pikachunegative -> Pikachugrises;
+Pikachugrises -> Pikachunegative;
+Pikachugrises -> PikachuX_Mirror;
+PikachuX_Mirror -> Pikachugrises;
+PikachuX_Mirror -> Pikachunegative;
+Pikachunegative -> PikachuX_Mirror;
+
+}

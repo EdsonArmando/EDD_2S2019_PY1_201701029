@@ -3,9 +3,11 @@ rankdir=TB;
  subgraph cluster_0{
  label="Arbol Binario de Imagenes"; 
  node [shape = record, style=filled, fillcolor=seashell2];
-nodoMario2 [ label = "<C0>|Mario2|<C1>"];
+nodoPikachu [ label = "<C0>|Pikachu|<C1>"];
+nodoMushroom [ label = "<C0>|Mushroom|<C1>"];
 nodoPrueba [ label = "<C0>|Prueba|<C1>"];
-nodoMario2:C1->nodoPrueba
+nodoPikachu:C0->nodoMushroom
+nodoPikachu:C1->nodoPrueba
 
 }
 }

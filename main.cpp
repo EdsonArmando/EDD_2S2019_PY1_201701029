@@ -6,9 +6,9 @@
 #pragma once
 using namespace std;
 
+
 int main() {
     Menu *menu = new Menu();
-
     menu->IniciarMenu();
     return  0;
 }

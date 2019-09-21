@@ -1,0 +1,6 @@
+ digraph{
+ rankdir=LR;  
+ node [shape=record];
+label="Inorder Treversal"
+Pikachu
+}

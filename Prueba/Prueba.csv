@@ -1,3 +1,4 @@
-"Layer", "File"
-0, Config.csv
-1, puntajes.csv
+"Layer","File"
+0,setup.csv
+1,capa2.csv
+2,puntajes.csv

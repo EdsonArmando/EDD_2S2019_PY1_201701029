@@ -77,6 +77,15 @@ public:
             temp=temp->siguiente;
         }while(temp!=ultimo);
     }
+    void ingresarPos(string nombre,int x, int y, int r, int g, int b){
+        NodeList *temp=ultimo;
+        do{
+            if(temp->nombre==nombre){
+                temp->matrix->add(x,y,r,g,b);
+            }
+            temp=temp->siguiente;
+        }while(temp!=ultimo);
+    }
     void graficar(string nombre){
         NodeList *temp=ultimo;
         do{

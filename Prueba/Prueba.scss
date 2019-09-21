@@ -15,27 +15,26 @@ float: left;
 box-shadow: 0px 0px 1px #fff;
 
 }
-.pixel:nth-child(14),
-.pixel:nth-child(15),
-.pixel:nth-child(16),
-.pixel:nth-child(20),
-.pixel:nth-child(23),
-.pixel:nth-child(26),
-.pixel:nth-child(29),
-.pixel:nth-child(32),
-.pixel:nth-child(35),
-.pixel:nth-child(38),
-.pixel:nth-child(41),
-.pixel:nth-child(44),
-.pixel:nth-child(50),
-.pixel:nth-child(56),
-.pixel:nth-child(62),
-.pixel:nth-child(68){
- background: #fbf19e;
-}.pixel:nth-child(45),
-.pixel:nth-child(46),
-.pixel:nth-child(57),
-.pixel:nth-child(64),
-.pixel:nth-child(71){
- background: #fbf19e;
-}
+.pixel:nth-child(45){background:#ffb400;}
+.pixel:nth-child(46){background:#ffb400;}
+.pixel:nth-child(57){background:#ffb400;}
+.pixel:nth-child(64){background:#ffb400;}
+.pixel:nth-child(71){background:#ffb400;}
+
+.pixel:nth-child(14){background:#ffffff;}
+.pixel:nth-child(15){background:#ffffff;}
+.pixel:nth-child(16){background:#ffffff;}
+.pixel:nth-child(20){background:#ffffff;}
+.pixel:nth-child(23){background:#ffffff;}
+.pixel:nth-child(26){background:#ffffff;}
+.pixel:nth-child(29){background:#ffffff;}
+.pixel:nth-child(32){background:#ffffff;}
+.pixel:nth-child(35){background:#ffffff;}
+.pixel:nth-child(38){background:#ffffff;}
+.pixel:nth-child(41){background:#ffffff;}
+.pixel:nth-child(44){background:#ffffff;}
+.pixel:nth-child(50){background:#ffffff;}
+.pixel:nth-child(56){background:#ffffff;}
+.pixel:nth-child(62){background:#ffffff;}
+.pixel:nth-child(68){background:#ffffff;}
+

@@ -95,7 +95,7 @@ public:
         while (temp1!=NULL){
             content=temp1->listX->first;
             while(content!=NULL){
-                mirrorXs->add(content->x,(fila-content->y),content->r,content->g,content->b);
+                mirrorXs->add(content->x,((fila+1)-content->y),content->r,content->g,content->b);
                 content=content->derech;
             }
             temp1=temp1->siguiente;
@@ -110,7 +110,7 @@ public:
         while (temp1!=NULL){
             content=temp1->listX->first;
             while(content!=NULL){
-                mirrorXs->add((columnas-content->x)+1,(fila-content->y),content->r,content->g,content->b);
+                mirrorXs->add((columnas-content->x)+1,((fila+1)-content->y),content->r,content->g,content->b);
                 content=content->derech;
             }
             temp1=temp1->siguiente;
@@ -141,7 +141,8 @@ public:
         while (temp1!=NULL){
             content=temp1->listX->first;
             while(content!=NULL){
-                mirrorXs->add(content->x,content->y,content->r,content->g,content->b);
+                int suma = (content->r*0.3)+ (content->r*0.5)+ (content->r*0.11);
+                mirrorXs->add(content->x,content->y,suma,suma,suma);
                 content=content->derech;
             }
             temp1=temp1->siguiente;
@@ -180,9 +181,9 @@ public:
             content=temp1->listaY->first;
             while(content!=NULL){
                 relaciones+= std::to_string(cont)+"[label=\"{<data>("+std::to_string(content->x)+','+std::to_string(content->y)+") "+std::to_string(content->r)+"-"+std::to_string(content->g)+"-"+std::to_string(content->b)+ "| <ref>  }\", width=1.2]\n";
-                if(temp1->siguiente!=NULL){
+
                     relaciones+= std::to_string(cont)+":ref:c->" +std::to_string(cont+1)+":data\n";
-                }
+
                 cont++;
                 content=content->abajo;
             }
@@ -212,7 +213,7 @@ public:
             content=temp1->listX->first;
             while(content!=NULL){
                 relaciones+= std::to_string(cont)+"[label=\"{<data>("+std::to_string(content->x)+','+std::to_string(content->y)+") "+std::to_string(content->r)+"-"+std::to_string(content->g)+"-"+std::to_string(content->b)+ "| <ref>  }\", width=1.2]\n";
-                if(temp1->siguiente!=NULL){
+                if(temp1!=NULL){
                     relaciones+= std::to_string(cont)+":ref:c->" +std::to_string(cont+1)+":data\n";
                 }
                 cont++;
@@ -294,14 +295,17 @@ public:
         }
         return pixel;
     }
-    std::string convertToHexa(int r, int g, int b){
+   std::string convertToHexa(int r, int g, int b){
+        if(r==0 && g==0 && b==0){
+
+            return "#000000";
+        }
         std::stringstream ss;
         ss<< "#";
         ss<< std::hex << (r<<16|g<<8|b);
         return ss.str();
 
     }
-
     void imageSpaseMatrix(){
         Node_X *temp=NULL;
         Node_Y *temp1=NULL;

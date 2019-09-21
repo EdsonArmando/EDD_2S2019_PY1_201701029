@@ -15,7 +15,7 @@ class Menu {
 private:
     ifstream archivoEntrada;
     NodeList *nuevo;
-    int posX=1;
+    int posX=1,x,y,rs,gs,bs;
     string folder="",nameFilter;
     int posY=1;
     string r,g,b;
@@ -40,6 +40,29 @@ public:
         cout<<"Enter Option: "<<endl;
         cin>>opcion;
         switch (opcion){
+            case 4:
+                tree.imageLayerReport(nameImage);
+                cout<<"2. Filtros"<<endl;
+                cout<<"Enter Name: "<<endl;
+                cin>>capaImage;
+                cout<<"1. Ingresar nueva posiciion"<<endl;
+                cout<<"2. Modificar Posicion"<<endl;
+                cin>>opcion;
+                if(opcion==1){
+                    cout<<"X"<<endl;
+                    cin>>x;
+                    cout<<"Y"<<endl;
+                    cin>>y;
+                    cout<<"r"<<endl;
+                    cin>>rs;
+                    cout<<"g"<<endl;
+                    cin>>gs;
+                    cout<<"b"<<endl;
+                    cin>>bs;
+                    tree.edicionMaual(nameImage,capaImage,x,y,rs,gs,bs);
+                }
+                IniciarMenu();
+                break;
             case 1:
                 system("cls");
                 cout<<"Enter name"<<endl;
@@ -138,8 +161,6 @@ public:
                         }else{
                             tree.graficoLinealizarMatriz(na,capaImage,"columnas");
                         }
-
-
                         IniciarMenu();
                         break;
                     case 3:
@@ -210,7 +231,7 @@ public:
     void readInitialFile(string ruta){
         string texto = devolverTexto(ruta);
         string de = "\n";
-        string delimi = ", ";
+        string delimi = ",";
         size_t  pos=0;
         size_t  pos2=0;
         string archivo="";
@@ -223,8 +244,8 @@ public:
                 while ((pos2 = dato.find(delimi)) != std::string::npos) {
                     nameCSV = dato.substr(0, pos2);
                     dato.erase(0, pos2 + delimi.length());
-                    //cout<<dato<<endl;
-                    leerArchivoCSV(dato);
+                    cout<<nameCSV<<endl;
+                    leerArchivoCSV(dato,nameCSV);
                 }
                 texto.erase(0, pos + de.length());
             }else{
@@ -234,18 +255,18 @@ public:
         }
 
     }
-    void leerArchivoCSV(string fileName){
+    void leerArchivoCSV(string fileName,string noCapa){
         string texto = devolverTexto(fileName);
         NodeImage *temp=tree.mostrarArbole(raiz,nameImage);
         string de = "\n";
-        string delimi = ", ";
+        string delimi = ",";
         size_t  pos=0;
         size_t  pos2=0;
         string archivo="";
-        string nameCSV;
+        string nameCSV="";
         string dato;
         int cont =0;
-        if(fileName=="Config.csv"){
+        if(fileName=="Config.csv"||noCapa=="0"){
             while ((pos = texto.find(de))!= std::string::npos){
                 if(cont>0){
                     dato=texto.substr(0,pos);

@@ -75,7 +75,7 @@ public:
         string Cola1 = "\n digraph  List{ \n rankdir=LR;  \n node [shape=record];\n label=\"Lista Filtros\";\n";
         string compras = "";
         NodeFilter *aux = primero;
-
+        
         do {
 
             compras += aux->valor;
@@ -96,10 +96,8 @@ public:
             file << Cola1+compras;
             file.close();
             system("dot -Tpng Filter.dot -o filter.png");
+            system("filter.png");
         }
 
     }
 };
-
-
-

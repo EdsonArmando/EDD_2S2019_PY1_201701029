@@ -9,6 +9,8 @@
 #include "NodeContent.cpp"
 #include "LinkedList.cpp"
 #include "ListImage.cpp"
+#include <cstdlib>
+#include <unistd.h>
 
 using  namespace std;
 static NodeImage *raiz;
@@ -25,7 +27,11 @@ public:
                      " rankdir=LR;  \n"
                      " node [shape=record];\n";
 
-
+    void edicionMaual(string nameImage,string name,int x, int y, int r,int g, int b){
+        NodeImage *temp;
+        temp=mostrarArbole(raiz,nameImage);
+        temp->list->ingresarPos(name,x,y,r,g,b);
+    }
     void insertarNodo(NodeImage *&raiz,string n) {
         if (raiz ==NULL) {
             NodeImage *nuevo = new NodeImage(n);
@@ -70,7 +76,12 @@ public:
     void graphDoubleList(string name){
         NodeListLayerFilter *temp=NULL;
         temp=lista->returnNodo(name);
-        temp->liSta->generarDoc();
+        if(temp!=NULL){
+          temp->liSta->generarDoc();
+        }else{
+          cout<<"No hay filtos aplicados"<<endl;
+        }
+
     }
     void aplyFilter(string nameImage, string nameFilter,int x, int y){
         NodeListLayerFilter *listFiltro;
@@ -250,6 +261,14 @@ public:
         file<< "\n}\n";
         file<< pixelImage;
         file.close();
+        string imagHtm="\\"+name+".html";
+        const char *one = name.c_str();
+        const char *two = imagHtm.c_str();
+
+        string total( string(one) + two );
+
+        system(total.c_str());
+
     }
     void generateImage(string name, string nameFilter){
         NodeList *temp3;
@@ -309,6 +328,13 @@ public:
         file<< "\n}\n";
         file<< pixelImage;
         file.close();
+        string imagHtm="\\"+name+nameFilter+".html";
+        const char *one = name.c_str();
+        const char *two = imagHtm.c_str();
+
+        string total( string(one) + two );
+
+        system(total.c_str());
     }
     void generateImage(string name, string nameFilter,int x, int y){
         NodeList *temp3;
@@ -363,6 +389,13 @@ public:
         file<< "\n}\n";
         file<< pixelImage;
         file.close();
+        string imagHtm="\\"+name+nameFilter+".html";
+        const char *one = name.c_str();
+        const char *two = imagHtm.c_str();
+
+        string total( string(one) + two );
+
+        system(total.c_str());
     }
     void mostrarArbol(){
         ofstream file;
