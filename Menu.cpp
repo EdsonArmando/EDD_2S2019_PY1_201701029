@@ -206,15 +206,15 @@ public:
                           cin>>capaImage;
                           switch (opcion) {
                             case 1:
-                            imageMatrixFilter(nameImage,"negative",capaImage);
+                               tree.imageMatrixFilter(nameImage,"negative",capaImage);
                             break;
                             case 2:
-                              imageMatrixFilter(nameImage,"grises",capaImage);
+                              tree.imageMatrixFilter(nameImage,"grises",capaImage);
                             break;
                             case 3:
-                              imageMatrixFilter(nameImage,"X_Mirror",capaImage);
-                            case 3:
-                              imageMatrixFilter(nameImage,"Y_Mirror",capaImage);
+                              tree.imageMatrixFilter(nameImage,"X_Mirror",capaImage);
+                            case 4:
+                              tree.imageMatrixFilter(nameImage,"Y_Mirror",capaImage);
                             break;
                           }
                         }

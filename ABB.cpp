@@ -80,7 +80,7 @@ public:
       NodeListLayerFilter *tempoImage;
       tempoImage = lista->returnNodo(name);
       tempFilter=tempoImage->liSta->devolverNodo(name+nameFilter);
-      temp3=tempFilter->list->graficar(capa);
+      
 
     }
     void filterLayer(string name,string capa,string filtro){
