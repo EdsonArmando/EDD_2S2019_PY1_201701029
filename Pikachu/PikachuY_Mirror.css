@@ -16,7 +16,7 @@ float: left;
 box-shadow: 0px 0px 1px #fff;
 
 }
-.pixel:nth-child(13){background:#ffff00;}
+.pixel:nth-child(1){background-color: rgb(0,0,0);}
 .pixel:nth-child(14){background:#ffff00;}
 .pixel:nth-child(15){background:#ffff00;}
 .pixel:nth-child(16){background:#ffff00;}

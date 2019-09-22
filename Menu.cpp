@@ -91,6 +91,7 @@ public:
                 cout<<"5. DouebleMirror"<<endl;
                 cout<<"6. Collage"<<endl;
                 cout<<"7. Mosaic"<<endl;
+                cout<<"8. Layer"<<endl;
                 cout<<"Enter Option: "<<endl;
                 cin>>opcion;
                 switch(opcion){
@@ -122,6 +123,22 @@ public:
                         tree.aplyFilter(nameImage,"Collage",cantidadx,cantidady);
                         IniciarMenu();
                         break;
+                   case 8:
+                       tree.imageLayerReport(nameImage);
+                       cout<<"Enter Name: "<<endl;
+                       cin>>capaImage;
+                       cout<<"Seleccione el filtro"<<endl;
+                       cout<<"1. Negative "<<endl;
+                       cout<<"2. Grayscale "<<endl;
+                       cin>>opcion;
+                       if(opcion==1){
+                          tree.filterLayer(nameImage,capaImage,"negative");
+                       }else if(opcion==2){
+                         tree.filterLayer(nameImage,capaImage,"grises");
+                       }
+
+                       IniciarMenu();
+                      break;
                 }
                 break;
             case 5:
@@ -164,10 +181,44 @@ public:
                         IniciarMenu();
                         break;
                     case 3:
-                        tree.imageLayerReport(nameImage);
-                        cout<<"Enter Name: "<<endl;
-                        cin>>capaImage;
-                        tree.imageLayerReport2(nameImage,capaImage);
+                        cout<<"LayerReports"<<endl;
+                        cout<<"1. Image Original"<<endl;
+                        cout<<"2. Image Filter"<<endl;
+                        cin>>opcion;
+                        if(opcion==1){
+                          tree.imageLayerReport(nameImage);
+                          cout<<"Enter Name: "<<endl;
+                          cin>>capaImage;
+                          tree.imageLayerReport2(nameImage,capaImage);
+                        }else if(opcion==2){
+                          cout<<"1. Negative "<<endl;
+                          cout<<"2. Grayscale "<<endl;
+                          cout<<"3. X-Mirror"<<endl;
+                          cout<<"4. Y-Mirror"<<endl;
+                          cout<<"5. DouebleMirror"<<endl;
+                          cout<<"6. Collage"<<endl;
+                          cout<<"7. Mosaic"<<endl;
+                          cout<<"8. Layer"<<endl;
+                          cout<<"Enter Option: "<<endl;
+                          cin>>opcion;
+                          tree.imageLayerReport(nameImage);
+                          cout<<"Enter Name: "<<endl;
+                          cin>>capaImage;
+                          switch (opcion) {
+                            case 1:
+                            imageMatrixFilter(nameImage,"negative",capaImage);
+                            break;
+                            case 2:
+                              imageMatrixFilter(nameImage,"grises",capaImage);
+                            break;
+                            case 3:
+                              imageMatrixFilter(nameImage,"X_Mirror",capaImage);
+                            case 3:
+                              imageMatrixFilter(nameImage,"Y_Mirror",capaImage);
+                            break;
+                          }
+                        }
+
                         IniciarMenu();
                         break;
                     case 5:

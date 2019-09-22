@@ -86,6 +86,21 @@ public:
             temp=temp->siguiente;
         }while(temp!=ultimo);
     }
+    void modificarPos(string nombre,string filtro){
+      NodeList *temp=ultimo;
+      SparseMatrix *nueva;
+      do{
+          if(temp->nombre==nombre){
+              if(filtro=="grises"){
+                nueva=temp->matrix->escalaGrises(0,0,0,0);
+              }else if(filtro=="negative"){
+                nueva=temp->matrix->negative(0,0,0,0);
+              }
+              temp->matrix=nueva;
+          }
+          temp=temp->siguiente;
+      }while(temp!=ultimo);
+    }
     void graficar(string nombre){
         NodeList *temp=ultimo;
         do{

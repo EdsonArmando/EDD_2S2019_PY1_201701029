@@ -1,5 +1,5 @@
 body {
-  background: #333333;      /* Background color of the whole page */
+  background: #ffffff;      /* Background color of the whole page */
   height: 100vh;            /* 100 viewport heigh units */
   display: flex;            /* defines a flex container */
   justify-content: center;  /* centers the canvas horizontally */
@@ -15,1288 +15,1288 @@ float: left;
 box-shadow: 0px 0px 1px #fff;
 
 }
-.pixel:nth-child(36){background:#ffff00;}
-.pixel:nth-child(37){background:#ffff00;}
-.pixel:nth-child(71){background:#ffff00;}
-.pixel:nth-child(72){background:#ffff00;}
-.pixel:nth-child(73){background:#ffff00;}
-.pixel:nth-child(74){background:#ffff00;}
-.pixel:nth-child(106){background:#ffff00;}
-.pixel:nth-child(107){background:#ffff00;}
-.pixel:nth-child(108){background:#ffff00;}
-.pixel:nth-child(109){background:#ffff00;}
-.pixel:nth-child(110){background:#ffff00;}
-.pixel:nth-child(111){background:#ffff00;}
-.pixel:nth-child(142){background:#ffff00;}
-.pixel:nth-child(143){background:#ffff00;}
-.pixel:nth-child(144){background:#ffff00;}
-.pixel:nth-child(145){background:#ffff00;}
-.pixel:nth-child(146){background:#ffff00;}
-.pixel:nth-child(147){background:#ffff00;}
-.pixel:nth-child(148){background:#ffff00;}
-.pixel:nth-child(152){background:#ffff00;}
-.pixel:nth-child(153){background:#ffff00;}
-.pixel:nth-child(154){background:#ffff00;}
-.pixel:nth-child(155){background:#ffff00;}
-.pixel:nth-child(156){background:#ffff00;}
-.pixel:nth-child(157){background:#ffff00;}
-.pixel:nth-child(178){background:#ffff00;}
-.pixel:nth-child(179){background:#ffff00;}
-.pixel:nth-child(180){background:#ffff00;}
-.pixel:nth-child(181){background:#ffff00;}
-.pixel:nth-child(182){background:#ffff00;}
-.pixel:nth-child(183){background:#ffff00;}
-.pixel:nth-child(184){background:#ffff00;}
-.pixel:nth-child(189){background:#ffff00;}
-.pixel:nth-child(190){background:#ffff00;}
-.pixel:nth-child(191){background:#ffff00;}
-.pixel:nth-child(192){background:#ffff00;}
-.pixel:nth-child(193){background:#ffff00;}
-.pixel:nth-child(194){background:#ffff00;}
-.pixel:nth-child(195){background:#ffff00;}
-.pixel:nth-child(196){background:#ffff00;}
-.pixel:nth-child(197){background:#ffff00;}
-.pixel:nth-child(198){background:#ffff00;}
-.pixel:nth-child(214){background:#ffff00;}
-.pixel:nth-child(215){background:#ffff00;}
-.pixel:nth-child(216){background:#ffff00;}
-.pixel:nth-child(217){background:#ffff00;}
-.pixel:nth-child(218){background:#ffff00;}
-.pixel:nth-child(219){background:#ffff00;}
-.pixel:nth-child(220){background:#ffff00;}
-.pixel:nth-child(221){background:#ffff00;}
-.pixel:nth-child(228){background:#ffff00;}
-.pixel:nth-child(229){background:#ffff00;}
-.pixel:nth-child(230){background:#ffff00;}
-.pixel:nth-child(231){background:#ffff00;}
-.pixel:nth-child(232){background:#ffff00;}
-.pixel:nth-child(233){background:#ffff00;}
-.pixel:nth-child(234){background:#ffff00;}
-.pixel:nth-child(235){background:#ffff00;}
-.pixel:nth-child(236){background:#ffff00;}
-.pixel:nth-child(237){background:#ffff00;}
-.pixel:nth-child(238){background:#ffff00;}
-.pixel:nth-child(239){background:#ffff00;}
-.pixel:nth-child(241){background:#ffff00;}
-.pixel:nth-child(242){background:#ffff00;}
-.pixel:nth-child(243){background:#ffff00;}
-.pixel:nth-child(244){background:#ffff00;}
-.pixel:nth-child(245){background:#ffff00;}
-.pixel:nth-child(246){background:#ffff00;}
-.pixel:nth-child(247){background:#ffff00;}
-.pixel:nth-child(249){background:#ffff00;}
-.pixel:nth-child(250){background:#ffff00;}
-.pixel:nth-child(251){background:#ffff00;}
-.pixel:nth-child(252){background:#ffff00;}
-.pixel:nth-child(253){background:#ffff00;}
-.pixel:nth-child(254){background:#ffff00;}
-.pixel:nth-child(255){background:#ffff00;}
-.pixel:nth-child(256){background:#ffff00;}
-.pixel:nth-child(257){background:#ffff00;}
-.pixel:nth-child(266){background:#ffff00;}
-.pixel:nth-child(267){background:#ffff00;}
-.pixel:nth-child(268){background:#ffff00;}
-.pixel:nth-child(269){background:#ffff00;}
-.pixel:nth-child(270){background:#ffff00;}
-.pixel:nth-child(271){background:#ffff00;}
-.pixel:nth-child(272){background:#ffff00;}
-.pixel:nth-child(273){background:#ffff00;}
-.pixel:nth-child(274){background:#ffff00;}
-.pixel:nth-child(275){background:#ffff00;}
-.pixel:nth-child(276){background:#ffff00;}
-.pixel:nth-child(277){background:#ffff00;}
-.pixel:nth-child(278){background:#ffff00;}
-.pixel:nth-child(279){background:#ffff00;}
-.pixel:nth-child(280){background:#ffff00;}
-.pixel:nth-child(281){background:#ffff00;}
-.pixel:nth-child(282){background:#ffff00;}
-.pixel:nth-child(283){background:#ffff00;}
-.pixel:nth-child(284){background:#ffff00;}
-.pixel:nth-child(285){background:#ffff00;}
-.pixel:nth-child(286){background:#ffff00;}
-.pixel:nth-child(287){background:#ffff00;}
-.pixel:nth-child(288){background:#ffff00;}
-.pixel:nth-child(289){background:#ffff00;}
-.pixel:nth-child(290){background:#ffff00;}
-.pixel:nth-child(291){background:#ffff00;}
-.pixel:nth-child(292){background:#ffff00;}
-.pixel:nth-child(293){background:#ffff00;}
-.pixel:nth-child(304){background:#ffff00;}
-.pixel:nth-child(305){background:#ffff00;}
-.pixel:nth-child(306){background:#ffff00;}
-.pixel:nth-child(307){background:#ffff00;}
-.pixel:nth-child(308){background:#ffff00;}
-.pixel:nth-child(309){background:#ffff00;}
-.pixel:nth-child(310){background:#ffff00;}
-.pixel:nth-child(311){background:#ffff00;}
-.pixel:nth-child(312){background:#ffff00;}
-.pixel:nth-child(313){background:#ffff00;}
-.pixel:nth-child(314){background:#ffff00;}
-.pixel:nth-child(315){background:#ffff00;}
-.pixel:nth-child(316){background:#ffff00;}
-.pixel:nth-child(317){background:#ffff00;}
-.pixel:nth-child(318){background:#ffff00;}
-.pixel:nth-child(319){background:#ffff00;}
-.pixel:nth-child(320){background:#ffff00;}
-.pixel:nth-child(321){background:#ffff00;}
-.pixel:nth-child(322){background:#ffff00;}
-.pixel:nth-child(323){background:#ffff00;}
-.pixel:nth-child(324){background:#ffff00;}
-.pixel:nth-child(325){background:#ffff00;}
-.pixel:nth-child(326){background:#ffff00;}
-.pixel:nth-child(327){background:#ffff00;}
-.pixel:nth-child(328){background:#ffff00;}
-.pixel:nth-child(329){background:#ffff00;}
-.pixel:nth-child(342){background:#ffff00;}
-.pixel:nth-child(343){background:#ffff00;}
-.pixel:nth-child(344){background:#ffff00;}
-.pixel:nth-child(345){background:#ffff00;}
-.pixel:nth-child(346){background:#ffff00;}
-.pixel:nth-child(347){background:#ffff00;}
-.pixel:nth-child(348){background:#ffff00;}
-.pixel:nth-child(349){background:#ffff00;}
-.pixel:nth-child(350){background:#ffff00;}
-.pixel:nth-child(351){background:#ffff00;}
-.pixel:nth-child(352){background:#ffff00;}
-.pixel:nth-child(353){background:#ffff00;}
-.pixel:nth-child(354){background:#ffff00;}
-.pixel:nth-child(355){background:#ffff00;}
-.pixel:nth-child(356){background:#ffff00;}
-.pixel:nth-child(357){background:#ffff00;}
-.pixel:nth-child(358){background:#ffff00;}
-.pixel:nth-child(359){background:#ffff00;}
-.pixel:nth-child(360){background:#ffff00;}
-.pixel:nth-child(361){background:#ffff00;}
-.pixel:nth-child(362){background:#ffff00;}
-.pixel:nth-child(363){background:#ffff00;}
-.pixel:nth-child(364){background:#ffff00;}
-.pixel:nth-child(365){background:#ffff00;}
-.pixel:nth-child(381){background:#ffff00;}
-.pixel:nth-child(382){background:#ffff00;}
-.pixel:nth-child(383){background:#ffff00;}
-.pixel:nth-child(384){background:#ffff00;}
-.pixel:nth-child(385){background:#ffff00;}
-.pixel:nth-child(386){background:#ffff00;}
-.pixel:nth-child(387){background:#ffff00;}
-.pixel:nth-child(388){background:#ffff00;}
-.pixel:nth-child(389){background:#ffff00;}
-.pixel:nth-child(390){background:#ffff00;}
-.pixel:nth-child(391){background:#ffff00;}
-.pixel:nth-child(392){background:#ffff00;}
-.pixel:nth-child(393){background:#ffff00;}
-.pixel:nth-child(394){background:#ffff00;}
-.pixel:nth-child(395){background:#ffff00;}
-.pixel:nth-child(396){background:#ffff00;}
-.pixel:nth-child(397){background:#ffff00;}
-.pixel:nth-child(398){background:#ffff00;}
-.pixel:nth-child(399){background:#ffff00;}
-.pixel:nth-child(400){background:#ffff00;}
-.pixel:nth-child(401){background:#ffff00;}
-.pixel:nth-child(408){background:#ffff00;}
-.pixel:nth-child(420){background:#ffff00;}
-.pixel:nth-child(421){background:#ffff00;}
-.pixel:nth-child(422){background:#ffff00;}
-.pixel:nth-child(423){background:#ffff00;}
-.pixel:nth-child(424){background:#ffff00;}
-.pixel:nth-child(425){background:#ffff00;}
-.pixel:nth-child(426){background:#ffff00;}
-.pixel:nth-child(427){background:#ffff00;}
-.pixel:nth-child(428){background:#ffff00;}
-.pixel:nth-child(429){background:#ffff00;}
-.pixel:nth-child(430){background:#ffff00;}
-.pixel:nth-child(431){background:#ffff00;}
-.pixel:nth-child(432){background:#ffff00;}
-.pixel:nth-child(433){background:#ffff00;}
-.pixel:nth-child(434){background:#ffff00;}
-.pixel:nth-child(435){background:#ffff00;}
-.pixel:nth-child(436){background:#ffff00;}
-.pixel:nth-child(437){background:#ffff00;}
-.pixel:nth-child(438){background:#ffff00;}
-.pixel:nth-child(445){background:#ffff00;}
-.pixel:nth-child(446){background:#ffff00;}
-.pixel:nth-child(457){background:#ffff00;}
-.pixel:nth-child(458){background:#ffff00;}
-.pixel:nth-child(459){background:#ffff00;}
-.pixel:nth-child(460){background:#ffff00;}
-.pixel:nth-child(461){background:#ffff00;}
-.pixel:nth-child(462){background:#ffff00;}
-.pixel:nth-child(463){background:#ffff00;}
-.pixel:nth-child(464){background:#ffff00;}
-.pixel:nth-child(465){background:#ffff00;}
-.pixel:nth-child(466){background:#ffff00;}
-.pixel:nth-child(467){background:#ffff00;}
-.pixel:nth-child(468){background:#ffff00;}
-.pixel:nth-child(469){background:#ffff00;}
-.pixel:nth-child(470){background:#ffff00;}
-.pixel:nth-child(471){background:#ffff00;}
-.pixel:nth-child(472){background:#ffff00;}
-.pixel:nth-child(473){background:#ffff00;}
-.pixel:nth-child(474){background:#ffff00;}
-.pixel:nth-child(475){background:#ffff00;}
-.pixel:nth-child(482){background:#ffff00;}
-.pixel:nth-child(483){background:#ffff00;}
-.pixel:nth-child(484){background:#ffff00;}
-.pixel:nth-child(493){background:#ffff00;}
-.pixel:nth-child(494){background:#ffff00;}
-.pixel:nth-child(495){background:#ffff00;}
-.pixel:nth-child(496){background:#ffff00;}
-.pixel:nth-child(497){background:#ffff00;}
-.pixel:nth-child(498){background:#ffff00;}
-.pixel:nth-child(499){background:#ffff00;}
-.pixel:nth-child(500){background:#ffff00;}
-.pixel:nth-child(501){background:#ffff00;}
-.pixel:nth-child(502){background:#ffff00;}
-.pixel:nth-child(503){background:#ffff00;}
-.pixel:nth-child(504){background:#ffff00;}
-.pixel:nth-child(505){background:#ffff00;}
-.pixel:nth-child(506){background:#ffff00;}
-.pixel:nth-child(507){background:#ffff00;}
-.pixel:nth-child(508){background:#ffff00;}
-.pixel:nth-child(509){background:#ffff00;}
-.pixel:nth-child(510){background:#ffff00;}
-.pixel:nth-child(511){background:#ffff00;}
-.pixel:nth-child(512){background:#ffff00;}
-.pixel:nth-child(513){background:#ffff00;}
-.pixel:nth-child(519){background:#ffff00;}
-.pixel:nth-child(520){background:#ffff00;}
-.pixel:nth-child(521){background:#ffff00;}
-.pixel:nth-child(522){background:#ffff00;}
-.pixel:nth-child(530){background:#ffff00;}
-.pixel:nth-child(531){background:#ffff00;}
-.pixel:nth-child(532){background:#ffff00;}
-.pixel:nth-child(533){background:#ffff00;}
-.pixel:nth-child(534){background:#ffff00;}
-.pixel:nth-child(535){background:#ffff00;}
-.pixel:nth-child(536){background:#ffff00;}
-.pixel:nth-child(537){background:#ffff00;}
-.pixel:nth-child(538){background:#ffff00;}
-.pixel:nth-child(539){background:#ffff00;}
-.pixel:nth-child(540){background:#ffff00;}
-.pixel:nth-child(541){background:#ffff00;}
-.pixel:nth-child(542){background:#ffff00;}
-.pixel:nth-child(543){background:#ffff00;}
-.pixel:nth-child(544){background:#ffff00;}
-.pixel:nth-child(545){background:#ffff00;}
-.pixel:nth-child(546){background:#ffff00;}
-.pixel:nth-child(547){background:#ffff00;}
-.pixel:nth-child(548){background:#ffff00;}
-.pixel:nth-child(549){background:#ffff00;}
-.pixel:nth-child(550){background:#ffff00;}
-.pixel:nth-child(556){background:#ffff00;}
-.pixel:nth-child(557){background:#ffff00;}
-.pixel:nth-child(558){background:#ffff00;}
-.pixel:nth-child(559){background:#ffff00;}
-.pixel:nth-child(560){background:#ffff00;}
-.pixel:nth-child(567){background:#ffff00;}
-.pixel:nth-child(568){background:#ffff00;}
-.pixel:nth-child(569){background:#ffff00;}
-.pixel:nth-child(570){background:#ffff00;}
-.pixel:nth-child(571){background:#ffff00;}
-.pixel:nth-child(572){background:#ffff00;}
-.pixel:nth-child(573){background:#ffff00;}
-.pixel:nth-child(574){background:#ffff00;}
-.pixel:nth-child(575){background:#ffff00;}
-.pixel:nth-child(576){background:#ffff00;}
-.pixel:nth-child(577){background:#ffff00;}
-.pixel:nth-child(578){background:#ffff00;}
-.pixel:nth-child(579){background:#ffff00;}
-.pixel:nth-child(580){background:#ffff00;}
-.pixel:nth-child(581){background:#ffff00;}
-.pixel:nth-child(582){background:#ffff00;}
-.pixel:nth-child(583){background:#ffff00;}
-.pixel:nth-child(584){background:#ffff00;}
-.pixel:nth-child(585){background:#ffff00;}
-.pixel:nth-child(586){background:#ffff00;}
-.pixel:nth-child(587){background:#ffff00;}
-.pixel:nth-child(593){background:#ffff00;}
-.pixel:nth-child(594){background:#ffff00;}
-.pixel:nth-child(595){background:#ffff00;}
-.pixel:nth-child(596){background:#ffff00;}
-.pixel:nth-child(597){background:#ffff00;}
-.pixel:nth-child(598){background:#ffff00;}
-.pixel:nth-child(603){background:#ffff00;}
-.pixel:nth-child(604){background:#ffff00;}
-.pixel:nth-child(605){background:#ffff00;}
-.pixel:nth-child(606){background:#ffff00;}
-.pixel:nth-child(607){background:#ffff00;}
-.pixel:nth-child(608){background:#ffff00;}
-.pixel:nth-child(609){background:#ffff00;}
-.pixel:nth-child(610){background:#ffff00;}
-.pixel:nth-child(611){background:#ffff00;}
-.pixel:nth-child(612){background:#ffff00;}
-.pixel:nth-child(613){background:#ffff00;}
-.pixel:nth-child(614){background:#ffff00;}
-.pixel:nth-child(615){background:#ffff00;}
-.pixel:nth-child(616){background:#ffff00;}
-.pixel:nth-child(617){background:#ffff00;}
-.pixel:nth-child(618){background:#ffff00;}
-.pixel:nth-child(619){background:#ffff00;}
-.pixel:nth-child(620){background:#ffff00;}
-.pixel:nth-child(621){background:#ffff00;}
-.pixel:nth-child(622){background:#ffff00;}
-.pixel:nth-child(623){background:#ffff00;}
-.pixel:nth-child(624){background:#ffff00;}
-.pixel:nth-child(625){background:#ffff00;}
-.pixel:nth-child(630){background:#ffff00;}
-.pixel:nth-child(631){background:#ffff00;}
-.pixel:nth-child(632){background:#ffff00;}
-.pixel:nth-child(633){background:#ffff00;}
-.pixel:nth-child(634){background:#ffff00;}
-.pixel:nth-child(635){background:#ffff00;}
-.pixel:nth-child(636){background:#ffff00;}
-.pixel:nth-child(640){background:#ffff00;}
-.pixel:nth-child(641){background:#ffff00;}
-.pixel:nth-child(642){background:#ffff00;}
-.pixel:nth-child(643){background:#ffff00;}
-.pixel:nth-child(644){background:#ffff00;}
-.pixel:nth-child(645){background:#ffff00;}
-.pixel:nth-child(646){background:#ffff00;}
-.pixel:nth-child(647){background:#ffff00;}
-.pixel:nth-child(648){background:#ffff00;}
-.pixel:nth-child(649){background:#ffff00;}
-.pixel:nth-child(650){background:#ffff00;}
-.pixel:nth-child(651){background:#ffff00;}
-.pixel:nth-child(652){background:#ffff00;}
-.pixel:nth-child(653){background:#ffff00;}
-.pixel:nth-child(654){background:#ffff00;}
-.pixel:nth-child(655){background:#ffff00;}
-.pixel:nth-child(656){background:#ffff00;}
-.pixel:nth-child(657){background:#ffff00;}
-.pixel:nth-child(658){background:#ffff00;}
-.pixel:nth-child(659){background:#ffff00;}
-.pixel:nth-child(660){background:#ffff00;}
-.pixel:nth-child(661){background:#ffff00;}
-.pixel:nth-child(662){background:#ffff00;}
-.pixel:nth-child(667){background:#ffff00;}
-.pixel:nth-child(668){background:#ffff00;}
-.pixel:nth-child(669){background:#ffff00;}
-.pixel:nth-child(670){background:#ffff00;}
-.pixel:nth-child(671){background:#ffff00;}
-.pixel:nth-child(672){background:#ffff00;}
-.pixel:nth-child(673){background:#ffff00;}
-.pixel:nth-child(674){background:#ffff00;}
-.pixel:nth-child(677){background:#ffff00;}
-.pixel:nth-child(678){background:#ffff00;}
-.pixel:nth-child(679){background:#ffff00;}
-.pixel:nth-child(680){background:#ffff00;}
-.pixel:nth-child(681){background:#ffff00;}
-.pixel:nth-child(682){background:#ffff00;}
-.pixel:nth-child(683){background:#ffff00;}
-.pixel:nth-child(684){background:#ffff00;}
-.pixel:nth-child(685){background:#ffff00;}
-.pixel:nth-child(686){background:#ffff00;}
-.pixel:nth-child(687){background:#ffff00;}
-.pixel:nth-child(688){background:#ffff00;}
-.pixel:nth-child(689){background:#ffff00;}
-.pixel:nth-child(690){background:#ffff00;}
-.pixel:nth-child(691){background:#ffff00;}
-.pixel:nth-child(692){background:#ffff00;}
-.pixel:nth-child(693){background:#ffff00;}
-.pixel:nth-child(694){background:#ffff00;}
-.pixel:nth-child(695){background:#ffff00;}
-.pixel:nth-child(696){background:#ffff00;}
-.pixel:nth-child(697){background:#ffff00;}
-.pixel:nth-child(698){background:#ffff00;}
-.pixel:nth-child(699){background:#ffff00;}
-.pixel:nth-child(704){background:#ffff00;}
-.pixel:nth-child(705){background:#ffff00;}
-.pixel:nth-child(706){background:#ffff00;}
-.pixel:nth-child(707){background:#ffff00;}
-.pixel:nth-child(708){background:#ffff00;}
-.pixel:nth-child(709){background:#ffff00;}
-.pixel:nth-child(710){background:#ffff00;}
-.pixel:nth-child(711){background:#ffff00;}
-.pixel:nth-child(712){background:#ffff00;}
-.pixel:nth-child(714){background:#ffff00;}
-.pixel:nth-child(715){background:#ffff00;}
-.pixel:nth-child(716){background:#ffff00;}
-.pixel:nth-child(717){background:#ffff00;}
-.pixel:nth-child(718){background:#ffff00;}
-.pixel:nth-child(719){background:#ffff00;}
-.pixel:nth-child(720){background:#ffff00;}
-.pixel:nth-child(721){background:#ffff00;}
-.pixel:nth-child(722){background:#ffff00;}
-.pixel:nth-child(723){background:#ffff00;}
-.pixel:nth-child(724){background:#ffff00;}
-.pixel:nth-child(725){background:#ffff00;}
-.pixel:nth-child(726){background:#ffff00;}
-.pixel:nth-child(727){background:#ffff00;}
-.pixel:nth-child(728){background:#ffff00;}
-.pixel:nth-child(729){background:#ffff00;}
-.pixel:nth-child(730){background:#ffff00;}
-.pixel:nth-child(731){background:#ffff00;}
-.pixel:nth-child(732){background:#ffff00;}
-.pixel:nth-child(733){background:#ffff00;}
-.pixel:nth-child(734){background:#ffff00;}
-.pixel:nth-child(735){background:#ffff00;}
-.pixel:nth-child(736){background:#ffff00;}
-.pixel:nth-child(741){background:#ffff00;}
-.pixel:nth-child(742){background:#ffff00;}
-.pixel:nth-child(743){background:#ffff00;}
-.pixel:nth-child(744){background:#ffff00;}
-.pixel:nth-child(745){background:#ffff00;}
-.pixel:nth-child(746){background:#ffff00;}
-.pixel:nth-child(747){background:#ffff00;}
-.pixel:nth-child(748){background:#ffff00;}
-.pixel:nth-child(749){background:#ffff00;}
-.pixel:nth-child(750){background:#ffff00;}
-.pixel:nth-child(751){background:#ffff00;}
-.pixel:nth-child(752){background:#ffff00;}
-.pixel:nth-child(753){background:#ffff00;}
-.pixel:nth-child(754){background:#ffff00;}
-.pixel:nth-child(755){background:#ffff00;}
-.pixel:nth-child(756){background:#ffff00;}
-.pixel:nth-child(757){background:#ffff00;}
-.pixel:nth-child(758){background:#ffff00;}
-.pixel:nth-child(759){background:#ffff00;}
-.pixel:nth-child(760){background:#ffff00;}
-.pixel:nth-child(761){background:#ffff00;}
-.pixel:nth-child(762){background:#ffff00;}
-.pixel:nth-child(763){background:#ffff00;}
-.pixel:nth-child(764){background:#ffff00;}
-.pixel:nth-child(765){background:#ffff00;}
-.pixel:nth-child(766){background:#ffff00;}
-.pixel:nth-child(767){background:#ffff00;}
-.pixel:nth-child(768){background:#ffff00;}
-.pixel:nth-child(769){background:#ffff00;}
-.pixel:nth-child(770){background:#ffff00;}
-.pixel:nth-child(771){background:#ffff00;}
-.pixel:nth-child(772){background:#ffff00;}
-.pixel:nth-child(778){background:#ffff00;}
-.pixel:nth-child(779){background:#ffff00;}
-.pixel:nth-child(780){background:#ffff00;}
-.pixel:nth-child(781){background:#ffff00;}
-.pixel:nth-child(782){background:#ffff00;}
-.pixel:nth-child(783){background:#ffff00;}
-.pixel:nth-child(784){background:#ffff00;}
-.pixel:nth-child(785){background:#ffff00;}
-.pixel:nth-child(786){background:#ffff00;}
-.pixel:nth-child(787){background:#ffff00;}
-.pixel:nth-child(788){background:#ffff00;}
-.pixel:nth-child(789){background:#ffff00;}
-.pixel:nth-child(790){background:#ffff00;}
-.pixel:nth-child(791){background:#ffff00;}
-.pixel:nth-child(792){background:#ffff00;}
-.pixel:nth-child(793){background:#ffff00;}
-.pixel:nth-child(794){background:#ffff00;}
-.pixel:nth-child(795){background:#ffff00;}
-.pixel:nth-child(796){background:#ffff00;}
-.pixel:nth-child(797){background:#ffff00;}
-.pixel:nth-child(798){background:#ffff00;}
-.pixel:nth-child(799){background:#ffff00;}
-.pixel:nth-child(800){background:#ffff00;}
-.pixel:nth-child(801){background:#ffff00;}
-.pixel:nth-child(802){background:#ffff00;}
-.pixel:nth-child(803){background:#ffff00;}
-.pixel:nth-child(804){background:#ffff00;}
-.pixel:nth-child(805){background:#ffff00;}
-.pixel:nth-child(806){background:#ffff00;}
-.pixel:nth-child(807){background:#ffff00;}
-.pixel:nth-child(808){background:#ffff00;}
-.pixel:nth-child(809){background:#ffff00;}
-.pixel:nth-child(816){background:#ffff00;}
-.pixel:nth-child(817){background:#ffff00;}
-.pixel:nth-child(818){background:#ffff00;}
-.pixel:nth-child(819){background:#ffff00;}
-.pixel:nth-child(820){background:#ffff00;}
-.pixel:nth-child(821){background:#ffff00;}
-.pixel:nth-child(822){background:#ffff00;}
-.pixel:nth-child(823){background:#ffff00;}
-.pixel:nth-child(824){background:#ffff00;}
-.pixel:nth-child(825){background:#ffff00;}
-.pixel:nth-child(827){background:#ffff00;}
-.pixel:nth-child(828){background:#ffff00;}
-.pixel:nth-child(829){background:#ffff00;}
-.pixel:nth-child(830){background:#ffff00;}
-.pixel:nth-child(831){background:#ffff00;}
-.pixel:nth-child(832){background:#ffff00;}
-.pixel:nth-child(833){background:#ffff00;}
-.pixel:nth-child(834){background:#ffff00;}
-.pixel:nth-child(835){background:#ffff00;}
-.pixel:nth-child(836){background:#ffff00;}
-.pixel:nth-child(837){background:#ffff00;}
-.pixel:nth-child(838){background:#ffff00;}
-.pixel:nth-child(839){background:#ffff00;}
-.pixel:nth-child(840){background:#ffff00;}
-.pixel:nth-child(841){background:#ffff00;}
-.pixel:nth-child(842){background:#ffff00;}
-.pixel:nth-child(843){background:#ffff00;}
-.pixel:nth-child(844){background:#ffff00;}
-.pixel:nth-child(845){background:#ffff00;}
-.pixel:nth-child(854){background:#ffff00;}
-.pixel:nth-child(855){background:#ffff00;}
-.pixel:nth-child(856){background:#ffff00;}
-.pixel:nth-child(857){background:#ffff00;}
-.pixel:nth-child(858){background:#ffff00;}
-.pixel:nth-child(859){background:#ffff00;}
-.pixel:nth-child(860){background:#ffff00;}
-.pixel:nth-child(861){background:#ffff00;}
-.pixel:nth-child(863){background:#ffff00;}
-.pixel:nth-child(864){background:#ffff00;}
-.pixel:nth-child(865){background:#ffff00;}
-.pixel:nth-child(866){background:#ffff00;}
-.pixel:nth-child(867){background:#ffff00;}
-.pixel:nth-child(868){background:#ffff00;}
-.pixel:nth-child(869){background:#ffff00;}
-.pixel:nth-child(870){background:#ffff00;}
-.pixel:nth-child(871){background:#ffff00;}
-.pixel:nth-child(872){background:#ffff00;}
-.pixel:nth-child(873){background:#ffff00;}
-.pixel:nth-child(874){background:#ffff00;}
-.pixel:nth-child(875){background:#ffff00;}
-.pixel:nth-child(876){background:#ffff00;}
-.pixel:nth-child(877){background:#ffff00;}
-.pixel:nth-child(878){background:#ffff00;}
-.pixel:nth-child(879){background:#ffff00;}
-.pixel:nth-child(880){background:#ffff00;}
-.pixel:nth-child(881){background:#ffff00;}
-.pixel:nth-child(882){background:#ffff00;}
-.pixel:nth-child(883){background:#ffff00;}
-.pixel:nth-child(892){background:#ffff00;}
-.pixel:nth-child(893){background:#ffff00;}
-.pixel:nth-child(894){background:#ffff00;}
-.pixel:nth-child(895){background:#ffff00;}
-.pixel:nth-child(896){background:#ffff00;}
-.pixel:nth-child(897){background:#ffff00;}
-.pixel:nth-child(900){background:#ffff00;}
-.pixel:nth-child(901){background:#ffff00;}
-.pixel:nth-child(902){background:#ffff00;}
-.pixel:nth-child(903){background:#ffff00;}
-.pixel:nth-child(904){background:#ffff00;}
-.pixel:nth-child(905){background:#ffff00;}
-.pixel:nth-child(906){background:#ffff00;}
-.pixel:nth-child(907){background:#ffff00;}
-.pixel:nth-child(908){background:#ffff00;}
-.pixel:nth-child(909){background:#ffff00;}
-.pixel:nth-child(910){background:#ffff00;}
-.pixel:nth-child(911){background:#ffff00;}
-.pixel:nth-child(912){background:#ffff00;}
-.pixel:nth-child(913){background:#ffff00;}
-.pixel:nth-child(914){background:#ffff00;}
-.pixel:nth-child(915){background:#ffff00;}
-.pixel:nth-child(916){background:#ffff00;}
-.pixel:nth-child(917){background:#ffff00;}
-.pixel:nth-child(918){background:#ffff00;}
-.pixel:nth-child(919){background:#ffff00;}
-.pixel:nth-child(920){background:#ffff00;}
-.pixel:nth-child(928){background:#ffff00;}
-.pixel:nth-child(929){background:#ffff00;}
-.pixel:nth-child(930){background:#ffff00;}
-.pixel:nth-child(931){background:#ffff00;}
-.pixel:nth-child(932){background:#ffff00;}
-.pixel:nth-child(933){background:#ffff00;}
-.pixel:nth-child(937){background:#ffff00;}
-.pixel:nth-child(938){background:#ffff00;}
-.pixel:nth-child(939){background:#ffff00;}
-.pixel:nth-child(940){background:#ffff00;}
-.pixel:nth-child(941){background:#ffff00;}
-.pixel:nth-child(942){background:#ffff00;}
-.pixel:nth-child(943){background:#ffff00;}
-.pixel:nth-child(944){background:#ffff00;}
-.pixel:nth-child(945){background:#ffff00;}
-.pixel:nth-child(946){background:#ffff00;}
-.pixel:nth-child(947){background:#ffff00;}
-.pixel:nth-child(948){background:#ffff00;}
-.pixel:nth-child(949){background:#ffff00;}
-.pixel:nth-child(950){background:#ffff00;}
-.pixel:nth-child(951){background:#ffff00;}
-.pixel:nth-child(952){background:#ffff00;}
-.pixel:nth-child(953){background:#ffff00;}
-.pixel:nth-child(954){background:#ffff00;}
-.pixel:nth-child(955){background:#ffff00;}
-.pixel:nth-child(956){background:#ffff00;}
-.pixel:nth-child(957){background:#ffff00;}
-.pixel:nth-child(965){background:#ffff00;}
-.pixel:nth-child(966){background:#ffff00;}
-.pixel:nth-child(967){background:#ffff00;}
-.pixel:nth-child(968){background:#ffff00;}
-.pixel:nth-child(969){background:#ffff00;}
-.pixel:nth-child(970){background:#ffff00;}
-.pixel:nth-child(971){background:#ffff00;}
-.pixel:nth-child(973){background:#ffff00;}
-.pixel:nth-child(974){background:#ffff00;}
-.pixel:nth-child(975){background:#ffff00;}
-.pixel:nth-child(976){background:#ffff00;}
-.pixel:nth-child(977){background:#ffff00;}
-.pixel:nth-child(978){background:#ffff00;}
-.pixel:nth-child(979){background:#ffff00;}
-.pixel:nth-child(980){background:#ffff00;}
-.pixel:nth-child(981){background:#ffff00;}
-.pixel:nth-child(982){background:#ffff00;}
-.pixel:nth-child(983){background:#ffff00;}
-.pixel:nth-child(984){background:#ffff00;}
-.pixel:nth-child(985){background:#ffff00;}
-.pixel:nth-child(986){background:#ffff00;}
-.pixel:nth-child(987){background:#ffff00;}
-.pixel:nth-child(988){background:#ffff00;}
-.pixel:nth-child(989){background:#ffff00;}
-.pixel:nth-child(990){background:#ffff00;}
-.pixel:nth-child(991){background:#ffff00;}
-.pixel:nth-child(992){background:#ffff00;}
-.pixel:nth-child(993){background:#ffff00;}
-.pixel:nth-child(994){background:#ffff00;}
-.pixel:nth-child(1003){background:#ffff00;}
-.pixel:nth-child(1004){background:#ffff00;}
-.pixel:nth-child(1005){background:#ffff00;}
-.pixel:nth-child(1006){background:#ffff00;}
-.pixel:nth-child(1007){background:#ffff00;}
-.pixel:nth-child(1008){background:#ffff00;}
-.pixel:nth-child(1009){background:#ffff00;}
-.pixel:nth-child(1010){background:#ffff00;}
-.pixel:nth-child(1011){background:#ffff00;}
-.pixel:nth-child(1012){background:#ffff00;}
-.pixel:nth-child(1013){background:#ffff00;}
-.pixel:nth-child(1014){background:#ffff00;}
-.pixel:nth-child(1015){background:#ffff00;}
-.pixel:nth-child(1016){background:#ffff00;}
-.pixel:nth-child(1017){background:#ffff00;}
-.pixel:nth-child(1018){background:#ffff00;}
-.pixel:nth-child(1019){background:#ffff00;}
-.pixel:nth-child(1020){background:#ffff00;}
-.pixel:nth-child(1021){background:#ffff00;}
-.pixel:nth-child(1022){background:#ffff00;}
-.pixel:nth-child(1023){background:#ffff00;}
-.pixel:nth-child(1024){background:#ffff00;}
-.pixel:nth-child(1025){background:#ffff00;}
-.pixel:nth-child(1026){background:#ffff00;}
-.pixel:nth-child(1027){background:#ffff00;}
-.pixel:nth-child(1028){background:#ffff00;}
-.pixel:nth-child(1029){background:#ffff00;}
-.pixel:nth-child(1030){background:#ffff00;}
-.pixel:nth-child(1031){background:#ffff00;}
-.pixel:nth-child(1032){background:#ffff00;}
-.pixel:nth-child(1041){background:#ffff00;}
-.pixel:nth-child(1042){background:#ffff00;}
-.pixel:nth-child(1043){background:#ffff00;}
-.pixel:nth-child(1044){background:#ffff00;}
-.pixel:nth-child(1045){background:#ffff00;}
-.pixel:nth-child(1046){background:#ffff00;}
-.pixel:nth-child(1047){background:#ffff00;}
-.pixel:nth-child(1048){background:#ffff00;}
-.pixel:nth-child(1049){background:#ffff00;}
-.pixel:nth-child(1050){background:#ffff00;}
-.pixel:nth-child(1051){background:#ffff00;}
-.pixel:nth-child(1052){background:#ffff00;}
-.pixel:nth-child(1053){background:#ffff00;}
-.pixel:nth-child(1054){background:#ffff00;}
-.pixel:nth-child(1055){background:#ffff00;}
-.pixel:nth-child(1056){background:#ffff00;}
-.pixel:nth-child(1057){background:#ffff00;}
-.pixel:nth-child(1058){background:#ffff00;}
-.pixel:nth-child(1059){background:#ffff00;}
-.pixel:nth-child(1060){background:#ffff00;}
-.pixel:nth-child(1061){background:#ffff00;}
-.pixel:nth-child(1062){background:#ffff00;}
-.pixel:nth-child(1063){background:#ffff00;}
-.pixel:nth-child(1064){background:#ffff00;}
-.pixel:nth-child(1065){background:#ffff00;}
-.pixel:nth-child(1066){background:#ffff00;}
-.pixel:nth-child(1067){background:#ffff00;}
-.pixel:nth-child(1068){background:#ffff00;}
-.pixel:nth-child(1069){background:#ffff00;}
-.pixel:nth-child(1079){background:#ffff00;}
-.pixel:nth-child(1080){background:#ffff00;}
-.pixel:nth-child(1081){background:#ffff00;}
-.pixel:nth-child(1082){background:#ffff00;}
-.pixel:nth-child(1083){background:#ffff00;}
-.pixel:nth-child(1084){background:#ffff00;}
-.pixel:nth-child(1085){background:#ffff00;}
-.pixel:nth-child(1086){background:#ffff00;}
-.pixel:nth-child(1087){background:#ffff00;}
-.pixel:nth-child(1088){background:#ffff00;}
-.pixel:nth-child(1089){background:#ffff00;}
-.pixel:nth-child(1090){background:#ffff00;}
-.pixel:nth-child(1091){background:#ffff00;}
-.pixel:nth-child(1092){background:#ffff00;}
-.pixel:nth-child(1093){background:#ffff00;}
-.pixel:nth-child(1094){background:#ffff00;}
-.pixel:nth-child(1095){background:#ffff00;}
-.pixel:nth-child(1096){background:#ffff00;}
-.pixel:nth-child(1097){background:#ffff00;}
-.pixel:nth-child(1098){background:#ffff00;}
-.pixel:nth-child(1099){background:#ffff00;}
-.pixel:nth-child(1100){background:#ffff00;}
-.pixel:nth-child(1101){background:#ffff00;}
-.pixel:nth-child(1102){background:#ffff00;}
-.pixel:nth-child(1103){background:#ffff00;}
-.pixel:nth-child(1104){background:#ffff00;}
-.pixel:nth-child(1105){background:#ffff00;}
-.pixel:nth-child(1106){background:#ffff00;}
-.pixel:nth-child(1117){background:#ffff00;}
-.pixel:nth-child(1118){background:#ffff00;}
-.pixel:nth-child(1119){background:#ffff00;}
-.pixel:nth-child(1120){background:#ffff00;}
-.pixel:nth-child(1121){background:#ffff00;}
-.pixel:nth-child(1122){background:#ffff00;}
-.pixel:nth-child(1123){background:#ffff00;}
-.pixel:nth-child(1124){background:#ffff00;}
-.pixel:nth-child(1125){background:#ffff00;}
-.pixel:nth-child(1126){background:#ffff00;}
-.pixel:nth-child(1127){background:#ffff00;}
-.pixel:nth-child(1128){background:#ffff00;}
-.pixel:nth-child(1129){background:#ffff00;}
-.pixel:nth-child(1130){background:#ffff00;}
-.pixel:nth-child(1131){background:#ffff00;}
-.pixel:nth-child(1132){background:#ffff00;}
-.pixel:nth-child(1133){background:#ffff00;}
-.pixel:nth-child(1134){background:#ffff00;}
-.pixel:nth-child(1135){background:#ffff00;}
-.pixel:nth-child(1136){background:#ffff00;}
-.pixel:nth-child(1137){background:#ffff00;}
-.pixel:nth-child(1138){background:#ffff00;}
-.pixel:nth-child(1139){background:#ffff00;}
-.pixel:nth-child(1140){background:#ffff00;}
-.pixel:nth-child(1141){background:#ffff00;}
-.pixel:nth-child(1142){background:#ffff00;}
-.pixel:nth-child(1143){background:#ffff00;}
-.pixel:nth-child(1153){background:#ffff00;}
-.pixel:nth-child(1154){background:#ffff00;}
-.pixel:nth-child(1155){background:#ffff00;}
-.pixel:nth-child(1156){background:#ffff00;}
-.pixel:nth-child(1157){background:#ffff00;}
-.pixel:nth-child(1158){background:#ffff00;}
-.pixel:nth-child(1159){background:#ffff00;}
-.pixel:nth-child(1160){background:#ffff00;}
-.pixel:nth-child(1161){background:#ffff00;}
-.pixel:nth-child(1162){background:#ffff00;}
-.pixel:nth-child(1163){background:#ffff00;}
-.pixel:nth-child(1164){background:#ffff00;}
-.pixel:nth-child(1165){background:#ffff00;}
-.pixel:nth-child(1166){background:#ffff00;}
-.pixel:nth-child(1167){background:#ffff00;}
-.pixel:nth-child(1168){background:#ffff00;}
-.pixel:nth-child(1169){background:#ffff00;}
-.pixel:nth-child(1170){background:#ffff00;}
-.pixel:nth-child(1171){background:#ffff00;}
-.pixel:nth-child(1172){background:#ffff00;}
-.pixel:nth-child(1173){background:#ffff00;}
-.pixel:nth-child(1174){background:#ffff00;}
-.pixel:nth-child(1175){background:#ffff00;}
-.pixel:nth-child(1176){background:#ffff00;}
-.pixel:nth-child(1177){background:#ffff00;}
-.pixel:nth-child(1178){background:#ffff00;}
-.pixel:nth-child(1179){background:#ffff00;}
-.pixel:nth-child(1180){background:#ffff00;}
-.pixel:nth-child(1191){background:#ffff00;}
-.pixel:nth-child(1192){background:#ffff00;}
-.pixel:nth-child(1193){background:#ffff00;}
-.pixel:nth-child(1194){background:#ffff00;}
-.pixel:nth-child(1195){background:#ffff00;}
-.pixel:nth-child(1196){background:#ffff00;}
-.pixel:nth-child(1197){background:#ffff00;}
-.pixel:nth-child(1198){background:#ffff00;}
-.pixel:nth-child(1199){background:#ffff00;}
-.pixel:nth-child(1200){background:#ffff00;}
-.pixel:nth-child(1201){background:#ffff00;}
-.pixel:nth-child(1202){background:#ffff00;}
-.pixel:nth-child(1203){background:#ffff00;}
-.pixel:nth-child(1204){background:#ffff00;}
-.pixel:nth-child(1205){background:#ffff00;}
-.pixel:nth-child(1206){background:#ffff00;}
-.pixel:nth-child(1207){background:#ffff00;}
-.pixel:nth-child(1208){background:#ffff00;}
-.pixel:nth-child(1209){background:#ffff00;}
-.pixel:nth-child(1210){background:#ffff00;}
-.pixel:nth-child(1211){background:#ffff00;}
-.pixel:nth-child(1212){background:#ffff00;}
-.pixel:nth-child(1213){background:#ffff00;}
-.pixel:nth-child(1214){background:#ffff00;}
-.pixel:nth-child(1215){background:#ffff00;}
-.pixel:nth-child(1216){background:#ffff00;}
-.pixel:nth-child(1217){background:#ffff00;}
-.pixel:nth-child(1229){background:#ffff00;}
-.pixel:nth-child(1230){background:#ffff00;}
-.pixel:nth-child(1231){background:#ffff00;}
-.pixel:nth-child(1232){background:#ffff00;}
-.pixel:nth-child(1233){background:#ffff00;}
-.pixel:nth-child(1234){background:#ffff00;}
-.pixel:nth-child(1235){background:#ffff00;}
-.pixel:nth-child(1236){background:#ffff00;}
-.pixel:nth-child(1237){background:#ffff00;}
-.pixel:nth-child(1238){background:#ffff00;}
-.pixel:nth-child(1239){background:#ffff00;}
-.pixel:nth-child(1240){background:#ffff00;}
-.pixel:nth-child(1241){background:#ffff00;}
-.pixel:nth-child(1242){background:#ffff00;}
-.pixel:nth-child(1243){background:#ffff00;}
-.pixel:nth-child(1244){background:#ffff00;}
-.pixel:nth-child(1245){background:#ffff00;}
-.pixel:nth-child(1246){background:#ffff00;}
-.pixel:nth-child(1247){background:#ffff00;}
-.pixel:nth-child(1248){background:#ffff00;}
-.pixel:nth-child(1249){background:#ffff00;}
-.pixel:nth-child(1250){background:#ffff00;}
-.pixel:nth-child(1251){background:#ffff00;}
-.pixel:nth-child(1252){background:#ffff00;}
-.pixel:nth-child(1253){background:#ffff00;}
-.pixel:nth-child(1254){background:#ffff00;}
-.pixel:nth-child(1268){background:#ffff00;}
-.pixel:nth-child(1269){background:#ffff00;}
-.pixel:nth-child(1270){background:#ffff00;}
-.pixel:nth-child(1271){background:#ffff00;}
-.pixel:nth-child(1272){background:#ffff00;}
-.pixel:nth-child(1273){background:#ffff00;}
-.pixel:nth-child(1274){background:#ffff00;}
-.pixel:nth-child(1275){background:#ffff00;}
-.pixel:nth-child(1276){background:#ffff00;}
-.pixel:nth-child(1277){background:#ffff00;}
-.pixel:nth-child(1278){background:#ffff00;}
-.pixel:nth-child(1279){background:#ffff00;}
-.pixel:nth-child(1280){background:#ffff00;}
-.pixel:nth-child(1281){background:#ffff00;}
-.pixel:nth-child(1282){background:#ffff00;}
-.pixel:nth-child(1283){background:#ffff00;}
-.pixel:nth-child(1284){background:#ffff00;}
-.pixel:nth-child(1285){background:#ffff00;}
-.pixel:nth-child(1286){background:#ffff00;}
-.pixel:nth-child(1287){background:#ffff00;}
-.pixel:nth-child(1288){background:#ffff00;}
-.pixel:nth-child(1289){background:#ffff00;}
-.pixel:nth-child(1290){background:#ffff00;}
-.pixel:nth-child(1307){background:#ffff00;}
-.pixel:nth-child(1308){background:#ffff00;}
-.pixel:nth-child(1309){background:#ffff00;}
-.pixel:nth-child(1310){background:#ffff00;}
-.pixel:nth-child(1311){background:#ffff00;}
-.pixel:nth-child(1312){background:#ffff00;}
-.pixel:nth-child(1313){background:#ffff00;}
-.pixel:nth-child(1314){background:#ffff00;}
-.pixel:nth-child(1315){background:#ffff00;}
-.pixel:nth-child(1316){background:#ffff00;}
-.pixel:nth-child(1317){background:#ffff00;}
-.pixel:nth-child(1318){background:#ffff00;}
-.pixel:nth-child(1319){background:#ffff00;}
-.pixel:nth-child(1320){background:#ffff00;}
-.pixel:nth-child(1321){background:#ffff00;}
-.pixel:nth-child(1322){background:#ffff00;}
-.pixel:nth-child(1323){background:#ffff00;}
-.pixel:nth-child(1324){background:#ffff00;}
-.pixel:nth-child(1325){background:#ffff00;}
-.pixel:nth-child(1326){background:#ffff00;}
-.pixel:nth-child(1327){background:#ffff00;}
-.pixel:nth-child(1345){background:#ffff00;}
-.pixel:nth-child(1346){background:#ffff00;}
-.pixel:nth-child(1347){background:#ffff00;}
-.pixel:nth-child(1348){background:#ffff00;}
-.pixel:nth-child(1349){background:#ffff00;}
-.pixel:nth-child(1350){background:#ffff00;}
-.pixel:nth-child(1351){background:#ffff00;}
-.pixel:nth-child(1352){background:#ffff00;}
-.pixel:nth-child(1353){background:#ffff00;}
-.pixel:nth-child(1354){background:#ffff00;}
-.pixel:nth-child(1355){background:#ffff00;}
-.pixel:nth-child(1356){background:#ffff00;}
-.pixel:nth-child(1357){background:#ffff00;}
-.pixel:nth-child(1358){background:#ffff00;}
-.pixel:nth-child(1359){background:#ffff00;}
-.pixel:nth-child(1360){background:#ffff00;}
-.pixel:nth-child(1361){background:#ffff00;}
-.pixel:nth-child(1362){background:#ffff00;}
-.pixel:nth-child(1363){background:#ffff00;}
-.pixel:nth-child(1383){background:#ffff00;}
-.pixel:nth-child(1384){background:#ffff00;}
-.pixel:nth-child(1385){background:#ffff00;}
-.pixel:nth-child(1386){background:#ffff00;}
-.pixel:nth-child(1387){background:#ffff00;}
-.pixel:nth-child(1388){background:#ffff00;}
-.pixel:nth-child(1389){background:#ffff00;}
-.pixel:nth-child(1390){background:#ffff00;}
-.pixel:nth-child(1391){background:#ffff00;}
-.pixel:nth-child(1392){background:#ffff00;}
-.pixel:nth-child(1393){background:#ffff00;}
-.pixel:nth-child(1394){background:#ffff00;}
-.pixel:nth-child(1395){background:#ffff00;}
-.pixel:nth-child(1396){background:#ffff00;}
-.pixel:nth-child(1397){background:#ffff00;}
-.pixel:nth-child(1398){background:#ffff00;}
-.pixel:nth-child(1399){background:#ffff00;}
-.pixel:nth-child(1419){background:#ffff00;}
-.pixel:nth-child(1420){background:#ffff00;}
-.pixel:nth-child(1421){background:#ffff00;}
-.pixel:nth-child(1422){background:#ffff00;}
-.pixel:nth-child(1423){background:#ffff00;}
-.pixel:nth-child(1424){background:#ffff00;}
-.pixel:nth-child(1425){background:#ffff00;}
-.pixel:nth-child(1432){background:#ffff00;}
-.pixel:nth-child(1433){background:#ffff00;}
-.pixel:nth-child(1434){background:#ffff00;}
-.pixel:nth-child(1435){background:#ffff00;}
-.pixel:nth-child(1436){background:#ffff00;}
-.pixel:nth-child(1437){background:#ffff00;}
-.pixel:nth-child(1456){background:#ffff00;}
-.pixel:nth-child(1457){background:#ffff00;}
-.pixel:nth-child(1458){background:#ffff00;}
-.pixel:nth-child(1459){background:#ffff00;}
-.pixel:nth-child(1460){background:#ffff00;}
-.pixel:nth-child(1470){background:#ffff00;}
-.pixel:nth-child(1471){background:#ffff00;}
-.pixel:nth-child(1472){background:#ffff00;}
-.pixel:nth-child(1473){background:#ffff00;}
-.pixel:nth-child(1474){background:#ffff00;}
+.pixel:nth-child(36){background-color: rgb(0,0,255);}
+.pixel:nth-child(37){background-color: rgb(0,0,255);}
+.pixel:nth-child(71){background-color: rgb(0,0,255);}
+.pixel:nth-child(72){background-color: rgb(0,0,255);}
+.pixel:nth-child(73){background-color: rgb(0,0,255);}
+.pixel:nth-child(74){background-color: rgb(0,0,255);}
+.pixel:nth-child(106){background-color: rgb(0,0,255);}
+.pixel:nth-child(107){background-color: rgb(0,0,255);}
+.pixel:nth-child(108){background-color: rgb(0,0,255);}
+.pixel:nth-child(109){background-color: rgb(0,0,255);}
+.pixel:nth-child(110){background-color: rgb(0,0,255);}
+.pixel:nth-child(111){background-color: rgb(0,0,255);}
+.pixel:nth-child(142){background-color: rgb(0,0,255);}
+.pixel:nth-child(143){background-color: rgb(0,0,255);}
+.pixel:nth-child(144){background-color: rgb(0,0,255);}
+.pixel:nth-child(145){background-color: rgb(0,0,255);}
+.pixel:nth-child(146){background-color: rgb(0,0,255);}
+.pixel:nth-child(147){background-color: rgb(0,0,255);}
+.pixel:nth-child(148){background-color: rgb(0,0,255);}
+.pixel:nth-child(152){background-color: rgb(0,0,255);}
+.pixel:nth-child(153){background-color: rgb(0,0,255);}
+.pixel:nth-child(154){background-color: rgb(0,0,255);}
+.pixel:nth-child(155){background-color: rgb(0,0,255);}
+.pixel:nth-child(156){background-color: rgb(0,0,255);}
+.pixel:nth-child(157){background-color: rgb(0,0,255);}
+.pixel:nth-child(178){background-color: rgb(0,0,255);}
+.pixel:nth-child(179){background-color: rgb(0,0,255);}
+.pixel:nth-child(180){background-color: rgb(0,0,255);}
+.pixel:nth-child(181){background-color: rgb(0,0,255);}
+.pixel:nth-child(182){background-color: rgb(0,0,255);}
+.pixel:nth-child(183){background-color: rgb(0,0,255);}
+.pixel:nth-child(184){background-color: rgb(0,0,255);}
+.pixel:nth-child(189){background-color: rgb(0,0,255);}
+.pixel:nth-child(190){background-color: rgb(0,0,255);}
+.pixel:nth-child(191){background-color: rgb(0,0,255);}
+.pixel:nth-child(192){background-color: rgb(0,0,255);}
+.pixel:nth-child(193){background-color: rgb(0,0,255);}
+.pixel:nth-child(194){background-color: rgb(0,0,255);}
+.pixel:nth-child(195){background-color: rgb(0,0,255);}
+.pixel:nth-child(196){background-color: rgb(0,0,255);}
+.pixel:nth-child(197){background-color: rgb(0,0,255);}
+.pixel:nth-child(198){background-color: rgb(0,0,255);}
+.pixel:nth-child(214){background-color: rgb(0,0,255);}
+.pixel:nth-child(215){background-color: rgb(0,0,255);}
+.pixel:nth-child(216){background-color: rgb(0,0,255);}
+.pixel:nth-child(217){background-color: rgb(0,0,255);}
+.pixel:nth-child(218){background-color: rgb(0,0,255);}
+.pixel:nth-child(219){background-color: rgb(0,0,255);}
+.pixel:nth-child(220){background-color: rgb(0,0,255);}
+.pixel:nth-child(221){background-color: rgb(0,0,255);}
+.pixel:nth-child(228){background-color: rgb(0,0,255);}
+.pixel:nth-child(229){background-color: rgb(0,0,255);}
+.pixel:nth-child(230){background-color: rgb(0,0,255);}
+.pixel:nth-child(231){background-color: rgb(0,0,255);}
+.pixel:nth-child(232){background-color: rgb(0,0,255);}
+.pixel:nth-child(233){background-color: rgb(0,0,255);}
+.pixel:nth-child(234){background-color: rgb(0,0,255);}
+.pixel:nth-child(235){background-color: rgb(0,0,255);}
+.pixel:nth-child(236){background-color: rgb(0,0,255);}
+.pixel:nth-child(237){background-color: rgb(0,0,255);}
+.pixel:nth-child(238){background-color: rgb(0,0,255);}
+.pixel:nth-child(239){background-color: rgb(0,0,255);}
+.pixel:nth-child(241){background-color: rgb(0,0,255);}
+.pixel:nth-child(242){background-color: rgb(0,0,255);}
+.pixel:nth-child(243){background-color: rgb(0,0,255);}
+.pixel:nth-child(244){background-color: rgb(0,0,255);}
+.pixel:nth-child(245){background-color: rgb(0,0,255);}
+.pixel:nth-child(246){background-color: rgb(0,0,255);}
+.pixel:nth-child(247){background-color: rgb(0,0,255);}
+.pixel:nth-child(249){background-color: rgb(0,0,255);}
+.pixel:nth-child(250){background-color: rgb(0,0,255);}
+.pixel:nth-child(251){background-color: rgb(0,0,255);}
+.pixel:nth-child(252){background-color: rgb(0,0,255);}
+.pixel:nth-child(253){background-color: rgb(0,0,255);}
+.pixel:nth-child(254){background-color: rgb(0,0,255);}
+.pixel:nth-child(255){background-color: rgb(0,0,255);}
+.pixel:nth-child(256){background-color: rgb(0,0,255);}
+.pixel:nth-child(257){background-color: rgb(0,0,255);}
+.pixel:nth-child(266){background-color: rgb(0,0,255);}
+.pixel:nth-child(267){background-color: rgb(0,0,255);}
+.pixel:nth-child(268){background-color: rgb(0,0,255);}
+.pixel:nth-child(269){background-color: rgb(0,0,255);}
+.pixel:nth-child(270){background-color: rgb(0,0,255);}
+.pixel:nth-child(271){background-color: rgb(0,0,255);}
+.pixel:nth-child(272){background-color: rgb(0,0,255);}
+.pixel:nth-child(273){background-color: rgb(0,0,255);}
+.pixel:nth-child(274){background-color: rgb(0,0,255);}
+.pixel:nth-child(275){background-color: rgb(0,0,255);}
+.pixel:nth-child(276){background-color: rgb(0,0,255);}
+.pixel:nth-child(277){background-color: rgb(0,0,255);}
+.pixel:nth-child(278){background-color: rgb(0,0,255);}
+.pixel:nth-child(279){background-color: rgb(0,0,255);}
+.pixel:nth-child(280){background-color: rgb(0,0,255);}
+.pixel:nth-child(281){background-color: rgb(0,0,255);}
+.pixel:nth-child(282){background-color: rgb(0,0,255);}
+.pixel:nth-child(283){background-color: rgb(0,0,255);}
+.pixel:nth-child(284){background-color: rgb(0,0,255);}
+.pixel:nth-child(285){background-color: rgb(0,0,255);}
+.pixel:nth-child(286){background-color: rgb(0,0,255);}
+.pixel:nth-child(287){background-color: rgb(0,0,255);}
+.pixel:nth-child(288){background-color: rgb(0,0,255);}
+.pixel:nth-child(289){background-color: rgb(0,0,255);}
+.pixel:nth-child(290){background-color: rgb(0,0,255);}
+.pixel:nth-child(291){background-color: rgb(0,0,255);}
+.pixel:nth-child(292){background-color: rgb(0,0,255);}
+.pixel:nth-child(293){background-color: rgb(0,0,255);}
+.pixel:nth-child(304){background-color: rgb(0,0,255);}
+.pixel:nth-child(305){background-color: rgb(0,0,255);}
+.pixel:nth-child(306){background-color: rgb(0,0,255);}
+.pixel:nth-child(307){background-color: rgb(0,0,255);}
+.pixel:nth-child(308){background-color: rgb(0,0,255);}
+.pixel:nth-child(309){background-color: rgb(0,0,255);}
+.pixel:nth-child(310){background-color: rgb(0,0,255);}
+.pixel:nth-child(311){background-color: rgb(0,0,255);}
+.pixel:nth-child(312){background-color: rgb(0,0,255);}
+.pixel:nth-child(313){background-color: rgb(0,0,255);}
+.pixel:nth-child(314){background-color: rgb(0,0,255);}
+.pixel:nth-child(315){background-color: rgb(0,0,255);}
+.pixel:nth-child(316){background-color: rgb(0,0,255);}
+.pixel:nth-child(317){background-color: rgb(0,0,255);}
+.pixel:nth-child(318){background-color: rgb(0,0,255);}
+.pixel:nth-child(319){background-color: rgb(0,0,255);}
+.pixel:nth-child(320){background-color: rgb(0,0,255);}
+.pixel:nth-child(321){background-color: rgb(0,0,255);}
+.pixel:nth-child(322){background-color: rgb(0,0,255);}
+.pixel:nth-child(323){background-color: rgb(0,0,255);}
+.pixel:nth-child(324){background-color: rgb(0,0,255);}
+.pixel:nth-child(325){background-color: rgb(0,0,255);}
+.pixel:nth-child(326){background-color: rgb(0,0,255);}
+.pixel:nth-child(327){background-color: rgb(0,0,255);}
+.pixel:nth-child(328){background-color: rgb(0,0,255);}
+.pixel:nth-child(329){background-color: rgb(0,0,255);}
+.pixel:nth-child(342){background-color: rgb(0,0,255);}
+.pixel:nth-child(343){background-color: rgb(0,0,255);}
+.pixel:nth-child(344){background-color: rgb(0,0,255);}
+.pixel:nth-child(345){background-color: rgb(0,0,255);}
+.pixel:nth-child(346){background-color: rgb(0,0,255);}
+.pixel:nth-child(347){background-color: rgb(0,0,255);}
+.pixel:nth-child(348){background-color: rgb(0,0,255);}
+.pixel:nth-child(349){background-color: rgb(0,0,255);}
+.pixel:nth-child(350){background-color: rgb(0,0,255);}
+.pixel:nth-child(351){background-color: rgb(0,0,255);}
+.pixel:nth-child(352){background-color: rgb(0,0,255);}
+.pixel:nth-child(353){background-color: rgb(0,0,255);}
+.pixel:nth-child(354){background-color: rgb(0,0,255);}
+.pixel:nth-child(355){background-color: rgb(0,0,255);}
+.pixel:nth-child(356){background-color: rgb(0,0,255);}
+.pixel:nth-child(357){background-color: rgb(0,0,255);}
+.pixel:nth-child(358){background-color: rgb(0,0,255);}
+.pixel:nth-child(359){background-color: rgb(0,0,255);}
+.pixel:nth-child(360){background-color: rgb(0,0,255);}
+.pixel:nth-child(361){background-color: rgb(0,0,255);}
+.pixel:nth-child(362){background-color: rgb(0,0,255);}
+.pixel:nth-child(363){background-color: rgb(0,0,255);}
+.pixel:nth-child(364){background-color: rgb(0,0,255);}
+.pixel:nth-child(365){background-color: rgb(0,0,255);}
+.pixel:nth-child(381){background-color: rgb(0,0,255);}
+.pixel:nth-child(382){background-color: rgb(0,0,255);}
+.pixel:nth-child(383){background-color: rgb(0,0,255);}
+.pixel:nth-child(384){background-color: rgb(0,0,255);}
+.pixel:nth-child(385){background-color: rgb(0,0,255);}
+.pixel:nth-child(386){background-color: rgb(0,0,255);}
+.pixel:nth-child(387){background-color: rgb(0,0,255);}
+.pixel:nth-child(388){background-color: rgb(0,0,255);}
+.pixel:nth-child(389){background-color: rgb(0,0,255);}
+.pixel:nth-child(390){background-color: rgb(0,0,255);}
+.pixel:nth-child(391){background-color: rgb(0,0,255);}
+.pixel:nth-child(392){background-color: rgb(0,0,255);}
+.pixel:nth-child(393){background-color: rgb(0,0,255);}
+.pixel:nth-child(394){background-color: rgb(0,0,255);}
+.pixel:nth-child(395){background-color: rgb(0,0,255);}
+.pixel:nth-child(396){background-color: rgb(0,0,255);}
+.pixel:nth-child(397){background-color: rgb(0,0,255);}
+.pixel:nth-child(398){background-color: rgb(0,0,255);}
+.pixel:nth-child(399){background-color: rgb(0,0,255);}
+.pixel:nth-child(400){background-color: rgb(0,0,255);}
+.pixel:nth-child(401){background-color: rgb(0,0,255);}
+.pixel:nth-child(408){background-color: rgb(0,0,255);}
+.pixel:nth-child(420){background-color: rgb(0,0,255);}
+.pixel:nth-child(421){background-color: rgb(0,0,255);}
+.pixel:nth-child(422){background-color: rgb(0,0,255);}
+.pixel:nth-child(423){background-color: rgb(0,0,255);}
+.pixel:nth-child(424){background-color: rgb(0,0,255);}
+.pixel:nth-child(425){background-color: rgb(0,0,255);}
+.pixel:nth-child(426){background-color: rgb(0,0,255);}
+.pixel:nth-child(427){background-color: rgb(0,0,255);}
+.pixel:nth-child(428){background-color: rgb(0,0,255);}
+.pixel:nth-child(429){background-color: rgb(0,0,255);}
+.pixel:nth-child(430){background-color: rgb(0,0,255);}
+.pixel:nth-child(431){background-color: rgb(0,0,255);}
+.pixel:nth-child(432){background-color: rgb(0,0,255);}
+.pixel:nth-child(433){background-color: rgb(0,0,255);}
+.pixel:nth-child(434){background-color: rgb(0,0,255);}
+.pixel:nth-child(435){background-color: rgb(0,0,255);}
+.pixel:nth-child(436){background-color: rgb(0,0,255);}
+.pixel:nth-child(437){background-color: rgb(0,0,255);}
+.pixel:nth-child(438){background-color: rgb(0,0,255);}
+.pixel:nth-child(445){background-color: rgb(0,0,255);}
+.pixel:nth-child(446){background-color: rgb(0,0,255);}
+.pixel:nth-child(457){background-color: rgb(0,0,255);}
+.pixel:nth-child(458){background-color: rgb(0,0,255);}
+.pixel:nth-child(459){background-color: rgb(0,0,255);}
+.pixel:nth-child(460){background-color: rgb(0,0,255);}
+.pixel:nth-child(461){background-color: rgb(0,0,255);}
+.pixel:nth-child(462){background-color: rgb(0,0,255);}
+.pixel:nth-child(463){background-color: rgb(0,0,255);}
+.pixel:nth-child(464){background-color: rgb(0,0,255);}
+.pixel:nth-child(465){background-color: rgb(0,0,255);}
+.pixel:nth-child(466){background-color: rgb(0,0,255);}
+.pixel:nth-child(467){background-color: rgb(0,0,255);}
+.pixel:nth-child(468){background-color: rgb(0,0,255);}
+.pixel:nth-child(469){background-color: rgb(0,0,255);}
+.pixel:nth-child(470){background-color: rgb(0,0,255);}
+.pixel:nth-child(471){background-color: rgb(0,0,255);}
+.pixel:nth-child(472){background-color: rgb(0,0,255);}
+.pixel:nth-child(473){background-color: rgb(0,0,255);}
+.pixel:nth-child(474){background-color: rgb(0,0,255);}
+.pixel:nth-child(475){background-color: rgb(0,0,255);}
+.pixel:nth-child(482){background-color: rgb(0,0,255);}
+.pixel:nth-child(483){background-color: rgb(0,0,255);}
+.pixel:nth-child(484){background-color: rgb(0,0,255);}
+.pixel:nth-child(493){background-color: rgb(0,0,255);}
+.pixel:nth-child(494){background-color: rgb(0,0,255);}
+.pixel:nth-child(495){background-color: rgb(0,0,255);}
+.pixel:nth-child(496){background-color: rgb(0,0,255);}
+.pixel:nth-child(497){background-color: rgb(0,0,255);}
+.pixel:nth-child(498){background-color: rgb(0,0,255);}
+.pixel:nth-child(499){background-color: rgb(0,0,255);}
+.pixel:nth-child(500){background-color: rgb(0,0,255);}
+.pixel:nth-child(501){background-color: rgb(0,0,255);}
+.pixel:nth-child(502){background-color: rgb(0,0,255);}
+.pixel:nth-child(503){background-color: rgb(0,0,255);}
+.pixel:nth-child(504){background-color: rgb(0,0,255);}
+.pixel:nth-child(505){background-color: rgb(0,0,255);}
+.pixel:nth-child(506){background-color: rgb(0,0,255);}
+.pixel:nth-child(507){background-color: rgb(0,0,255);}
+.pixel:nth-child(508){background-color: rgb(0,0,255);}
+.pixel:nth-child(509){background-color: rgb(0,0,255);}
+.pixel:nth-child(510){background-color: rgb(0,0,255);}
+.pixel:nth-child(511){background-color: rgb(0,0,255);}
+.pixel:nth-child(512){background-color: rgb(0,0,255);}
+.pixel:nth-child(513){background-color: rgb(0,0,255);}
+.pixel:nth-child(519){background-color: rgb(0,0,255);}
+.pixel:nth-child(520){background-color: rgb(0,0,255);}
+.pixel:nth-child(521){background-color: rgb(0,0,255);}
+.pixel:nth-child(522){background-color: rgb(0,0,255);}
+.pixel:nth-child(530){background-color: rgb(0,0,255);}
+.pixel:nth-child(531){background-color: rgb(0,0,255);}
+.pixel:nth-child(532){background-color: rgb(0,0,255);}
+.pixel:nth-child(533){background-color: rgb(0,0,255);}
+.pixel:nth-child(534){background-color: rgb(0,0,255);}
+.pixel:nth-child(535){background-color: rgb(0,0,255);}
+.pixel:nth-child(536){background-color: rgb(0,0,255);}
+.pixel:nth-child(537){background-color: rgb(0,0,255);}
+.pixel:nth-child(538){background-color: rgb(0,0,255);}
+.pixel:nth-child(539){background-color: rgb(0,0,255);}
+.pixel:nth-child(540){background-color: rgb(0,0,255);}
+.pixel:nth-child(541){background-color: rgb(0,0,255);}
+.pixel:nth-child(542){background-color: rgb(0,0,255);}
+.pixel:nth-child(543){background-color: rgb(0,0,255);}
+.pixel:nth-child(544){background-color: rgb(0,0,255);}
+.pixel:nth-child(545){background-color: rgb(0,0,255);}
+.pixel:nth-child(546){background-color: rgb(0,0,255);}
+.pixel:nth-child(547){background-color: rgb(0,0,255);}
+.pixel:nth-child(548){background-color: rgb(0,0,255);}
+.pixel:nth-child(549){background-color: rgb(0,0,255);}
+.pixel:nth-child(550){background-color: rgb(0,0,255);}
+.pixel:nth-child(556){background-color: rgb(0,0,255);}
+.pixel:nth-child(557){background-color: rgb(0,0,255);}
+.pixel:nth-child(558){background-color: rgb(0,0,255);}
+.pixel:nth-child(559){background-color: rgb(0,0,255);}
+.pixel:nth-child(560){background-color: rgb(0,0,255);}
+.pixel:nth-child(567){background-color: rgb(0,0,255);}
+.pixel:nth-child(568){background-color: rgb(0,0,255);}
+.pixel:nth-child(569){background-color: rgb(0,0,255);}
+.pixel:nth-child(570){background-color: rgb(0,0,255);}
+.pixel:nth-child(571){background-color: rgb(0,0,255);}
+.pixel:nth-child(572){background-color: rgb(0,0,255);}
+.pixel:nth-child(573){background-color: rgb(0,0,255);}
+.pixel:nth-child(574){background-color: rgb(0,0,255);}
+.pixel:nth-child(575){background-color: rgb(0,0,255);}
+.pixel:nth-child(576){background-color: rgb(0,0,255);}
+.pixel:nth-child(577){background-color: rgb(0,0,255);}
+.pixel:nth-child(578){background-color: rgb(0,0,255);}
+.pixel:nth-child(579){background-color: rgb(0,0,255);}
+.pixel:nth-child(580){background-color: rgb(0,0,255);}
+.pixel:nth-child(581){background-color: rgb(0,0,255);}
+.pixel:nth-child(582){background-color: rgb(0,0,255);}
+.pixel:nth-child(583){background-color: rgb(0,0,255);}
+.pixel:nth-child(584){background-color: rgb(0,0,255);}
+.pixel:nth-child(585){background-color: rgb(0,0,255);}
+.pixel:nth-child(586){background-color: rgb(0,0,255);}
+.pixel:nth-child(587){background-color: rgb(0,0,255);}
+.pixel:nth-child(593){background-color: rgb(0,0,255);}
+.pixel:nth-child(594){background-color: rgb(0,0,255);}
+.pixel:nth-child(595){background-color: rgb(0,0,255);}
+.pixel:nth-child(596){background-color: rgb(0,0,255);}
+.pixel:nth-child(597){background-color: rgb(0,0,255);}
+.pixel:nth-child(598){background-color: rgb(0,0,255);}
+.pixel:nth-child(603){background-color: rgb(0,0,255);}
+.pixel:nth-child(604){background-color: rgb(0,0,255);}
+.pixel:nth-child(605){background-color: rgb(0,0,255);}
+.pixel:nth-child(606){background-color: rgb(0,0,255);}
+.pixel:nth-child(607){background-color: rgb(0,0,255);}
+.pixel:nth-child(608){background-color: rgb(0,0,255);}
+.pixel:nth-child(609){background-color: rgb(0,0,255);}
+.pixel:nth-child(610){background-color: rgb(0,0,255);}
+.pixel:nth-child(611){background-color: rgb(0,0,255);}
+.pixel:nth-child(612){background-color: rgb(0,0,255);}
+.pixel:nth-child(613){background-color: rgb(0,0,255);}
+.pixel:nth-child(614){background-color: rgb(0,0,255);}
+.pixel:nth-child(615){background-color: rgb(0,0,255);}
+.pixel:nth-child(616){background-color: rgb(0,0,255);}
+.pixel:nth-child(617){background-color: rgb(0,0,255);}
+.pixel:nth-child(618){background-color: rgb(0,0,255);}
+.pixel:nth-child(619){background-color: rgb(0,0,255);}
+.pixel:nth-child(620){background-color: rgb(0,0,255);}
+.pixel:nth-child(621){background-color: rgb(0,0,255);}
+.pixel:nth-child(622){background-color: rgb(0,0,255);}
+.pixel:nth-child(623){background-color: rgb(0,0,255);}
+.pixel:nth-child(624){background-color: rgb(0,0,255);}
+.pixel:nth-child(625){background-color: rgb(0,0,255);}
+.pixel:nth-child(630){background-color: rgb(0,0,255);}
+.pixel:nth-child(631){background-color: rgb(0,0,255);}
+.pixel:nth-child(632){background-color: rgb(0,0,255);}
+.pixel:nth-child(633){background-color: rgb(0,0,255);}
+.pixel:nth-child(634){background-color: rgb(0,0,255);}
+.pixel:nth-child(635){background-color: rgb(0,0,255);}
+.pixel:nth-child(636){background-color: rgb(0,0,255);}
+.pixel:nth-child(640){background-color: rgb(0,0,255);}
+.pixel:nth-child(641){background-color: rgb(0,0,255);}
+.pixel:nth-child(642){background-color: rgb(0,0,255);}
+.pixel:nth-child(643){background-color: rgb(0,0,255);}
+.pixel:nth-child(644){background-color: rgb(0,0,255);}
+.pixel:nth-child(645){background-color: rgb(0,0,255);}
+.pixel:nth-child(646){background-color: rgb(0,0,255);}
+.pixel:nth-child(647){background-color: rgb(0,0,255);}
+.pixel:nth-child(648){background-color: rgb(0,0,255);}
+.pixel:nth-child(649){background-color: rgb(0,0,255);}
+.pixel:nth-child(650){background-color: rgb(0,0,255);}
+.pixel:nth-child(651){background-color: rgb(0,0,255);}
+.pixel:nth-child(652){background-color: rgb(0,0,255);}
+.pixel:nth-child(653){background-color: rgb(0,0,255);}
+.pixel:nth-child(654){background-color: rgb(0,0,255);}
+.pixel:nth-child(655){background-color: rgb(0,0,255);}
+.pixel:nth-child(656){background-color: rgb(0,0,255);}
+.pixel:nth-child(657){background-color: rgb(0,0,255);}
+.pixel:nth-child(658){background-color: rgb(0,0,255);}
+.pixel:nth-child(659){background-color: rgb(0,0,255);}
+.pixel:nth-child(660){background-color: rgb(0,0,255);}
+.pixel:nth-child(661){background-color: rgb(0,0,255);}
+.pixel:nth-child(662){background-color: rgb(0,0,255);}
+.pixel:nth-child(667){background-color: rgb(0,0,255);}
+.pixel:nth-child(668){background-color: rgb(0,0,255);}
+.pixel:nth-child(669){background-color: rgb(0,0,255);}
+.pixel:nth-child(670){background-color: rgb(0,0,255);}
+.pixel:nth-child(671){background-color: rgb(0,0,255);}
+.pixel:nth-child(672){background-color: rgb(0,0,255);}
+.pixel:nth-child(673){background-color: rgb(0,0,255);}
+.pixel:nth-child(674){background-color: rgb(0,0,255);}
+.pixel:nth-child(677){background-color: rgb(0,0,255);}
+.pixel:nth-child(678){background-color: rgb(0,0,255);}
+.pixel:nth-child(679){background-color: rgb(0,0,255);}
+.pixel:nth-child(680){background-color: rgb(0,0,255);}
+.pixel:nth-child(681){background-color: rgb(0,0,255);}
+.pixel:nth-child(682){background-color: rgb(0,0,255);}
+.pixel:nth-child(683){background-color: rgb(0,0,255);}
+.pixel:nth-child(684){background-color: rgb(0,0,255);}
+.pixel:nth-child(685){background-color: rgb(0,0,255);}
+.pixel:nth-child(686){background-color: rgb(0,0,255);}
+.pixel:nth-child(687){background-color: rgb(0,0,255);}
+.pixel:nth-child(688){background-color: rgb(0,0,255);}
+.pixel:nth-child(689){background-color: rgb(0,0,255);}
+.pixel:nth-child(690){background-color: rgb(0,0,255);}
+.pixel:nth-child(691){background-color: rgb(0,0,255);}
+.pixel:nth-child(692){background-color: rgb(0,0,255);}
+.pixel:nth-child(693){background-color: rgb(0,0,255);}
+.pixel:nth-child(694){background-color: rgb(0,0,255);}
+.pixel:nth-child(695){background-color: rgb(0,0,255);}
+.pixel:nth-child(696){background-color: rgb(0,0,255);}
+.pixel:nth-child(697){background-color: rgb(0,0,255);}
+.pixel:nth-child(698){background-color: rgb(0,0,255);}
+.pixel:nth-child(699){background-color: rgb(0,0,255);}
+.pixel:nth-child(704){background-color: rgb(0,0,255);}
+.pixel:nth-child(705){background-color: rgb(0,0,255);}
+.pixel:nth-child(706){background-color: rgb(0,0,255);}
+.pixel:nth-child(707){background-color: rgb(0,0,255);}
+.pixel:nth-child(708){background-color: rgb(0,0,255);}
+.pixel:nth-child(709){background-color: rgb(0,0,255);}
+.pixel:nth-child(710){background-color: rgb(0,0,255);}
+.pixel:nth-child(711){background-color: rgb(0,0,255);}
+.pixel:nth-child(712){background-color: rgb(0,0,255);}
+.pixel:nth-child(714){background-color: rgb(0,0,255);}
+.pixel:nth-child(715){background-color: rgb(0,0,255);}
+.pixel:nth-child(716){background-color: rgb(0,0,255);}
+.pixel:nth-child(717){background-color: rgb(0,0,255);}
+.pixel:nth-child(718){background-color: rgb(0,0,255);}
+.pixel:nth-child(719){background-color: rgb(0,0,255);}
+.pixel:nth-child(720){background-color: rgb(0,0,255);}
+.pixel:nth-child(721){background-color: rgb(0,0,255);}
+.pixel:nth-child(722){background-color: rgb(0,0,255);}
+.pixel:nth-child(723){background-color: rgb(0,0,255);}
+.pixel:nth-child(724){background-color: rgb(0,0,255);}
+.pixel:nth-child(725){background-color: rgb(0,0,255);}
+.pixel:nth-child(726){background-color: rgb(0,0,255);}
+.pixel:nth-child(727){background-color: rgb(0,0,255);}
+.pixel:nth-child(728){background-color: rgb(0,0,255);}
+.pixel:nth-child(729){background-color: rgb(0,0,255);}
+.pixel:nth-child(730){background-color: rgb(0,0,255);}
+.pixel:nth-child(731){background-color: rgb(0,0,255);}
+.pixel:nth-child(732){background-color: rgb(0,0,255);}
+.pixel:nth-child(733){background-color: rgb(0,0,255);}
+.pixel:nth-child(734){background-color: rgb(0,0,255);}
+.pixel:nth-child(735){background-color: rgb(0,0,255);}
+.pixel:nth-child(736){background-color: rgb(0,0,255);}
+.pixel:nth-child(741){background-color: rgb(0,0,255);}
+.pixel:nth-child(742){background-color: rgb(0,0,255);}
+.pixel:nth-child(743){background-color: rgb(0,0,255);}
+.pixel:nth-child(744){background-color: rgb(0,0,255);}
+.pixel:nth-child(745){background-color: rgb(0,0,255);}
+.pixel:nth-child(746){background-color: rgb(0,0,255);}
+.pixel:nth-child(747){background-color: rgb(0,0,255);}
+.pixel:nth-child(748){background-color: rgb(0,0,255);}
+.pixel:nth-child(749){background-color: rgb(0,0,255);}
+.pixel:nth-child(750){background-color: rgb(0,0,255);}
+.pixel:nth-child(751){background-color: rgb(0,0,255);}
+.pixel:nth-child(752){background-color: rgb(0,0,255);}
+.pixel:nth-child(753){background-color: rgb(0,0,255);}
+.pixel:nth-child(754){background-color: rgb(0,0,255);}
+.pixel:nth-child(755){background-color: rgb(0,0,255);}
+.pixel:nth-child(756){background-color: rgb(0,0,255);}
+.pixel:nth-child(757){background-color: rgb(0,0,255);}
+.pixel:nth-child(758){background-color: rgb(0,0,255);}
+.pixel:nth-child(759){background-color: rgb(0,0,255);}
+.pixel:nth-child(760){background-color: rgb(0,0,255);}
+.pixel:nth-child(761){background-color: rgb(0,0,255);}
+.pixel:nth-child(762){background-color: rgb(0,0,255);}
+.pixel:nth-child(763){background-color: rgb(0,0,255);}
+.pixel:nth-child(764){background-color: rgb(0,0,255);}
+.pixel:nth-child(765){background-color: rgb(0,0,255);}
+.pixel:nth-child(766){background-color: rgb(0,0,255);}
+.pixel:nth-child(767){background-color: rgb(0,0,255);}
+.pixel:nth-child(768){background-color: rgb(0,0,255);}
+.pixel:nth-child(769){background-color: rgb(0,0,255);}
+.pixel:nth-child(770){background-color: rgb(0,0,255);}
+.pixel:nth-child(771){background-color: rgb(0,0,255);}
+.pixel:nth-child(772){background-color: rgb(0,0,255);}
+.pixel:nth-child(778){background-color: rgb(0,0,255);}
+.pixel:nth-child(779){background-color: rgb(0,0,255);}
+.pixel:nth-child(780){background-color: rgb(0,0,255);}
+.pixel:nth-child(781){background-color: rgb(0,0,255);}
+.pixel:nth-child(782){background-color: rgb(0,0,255);}
+.pixel:nth-child(783){background-color: rgb(0,0,255);}
+.pixel:nth-child(784){background-color: rgb(0,0,255);}
+.pixel:nth-child(785){background-color: rgb(0,0,255);}
+.pixel:nth-child(786){background-color: rgb(0,0,255);}
+.pixel:nth-child(787){background-color: rgb(0,0,255);}
+.pixel:nth-child(788){background-color: rgb(0,0,255);}
+.pixel:nth-child(789){background-color: rgb(0,0,255);}
+.pixel:nth-child(790){background-color: rgb(0,0,255);}
+.pixel:nth-child(791){background-color: rgb(0,0,255);}
+.pixel:nth-child(792){background-color: rgb(0,0,255);}
+.pixel:nth-child(793){background-color: rgb(0,0,255);}
+.pixel:nth-child(794){background-color: rgb(0,0,255);}
+.pixel:nth-child(795){background-color: rgb(0,0,255);}
+.pixel:nth-child(796){background-color: rgb(0,0,255);}
+.pixel:nth-child(797){background-color: rgb(0,0,255);}
+.pixel:nth-child(798){background-color: rgb(0,0,255);}
+.pixel:nth-child(799){background-color: rgb(0,0,255);}
+.pixel:nth-child(800){background-color: rgb(0,0,255);}
+.pixel:nth-child(801){background-color: rgb(0,0,255);}
+.pixel:nth-child(802){background-color: rgb(0,0,255);}
+.pixel:nth-child(803){background-color: rgb(0,0,255);}
+.pixel:nth-child(804){background-color: rgb(0,0,255);}
+.pixel:nth-child(805){background-color: rgb(0,0,255);}
+.pixel:nth-child(806){background-color: rgb(0,0,255);}
+.pixel:nth-child(807){background-color: rgb(0,0,255);}
+.pixel:nth-child(808){background-color: rgb(0,0,255);}
+.pixel:nth-child(809){background-color: rgb(0,0,255);}
+.pixel:nth-child(816){background-color: rgb(0,0,255);}
+.pixel:nth-child(817){background-color: rgb(0,0,255);}
+.pixel:nth-child(818){background-color: rgb(0,0,255);}
+.pixel:nth-child(819){background-color: rgb(0,0,255);}
+.pixel:nth-child(820){background-color: rgb(0,0,255);}
+.pixel:nth-child(821){background-color: rgb(0,0,255);}
+.pixel:nth-child(822){background-color: rgb(0,0,255);}
+.pixel:nth-child(823){background-color: rgb(0,0,255);}
+.pixel:nth-child(824){background-color: rgb(0,0,255);}
+.pixel:nth-child(825){background-color: rgb(0,0,255);}
+.pixel:nth-child(827){background-color: rgb(0,0,255);}
+.pixel:nth-child(828){background-color: rgb(0,0,255);}
+.pixel:nth-child(829){background-color: rgb(0,0,255);}
+.pixel:nth-child(830){background-color: rgb(0,0,255);}
+.pixel:nth-child(831){background-color: rgb(0,0,255);}
+.pixel:nth-child(832){background-color: rgb(0,0,255);}
+.pixel:nth-child(833){background-color: rgb(0,0,255);}
+.pixel:nth-child(834){background-color: rgb(0,0,255);}
+.pixel:nth-child(835){background-color: rgb(0,0,255);}
+.pixel:nth-child(836){background-color: rgb(0,0,255);}
+.pixel:nth-child(837){background-color: rgb(0,0,255);}
+.pixel:nth-child(838){background-color: rgb(0,0,255);}
+.pixel:nth-child(839){background-color: rgb(0,0,255);}
+.pixel:nth-child(840){background-color: rgb(0,0,255);}
+.pixel:nth-child(841){background-color: rgb(0,0,255);}
+.pixel:nth-child(842){background-color: rgb(0,0,255);}
+.pixel:nth-child(843){background-color: rgb(0,0,255);}
+.pixel:nth-child(844){background-color: rgb(0,0,255);}
+.pixel:nth-child(845){background-color: rgb(0,0,255);}
+.pixel:nth-child(854){background-color: rgb(0,0,255);}
+.pixel:nth-child(855){background-color: rgb(0,0,255);}
+.pixel:nth-child(856){background-color: rgb(0,0,255);}
+.pixel:nth-child(857){background-color: rgb(0,0,255);}
+.pixel:nth-child(858){background-color: rgb(0,0,255);}
+.pixel:nth-child(859){background-color: rgb(0,0,255);}
+.pixel:nth-child(860){background-color: rgb(0,0,255);}
+.pixel:nth-child(861){background-color: rgb(0,0,255);}
+.pixel:nth-child(863){background-color: rgb(0,0,255);}
+.pixel:nth-child(864){background-color: rgb(0,0,255);}
+.pixel:nth-child(865){background-color: rgb(0,0,255);}
+.pixel:nth-child(866){background-color: rgb(0,0,255);}
+.pixel:nth-child(867){background-color: rgb(0,0,255);}
+.pixel:nth-child(868){background-color: rgb(0,0,255);}
+.pixel:nth-child(869){background-color: rgb(0,0,255);}
+.pixel:nth-child(870){background-color: rgb(0,0,255);}
+.pixel:nth-child(871){background-color: rgb(0,0,255);}
+.pixel:nth-child(872){background-color: rgb(0,0,255);}
+.pixel:nth-child(873){background-color: rgb(0,0,255);}
+.pixel:nth-child(874){background-color: rgb(0,0,255);}
+.pixel:nth-child(875){background-color: rgb(0,0,255);}
+.pixel:nth-child(876){background-color: rgb(0,0,255);}
+.pixel:nth-child(877){background-color: rgb(0,0,255);}
+.pixel:nth-child(878){background-color: rgb(0,0,255);}
+.pixel:nth-child(879){background-color: rgb(0,0,255);}
+.pixel:nth-child(880){background-color: rgb(0,0,255);}
+.pixel:nth-child(881){background-color: rgb(0,0,255);}
+.pixel:nth-child(882){background-color: rgb(0,0,255);}
+.pixel:nth-child(883){background-color: rgb(0,0,255);}
+.pixel:nth-child(892){background-color: rgb(0,0,255);}
+.pixel:nth-child(893){background-color: rgb(0,0,255);}
+.pixel:nth-child(894){background-color: rgb(0,0,255);}
+.pixel:nth-child(895){background-color: rgb(0,0,255);}
+.pixel:nth-child(896){background-color: rgb(0,0,255);}
+.pixel:nth-child(897){background-color: rgb(0,0,255);}
+.pixel:nth-child(900){background-color: rgb(0,0,255);}
+.pixel:nth-child(901){background-color: rgb(0,0,255);}
+.pixel:nth-child(902){background-color: rgb(0,0,255);}
+.pixel:nth-child(903){background-color: rgb(0,0,255);}
+.pixel:nth-child(904){background-color: rgb(0,0,255);}
+.pixel:nth-child(905){background-color: rgb(0,0,255);}
+.pixel:nth-child(906){background-color: rgb(0,0,255);}
+.pixel:nth-child(907){background-color: rgb(0,0,255);}
+.pixel:nth-child(908){background-color: rgb(0,0,255);}
+.pixel:nth-child(909){background-color: rgb(0,0,255);}
+.pixel:nth-child(910){background-color: rgb(0,0,255);}
+.pixel:nth-child(911){background-color: rgb(0,0,255);}
+.pixel:nth-child(912){background-color: rgb(0,0,255);}
+.pixel:nth-child(913){background-color: rgb(0,0,255);}
+.pixel:nth-child(914){background-color: rgb(0,0,255);}
+.pixel:nth-child(915){background-color: rgb(0,0,255);}
+.pixel:nth-child(916){background-color: rgb(0,0,255);}
+.pixel:nth-child(917){background-color: rgb(0,0,255);}
+.pixel:nth-child(918){background-color: rgb(0,0,255);}
+.pixel:nth-child(919){background-color: rgb(0,0,255);}
+.pixel:nth-child(920){background-color: rgb(0,0,255);}
+.pixel:nth-child(928){background-color: rgb(0,0,255);}
+.pixel:nth-child(929){background-color: rgb(0,0,255);}
+.pixel:nth-child(930){background-color: rgb(0,0,255);}
+.pixel:nth-child(931){background-color: rgb(0,0,255);}
+.pixel:nth-child(932){background-color: rgb(0,0,255);}
+.pixel:nth-child(933){background-color: rgb(0,0,255);}
+.pixel:nth-child(937){background-color: rgb(0,0,255);}
+.pixel:nth-child(938){background-color: rgb(0,0,255);}
+.pixel:nth-child(939){background-color: rgb(0,0,255);}
+.pixel:nth-child(940){background-color: rgb(0,0,255);}
+.pixel:nth-child(941){background-color: rgb(0,0,255);}
+.pixel:nth-child(942){background-color: rgb(0,0,255);}
+.pixel:nth-child(943){background-color: rgb(0,0,255);}
+.pixel:nth-child(944){background-color: rgb(0,0,255);}
+.pixel:nth-child(945){background-color: rgb(0,0,255);}
+.pixel:nth-child(946){background-color: rgb(0,0,255);}
+.pixel:nth-child(947){background-color: rgb(0,0,255);}
+.pixel:nth-child(948){background-color: rgb(0,0,255);}
+.pixel:nth-child(949){background-color: rgb(0,0,255);}
+.pixel:nth-child(950){background-color: rgb(0,0,255);}
+.pixel:nth-child(951){background-color: rgb(0,0,255);}
+.pixel:nth-child(952){background-color: rgb(0,0,255);}
+.pixel:nth-child(953){background-color: rgb(0,0,255);}
+.pixel:nth-child(954){background-color: rgb(0,0,255);}
+.pixel:nth-child(955){background-color: rgb(0,0,255);}
+.pixel:nth-child(956){background-color: rgb(0,0,255);}
+.pixel:nth-child(957){background-color: rgb(0,0,255);}
+.pixel:nth-child(965){background-color: rgb(0,0,255);}
+.pixel:nth-child(966){background-color: rgb(0,0,255);}
+.pixel:nth-child(967){background-color: rgb(0,0,255);}
+.pixel:nth-child(968){background-color: rgb(0,0,255);}
+.pixel:nth-child(969){background-color: rgb(0,0,255);}
+.pixel:nth-child(970){background-color: rgb(0,0,255);}
+.pixel:nth-child(971){background-color: rgb(0,0,255);}
+.pixel:nth-child(973){background-color: rgb(0,0,255);}
+.pixel:nth-child(974){background-color: rgb(0,0,255);}
+.pixel:nth-child(975){background-color: rgb(0,0,255);}
+.pixel:nth-child(976){background-color: rgb(0,0,255);}
+.pixel:nth-child(977){background-color: rgb(0,0,255);}
+.pixel:nth-child(978){background-color: rgb(0,0,255);}
+.pixel:nth-child(979){background-color: rgb(0,0,255);}
+.pixel:nth-child(980){background-color: rgb(0,0,255);}
+.pixel:nth-child(981){background-color: rgb(0,0,255);}
+.pixel:nth-child(982){background-color: rgb(0,0,255);}
+.pixel:nth-child(983){background-color: rgb(0,0,255);}
+.pixel:nth-child(984){background-color: rgb(0,0,255);}
+.pixel:nth-child(985){background-color: rgb(0,0,255);}
+.pixel:nth-child(986){background-color: rgb(0,0,255);}
+.pixel:nth-child(987){background-color: rgb(0,0,255);}
+.pixel:nth-child(988){background-color: rgb(0,0,255);}
+.pixel:nth-child(989){background-color: rgb(0,0,255);}
+.pixel:nth-child(990){background-color: rgb(0,0,255);}
+.pixel:nth-child(991){background-color: rgb(0,0,255);}
+.pixel:nth-child(992){background-color: rgb(0,0,255);}
+.pixel:nth-child(993){background-color: rgb(0,0,255);}
+.pixel:nth-child(994){background-color: rgb(0,0,255);}
+.pixel:nth-child(1003){background-color: rgb(0,0,255);}
+.pixel:nth-child(1004){background-color: rgb(0,0,255);}
+.pixel:nth-child(1005){background-color: rgb(0,0,255);}
+.pixel:nth-child(1006){background-color: rgb(0,0,255);}
+.pixel:nth-child(1007){background-color: rgb(0,0,255);}
+.pixel:nth-child(1008){background-color: rgb(0,0,255);}
+.pixel:nth-child(1009){background-color: rgb(0,0,255);}
+.pixel:nth-child(1010){background-color: rgb(0,0,255);}
+.pixel:nth-child(1011){background-color: rgb(0,0,255);}
+.pixel:nth-child(1012){background-color: rgb(0,0,255);}
+.pixel:nth-child(1013){background-color: rgb(0,0,255);}
+.pixel:nth-child(1014){background-color: rgb(0,0,255);}
+.pixel:nth-child(1015){background-color: rgb(0,0,255);}
+.pixel:nth-child(1016){background-color: rgb(0,0,255);}
+.pixel:nth-child(1017){background-color: rgb(0,0,255);}
+.pixel:nth-child(1018){background-color: rgb(0,0,255);}
+.pixel:nth-child(1019){background-color: rgb(0,0,255);}
+.pixel:nth-child(1020){background-color: rgb(0,0,255);}
+.pixel:nth-child(1021){background-color: rgb(0,0,255);}
+.pixel:nth-child(1022){background-color: rgb(0,0,255);}
+.pixel:nth-child(1023){background-color: rgb(0,0,255);}
+.pixel:nth-child(1024){background-color: rgb(0,0,255);}
+.pixel:nth-child(1025){background-color: rgb(0,0,255);}
+.pixel:nth-child(1026){background-color: rgb(0,0,255);}
+.pixel:nth-child(1027){background-color: rgb(0,0,255);}
+.pixel:nth-child(1028){background-color: rgb(0,0,255);}
+.pixel:nth-child(1029){background-color: rgb(0,0,255);}
+.pixel:nth-child(1030){background-color: rgb(0,0,255);}
+.pixel:nth-child(1031){background-color: rgb(0,0,255);}
+.pixel:nth-child(1032){background-color: rgb(0,0,255);}
+.pixel:nth-child(1041){background-color: rgb(0,0,255);}
+.pixel:nth-child(1042){background-color: rgb(0,0,255);}
+.pixel:nth-child(1043){background-color: rgb(0,0,255);}
+.pixel:nth-child(1044){background-color: rgb(0,0,255);}
+.pixel:nth-child(1045){background-color: rgb(0,0,255);}
+.pixel:nth-child(1046){background-color: rgb(0,0,255);}
+.pixel:nth-child(1047){background-color: rgb(0,0,255);}
+.pixel:nth-child(1048){background-color: rgb(0,0,255);}
+.pixel:nth-child(1049){background-color: rgb(0,0,255);}
+.pixel:nth-child(1050){background-color: rgb(0,0,255);}
+.pixel:nth-child(1051){background-color: rgb(0,0,255);}
+.pixel:nth-child(1052){background-color: rgb(0,0,255);}
+.pixel:nth-child(1053){background-color: rgb(0,0,255);}
+.pixel:nth-child(1054){background-color: rgb(0,0,255);}
+.pixel:nth-child(1055){background-color: rgb(0,0,255);}
+.pixel:nth-child(1056){background-color: rgb(0,0,255);}
+.pixel:nth-child(1057){background-color: rgb(0,0,255);}
+.pixel:nth-child(1058){background-color: rgb(0,0,255);}
+.pixel:nth-child(1059){background-color: rgb(0,0,255);}
+.pixel:nth-child(1060){background-color: rgb(0,0,255);}
+.pixel:nth-child(1061){background-color: rgb(0,0,255);}
+.pixel:nth-child(1062){background-color: rgb(0,0,255);}
+.pixel:nth-child(1063){background-color: rgb(0,0,255);}
+.pixel:nth-child(1064){background-color: rgb(0,0,255);}
+.pixel:nth-child(1065){background-color: rgb(0,0,255);}
+.pixel:nth-child(1066){background-color: rgb(0,0,255);}
+.pixel:nth-child(1067){background-color: rgb(0,0,255);}
+.pixel:nth-child(1068){background-color: rgb(0,0,255);}
+.pixel:nth-child(1069){background-color: rgb(0,0,255);}
+.pixel:nth-child(1079){background-color: rgb(0,0,255);}
+.pixel:nth-child(1080){background-color: rgb(0,0,255);}
+.pixel:nth-child(1081){background-color: rgb(0,0,255);}
+.pixel:nth-child(1082){background-color: rgb(0,0,255);}
+.pixel:nth-child(1083){background-color: rgb(0,0,255);}
+.pixel:nth-child(1084){background-color: rgb(0,0,255);}
+.pixel:nth-child(1085){background-color: rgb(0,0,255);}
+.pixel:nth-child(1086){background-color: rgb(0,0,255);}
+.pixel:nth-child(1087){background-color: rgb(0,0,255);}
+.pixel:nth-child(1088){background-color: rgb(0,0,255);}
+.pixel:nth-child(1089){background-color: rgb(0,0,255);}
+.pixel:nth-child(1090){background-color: rgb(0,0,255);}
+.pixel:nth-child(1091){background-color: rgb(0,0,255);}
+.pixel:nth-child(1092){background-color: rgb(0,0,255);}
+.pixel:nth-child(1093){background-color: rgb(0,0,255);}
+.pixel:nth-child(1094){background-color: rgb(0,0,255);}
+.pixel:nth-child(1095){background-color: rgb(0,0,255);}
+.pixel:nth-child(1096){background-color: rgb(0,0,255);}
+.pixel:nth-child(1097){background-color: rgb(0,0,255);}
+.pixel:nth-child(1098){background-color: rgb(0,0,255);}
+.pixel:nth-child(1099){background-color: rgb(0,0,255);}
+.pixel:nth-child(1100){background-color: rgb(0,0,255);}
+.pixel:nth-child(1101){background-color: rgb(0,0,255);}
+.pixel:nth-child(1102){background-color: rgb(0,0,255);}
+.pixel:nth-child(1103){background-color: rgb(0,0,255);}
+.pixel:nth-child(1104){background-color: rgb(0,0,255);}
+.pixel:nth-child(1105){background-color: rgb(0,0,255);}
+.pixel:nth-child(1106){background-color: rgb(0,0,255);}
+.pixel:nth-child(1117){background-color: rgb(0,0,255);}
+.pixel:nth-child(1118){background-color: rgb(0,0,255);}
+.pixel:nth-child(1119){background-color: rgb(0,0,255);}
+.pixel:nth-child(1120){background-color: rgb(0,0,255);}
+.pixel:nth-child(1121){background-color: rgb(0,0,255);}
+.pixel:nth-child(1122){background-color: rgb(0,0,255);}
+.pixel:nth-child(1123){background-color: rgb(0,0,255);}
+.pixel:nth-child(1124){background-color: rgb(0,0,255);}
+.pixel:nth-child(1125){background-color: rgb(0,0,255);}
+.pixel:nth-child(1126){background-color: rgb(0,0,255);}
+.pixel:nth-child(1127){background-color: rgb(0,0,255);}
+.pixel:nth-child(1128){background-color: rgb(0,0,255);}
+.pixel:nth-child(1129){background-color: rgb(0,0,255);}
+.pixel:nth-child(1130){background-color: rgb(0,0,255);}
+.pixel:nth-child(1131){background-color: rgb(0,0,255);}
+.pixel:nth-child(1132){background-color: rgb(0,0,255);}
+.pixel:nth-child(1133){background-color: rgb(0,0,255);}
+.pixel:nth-child(1134){background-color: rgb(0,0,255);}
+.pixel:nth-child(1135){background-color: rgb(0,0,255);}
+.pixel:nth-child(1136){background-color: rgb(0,0,255);}
+.pixel:nth-child(1137){background-color: rgb(0,0,255);}
+.pixel:nth-child(1138){background-color: rgb(0,0,255);}
+.pixel:nth-child(1139){background-color: rgb(0,0,255);}
+.pixel:nth-child(1140){background-color: rgb(0,0,255);}
+.pixel:nth-child(1141){background-color: rgb(0,0,255);}
+.pixel:nth-child(1142){background-color: rgb(0,0,255);}
+.pixel:nth-child(1143){background-color: rgb(0,0,255);}
+.pixel:nth-child(1153){background-color: rgb(0,0,255);}
+.pixel:nth-child(1154){background-color: rgb(0,0,255);}
+.pixel:nth-child(1155){background-color: rgb(0,0,255);}
+.pixel:nth-child(1156){background-color: rgb(0,0,255);}
+.pixel:nth-child(1157){background-color: rgb(0,0,255);}
+.pixel:nth-child(1158){background-color: rgb(0,0,255);}
+.pixel:nth-child(1159){background-color: rgb(0,0,255);}
+.pixel:nth-child(1160){background-color: rgb(0,0,255);}
+.pixel:nth-child(1161){background-color: rgb(0,0,255);}
+.pixel:nth-child(1162){background-color: rgb(0,0,255);}
+.pixel:nth-child(1163){background-color: rgb(0,0,255);}
+.pixel:nth-child(1164){background-color: rgb(0,0,255);}
+.pixel:nth-child(1165){background-color: rgb(0,0,255);}
+.pixel:nth-child(1166){background-color: rgb(0,0,255);}
+.pixel:nth-child(1167){background-color: rgb(0,0,255);}
+.pixel:nth-child(1168){background-color: rgb(0,0,255);}
+.pixel:nth-child(1169){background-color: rgb(0,0,255);}
+.pixel:nth-child(1170){background-color: rgb(0,0,255);}
+.pixel:nth-child(1171){background-color: rgb(0,0,255);}
+.pixel:nth-child(1172){background-color: rgb(0,0,255);}
+.pixel:nth-child(1173){background-color: rgb(0,0,255);}
+.pixel:nth-child(1174){background-color: rgb(0,0,255);}
+.pixel:nth-child(1175){background-color: rgb(0,0,255);}
+.pixel:nth-child(1176){background-color: rgb(0,0,255);}
+.pixel:nth-child(1177){background-color: rgb(0,0,255);}
+.pixel:nth-child(1178){background-color: rgb(0,0,255);}
+.pixel:nth-child(1179){background-color: rgb(0,0,255);}
+.pixel:nth-child(1180){background-color: rgb(0,0,255);}
+.pixel:nth-child(1191){background-color: rgb(0,0,255);}
+.pixel:nth-child(1192){background-color: rgb(0,0,255);}
+.pixel:nth-child(1193){background-color: rgb(0,0,255);}
+.pixel:nth-child(1194){background-color: rgb(0,0,255);}
+.pixel:nth-child(1195){background-color: rgb(0,0,255);}
+.pixel:nth-child(1196){background-color: rgb(0,0,255);}
+.pixel:nth-child(1197){background-color: rgb(0,0,255);}
+.pixel:nth-child(1198){background-color: rgb(0,0,255);}
+.pixel:nth-child(1199){background-color: rgb(0,0,255);}
+.pixel:nth-child(1200){background-color: rgb(0,0,255);}
+.pixel:nth-child(1201){background-color: rgb(0,0,255);}
+.pixel:nth-child(1202){background-color: rgb(0,0,255);}
+.pixel:nth-child(1203){background-color: rgb(0,0,255);}
+.pixel:nth-child(1204){background-color: rgb(0,0,255);}
+.pixel:nth-child(1205){background-color: rgb(0,0,255);}
+.pixel:nth-child(1206){background-color: rgb(0,0,255);}
+.pixel:nth-child(1207){background-color: rgb(0,0,255);}
+.pixel:nth-child(1208){background-color: rgb(0,0,255);}
+.pixel:nth-child(1209){background-color: rgb(0,0,255);}
+.pixel:nth-child(1210){background-color: rgb(0,0,255);}
+.pixel:nth-child(1211){background-color: rgb(0,0,255);}
+.pixel:nth-child(1212){background-color: rgb(0,0,255);}
+.pixel:nth-child(1213){background-color: rgb(0,0,255);}
+.pixel:nth-child(1214){background-color: rgb(0,0,255);}
+.pixel:nth-child(1215){background-color: rgb(0,0,255);}
+.pixel:nth-child(1216){background-color: rgb(0,0,255);}
+.pixel:nth-child(1217){background-color: rgb(0,0,255);}
+.pixel:nth-child(1229){background-color: rgb(0,0,255);}
+.pixel:nth-child(1230){background-color: rgb(0,0,255);}
+.pixel:nth-child(1231){background-color: rgb(0,0,255);}
+.pixel:nth-child(1232){background-color: rgb(0,0,255);}
+.pixel:nth-child(1233){background-color: rgb(0,0,255);}
+.pixel:nth-child(1234){background-color: rgb(0,0,255);}
+.pixel:nth-child(1235){background-color: rgb(0,0,255);}
+.pixel:nth-child(1236){background-color: rgb(0,0,255);}
+.pixel:nth-child(1237){background-color: rgb(0,0,255);}
+.pixel:nth-child(1238){background-color: rgb(0,0,255);}
+.pixel:nth-child(1239){background-color: rgb(0,0,255);}
+.pixel:nth-child(1240){background-color: rgb(0,0,255);}
+.pixel:nth-child(1241){background-color: rgb(0,0,255);}
+.pixel:nth-child(1242){background-color: rgb(0,0,255);}
+.pixel:nth-child(1243){background-color: rgb(0,0,255);}
+.pixel:nth-child(1244){background-color: rgb(0,0,255);}
+.pixel:nth-child(1245){background-color: rgb(0,0,255);}
+.pixel:nth-child(1246){background-color: rgb(0,0,255);}
+.pixel:nth-child(1247){background-color: rgb(0,0,255);}
+.pixel:nth-child(1248){background-color: rgb(0,0,255);}
+.pixel:nth-child(1249){background-color: rgb(0,0,255);}
+.pixel:nth-child(1250){background-color: rgb(0,0,255);}
+.pixel:nth-child(1251){background-color: rgb(0,0,255);}
+.pixel:nth-child(1252){background-color: rgb(0,0,255);}
+.pixel:nth-child(1253){background-color: rgb(0,0,255);}
+.pixel:nth-child(1254){background-color: rgb(0,0,255);}
+.pixel:nth-child(1268){background-color: rgb(0,0,255);}
+.pixel:nth-child(1269){background-color: rgb(0,0,255);}
+.pixel:nth-child(1270){background-color: rgb(0,0,255);}
+.pixel:nth-child(1271){background-color: rgb(0,0,255);}
+.pixel:nth-child(1272){background-color: rgb(0,0,255);}
+.pixel:nth-child(1273){background-color: rgb(0,0,255);}
+.pixel:nth-child(1274){background-color: rgb(0,0,255);}
+.pixel:nth-child(1275){background-color: rgb(0,0,255);}
+.pixel:nth-child(1276){background-color: rgb(0,0,255);}
+.pixel:nth-child(1277){background-color: rgb(0,0,255);}
+.pixel:nth-child(1278){background-color: rgb(0,0,255);}
+.pixel:nth-child(1279){background-color: rgb(0,0,255);}
+.pixel:nth-child(1280){background-color: rgb(0,0,255);}
+.pixel:nth-child(1281){background-color: rgb(0,0,255);}
+.pixel:nth-child(1282){background-color: rgb(0,0,255);}
+.pixel:nth-child(1283){background-color: rgb(0,0,255);}
+.pixel:nth-child(1284){background-color: rgb(0,0,255);}
+.pixel:nth-child(1285){background-color: rgb(0,0,255);}
+.pixel:nth-child(1286){background-color: rgb(0,0,255);}
+.pixel:nth-child(1287){background-color: rgb(0,0,255);}
+.pixel:nth-child(1288){background-color: rgb(0,0,255);}
+.pixel:nth-child(1289){background-color: rgb(0,0,255);}
+.pixel:nth-child(1290){background-color: rgb(0,0,255);}
+.pixel:nth-child(1307){background-color: rgb(0,0,255);}
+.pixel:nth-child(1308){background-color: rgb(0,0,255);}
+.pixel:nth-child(1309){background-color: rgb(0,0,255);}
+.pixel:nth-child(1310){background-color: rgb(0,0,255);}
+.pixel:nth-child(1311){background-color: rgb(0,0,255);}
+.pixel:nth-child(1312){background-color: rgb(0,0,255);}
+.pixel:nth-child(1313){background-color: rgb(0,0,255);}
+.pixel:nth-child(1314){background-color: rgb(0,0,255);}
+.pixel:nth-child(1315){background-color: rgb(0,0,255);}
+.pixel:nth-child(1316){background-color: rgb(0,0,255);}
+.pixel:nth-child(1317){background-color: rgb(0,0,255);}
+.pixel:nth-child(1318){background-color: rgb(0,0,255);}
+.pixel:nth-child(1319){background-color: rgb(0,0,255);}
+.pixel:nth-child(1320){background-color: rgb(0,0,255);}
+.pixel:nth-child(1321){background-color: rgb(0,0,255);}
+.pixel:nth-child(1322){background-color: rgb(0,0,255);}
+.pixel:nth-child(1323){background-color: rgb(0,0,255);}
+.pixel:nth-child(1324){background-color: rgb(0,0,255);}
+.pixel:nth-child(1325){background-color: rgb(0,0,255);}
+.pixel:nth-child(1326){background-color: rgb(0,0,255);}
+.pixel:nth-child(1327){background-color: rgb(0,0,255);}
+.pixel:nth-child(1345){background-color: rgb(0,0,255);}
+.pixel:nth-child(1346){background-color: rgb(0,0,255);}
+.pixel:nth-child(1347){background-color: rgb(0,0,255);}
+.pixel:nth-child(1348){background-color: rgb(0,0,255);}
+.pixel:nth-child(1349){background-color: rgb(0,0,255);}
+.pixel:nth-child(1350){background-color: rgb(0,0,255);}
+.pixel:nth-child(1351){background-color: rgb(0,0,255);}
+.pixel:nth-child(1352){background-color: rgb(0,0,255);}
+.pixel:nth-child(1353){background-color: rgb(0,0,255);}
+.pixel:nth-child(1354){background-color: rgb(0,0,255);}
+.pixel:nth-child(1355){background-color: rgb(0,0,255);}
+.pixel:nth-child(1356){background-color: rgb(0,0,255);}
+.pixel:nth-child(1357){background-color: rgb(0,0,255);}
+.pixel:nth-child(1358){background-color: rgb(0,0,255);}
+.pixel:nth-child(1359){background-color: rgb(0,0,255);}
+.pixel:nth-child(1360){background-color: rgb(0,0,255);}
+.pixel:nth-child(1361){background-color: rgb(0,0,255);}
+.pixel:nth-child(1362){background-color: rgb(0,0,255);}
+.pixel:nth-child(1363){background-color: rgb(0,0,255);}
+.pixel:nth-child(1383){background-color: rgb(0,0,255);}
+.pixel:nth-child(1384){background-color: rgb(0,0,255);}
+.pixel:nth-child(1385){background-color: rgb(0,0,255);}
+.pixel:nth-child(1386){background-color: rgb(0,0,255);}
+.pixel:nth-child(1387){background-color: rgb(0,0,255);}
+.pixel:nth-child(1388){background-color: rgb(0,0,255);}
+.pixel:nth-child(1389){background-color: rgb(0,0,255);}
+.pixel:nth-child(1390){background-color: rgb(0,0,255);}
+.pixel:nth-child(1391){background-color: rgb(0,0,255);}
+.pixel:nth-child(1392){background-color: rgb(0,0,255);}
+.pixel:nth-child(1393){background-color: rgb(0,0,255);}
+.pixel:nth-child(1394){background-color: rgb(0,0,255);}
+.pixel:nth-child(1395){background-color: rgb(0,0,255);}
+.pixel:nth-child(1396){background-color: rgb(0,0,255);}
+.pixel:nth-child(1397){background-color: rgb(0,0,255);}
+.pixel:nth-child(1398){background-color: rgb(0,0,255);}
+.pixel:nth-child(1399){background-color: rgb(0,0,255);}
+.pixel:nth-child(1419){background-color: rgb(0,0,255);}
+.pixel:nth-child(1420){background-color: rgb(0,0,255);}
+.pixel:nth-child(1421){background-color: rgb(0,0,255);}
+.pixel:nth-child(1422){background-color: rgb(0,0,255);}
+.pixel:nth-child(1423){background-color: rgb(0,0,255);}
+.pixel:nth-child(1424){background-color: rgb(0,0,255);}
+.pixel:nth-child(1425){background-color: rgb(0,0,255);}
+.pixel:nth-child(1432){background-color: rgb(0,0,255);}
+.pixel:nth-child(1433){background-color: rgb(0,0,255);}
+.pixel:nth-child(1434){background-color: rgb(0,0,255);}
+.pixel:nth-child(1435){background-color: rgb(0,0,255);}
+.pixel:nth-child(1436){background-color: rgb(0,0,255);}
+.pixel:nth-child(1437){background-color: rgb(0,0,255);}
+.pixel:nth-child(1456){background-color: rgb(0,0,255);}
+.pixel:nth-child(1457){background-color: rgb(0,0,255);}
+.pixel:nth-child(1458){background-color: rgb(0,0,255);}
+.pixel:nth-child(1459){background-color: rgb(0,0,255);}
+.pixel:nth-child(1460){background-color: rgb(0,0,255);}
+.pixel:nth-child(1470){background-color: rgb(0,0,255);}
+.pixel:nth-child(1471){background-color: rgb(0,0,255);}
+.pixel:nth-child(1472){background-color: rgb(0,0,255);}
+.pixel:nth-child(1473){background-color: rgb(0,0,255);}
+.pixel:nth-child(1474){background-color: rgb(0,0,255);}
 
-.pixel:nth-child(36){background:#000000;}
-.pixel:nth-child(37){background:#000000;}
-.pixel:nth-child(71){background:#000000;}
-.pixel:nth-child(72){background:#000000;}
-.pixel:nth-child(73){background:#000000;}
-.pixel:nth-child(74){background:#000000;}
-.pixel:nth-child(106){background:#000000;}
-.pixel:nth-child(107){background:#000000;}
-.pixel:nth-child(108){background:#000000;}
-.pixel:nth-child(109){background:#000000;}
-.pixel:nth-child(110){background:#000000;}
-.pixel:nth-child(111){background:#000000;}
-.pixel:nth-child(142){background:#000000;}
-.pixel:nth-child(146){background:#000000;}
-.pixel:nth-child(147){background:#000000;}
-.pixel:nth-child(148){background:#000000;}
-.pixel:nth-child(152){background:#000000;}
-.pixel:nth-child(153){background:#000000;}
-.pixel:nth-child(154){background:#000000;}
-.pixel:nth-child(155){background:#000000;}
-.pixel:nth-child(156){background:#000000;}
-.pixel:nth-child(157){background:#000000;}
-.pixel:nth-child(178){background:#000000;}
-.pixel:nth-child(183){background:#000000;}
-.pixel:nth-child(184){background:#000000;}
-.pixel:nth-child(189){background:#000000;}
-.pixel:nth-child(190){background:#000000;}
-.pixel:nth-child(191){background:#000000;}
-.pixel:nth-child(195){background:#000000;}
-.pixel:nth-child(196){background:#000000;}
-.pixel:nth-child(197){background:#000000;}
-.pixel:nth-child(198){background:#000000;}
-.pixel:nth-child(214){background:#000000;}
-.pixel:nth-child(220){background:#000000;}
-.pixel:nth-child(221){background:#000000;}
-.pixel:nth-child(228){background:#000000;}
-.pixel:nth-child(229){background:#000000;}
-.pixel:nth-child(236){background:#000000;}
-.pixel:nth-child(237){background:#000000;}
-.pixel:nth-child(238){background:#000000;}
-.pixel:nth-child(239){background:#000000;}
-.pixel:nth-child(241){background:#000000;}
-.pixel:nth-child(242){background:#000000;}
-.pixel:nth-child(243){background:#000000;}
-.pixel:nth-child(244){background:#000000;}
-.pixel:nth-child(245){background:#000000;}
-.pixel:nth-child(246){background:#000000;}
-.pixel:nth-child(247){background:#000000;}
-.pixel:nth-child(249){background:#000000;}
-.pixel:nth-child(250){background:#000000;}
-.pixel:nth-child(257){background:#000000;}
-.pixel:nth-child(266){background:#000000;}
-.pixel:nth-child(267){background:#000000;}
-.pixel:nth-child(277){background:#000000;}
-.pixel:nth-child(285){background:#000000;}
-.pixel:nth-child(293){background:#000000;}
-.pixel:nth-child(304){background:#000000;}
-.pixel:nth-child(305){background:#000000;}
-.pixel:nth-child(329){background:#000000;}
-.pixel:nth-child(342){background:#000000;}
-.pixel:nth-child(343){background:#000000;}
-.pixel:nth-child(363){background:#000000;}
-.pixel:nth-child(365){background:#000000;}
-.pixel:nth-child(381){background:#000000;}
-.pixel:nth-child(382){background:#000000;}
-.pixel:nth-child(384){background:#000000;}
-.pixel:nth-child(401){background:#000000;}
-.pixel:nth-child(408){background:#000000;}
-.pixel:nth-child(420){background:#000000;}
-.pixel:nth-child(438){background:#000000;}
-.pixel:nth-child(445){background:#000000;}
-.pixel:nth-child(446){background:#000000;}
-.pixel:nth-child(457){background:#000000;}
-.pixel:nth-child(475){background:#000000;}
-.pixel:nth-child(482){background:#000000;}
-.pixel:nth-child(484){background:#000000;}
-.pixel:nth-child(493){background:#000000;}
-.pixel:nth-child(513){background:#000000;}
-.pixel:nth-child(519){background:#000000;}
-.pixel:nth-child(522){background:#000000;}
-.pixel:nth-child(530){background:#000000;}
-.pixel:nth-child(550){background:#000000;}
-.pixel:nth-child(556){background:#000000;}
-.pixel:nth-child(560){background:#000000;}
-.pixel:nth-child(567){background:#000000;}
-.pixel:nth-child(587){background:#000000;}
-.pixel:nth-child(593){background:#000000;}
-.pixel:nth-child(598){background:#000000;}
-.pixel:nth-child(603){background:#000000;}
-.pixel:nth-child(625){background:#000000;}
-.pixel:nth-child(630){background:#000000;}
-.pixel:nth-child(636){background:#000000;}
-.pixel:nth-child(640){background:#000000;}
-.pixel:nth-child(662){background:#000000;}
-.pixel:nth-child(667){background:#000000;}
-.pixel:nth-child(674){background:#000000;}
-.pixel:nth-child(677){background:#000000;}
-.pixel:nth-child(699){background:#000000;}
-.pixel:nth-child(704){background:#000000;}
-.pixel:nth-child(712){background:#000000;}
-.pixel:nth-child(714){background:#000000;}
-.pixel:nth-child(736){background:#000000;}
-.pixel:nth-child(741){background:#000000;}
-.pixel:nth-child(750){background:#000000;}
-.pixel:nth-child(751){background:#000000;}
-.pixel:nth-child(752){background:#000000;}
-.pixel:nth-child(772){background:#000000;}
-.pixel:nth-child(778){background:#000000;}
-.pixel:nth-child(788){background:#000000;}
-.pixel:nth-child(789){background:#000000;}
-.pixel:nth-child(809){background:#000000;}
-.pixel:nth-child(816){background:#000000;}
-.pixel:nth-child(825){background:#000000;}
-.pixel:nth-child(827){background:#000000;}
-.pixel:nth-child(845){background:#000000;}
-.pixel:nth-child(854){background:#000000;}
-.pixel:nth-child(861){background:#000000;}
-.pixel:nth-child(863){background:#000000;}
-.pixel:nth-child(883){background:#000000;}
-.pixel:nth-child(892){background:#000000;}
-.pixel:nth-child(897){background:#000000;}
-.pixel:nth-child(900){background:#000000;}
-.pixel:nth-child(901){background:#000000;}
-.pixel:nth-child(920){background:#000000;}
-.pixel:nth-child(928){background:#000000;}
-.pixel:nth-child(933){background:#000000;}
-.pixel:nth-child(937){background:#000000;}
-.pixel:nth-child(957){background:#000000;}
-.pixel:nth-child(965){background:#000000;}
-.pixel:nth-child(971){background:#000000;}
-.pixel:nth-child(973){background:#000000;}
-.pixel:nth-child(994){background:#000000;}
-.pixel:nth-child(1003){background:#000000;}
-.pixel:nth-child(1009){background:#000000;}
-.pixel:nth-child(1010){background:#000000;}
-.pixel:nth-child(1032){background:#000000;}
-.pixel:nth-child(1041){background:#000000;}
-.pixel:nth-child(1047){background:#000000;}
-.pixel:nth-child(1069){background:#000000;}
-.pixel:nth-child(1079){background:#000000;}
-.pixel:nth-child(1083){background:#000000;}
-.pixel:nth-child(1084){background:#000000;}
-.pixel:nth-child(1106){background:#000000;}
-.pixel:nth-child(1117){background:#000000;}
-.pixel:nth-child(1121){background:#000000;}
-.pixel:nth-child(1143){background:#000000;}
-.pixel:nth-child(1153){background:#000000;}
-.pixel:nth-child(1158){background:#000000;}
-.pixel:nth-child(1180){background:#000000;}
-.pixel:nth-child(1191){background:#000000;}
-.pixel:nth-child(1195){background:#000000;}
-.pixel:nth-child(1217){background:#000000;}
-.pixel:nth-child(1229){background:#000000;}
-.pixel:nth-child(1230){background:#000000;}
-.pixel:nth-child(1232){background:#000000;}
-.pixel:nth-child(1254){background:#000000;}
-.pixel:nth-child(1268){background:#000000;}
-.pixel:nth-child(1269){background:#000000;}
-.pixel:nth-child(1270){background:#000000;}
-.pixel:nth-child(1290){background:#000000;}
-.pixel:nth-child(1307){background:#000000;}
-.pixel:nth-child(1327){background:#000000;}
-.pixel:nth-child(1345){background:#000000;}
-.pixel:nth-child(1363){background:#000000;}
-.pixel:nth-child(1383){background:#000000;}
-.pixel:nth-child(1388){background:#000000;}
-.pixel:nth-child(1389){background:#000000;}
-.pixel:nth-child(1390){background:#000000;}
-.pixel:nth-child(1391){background:#000000;}
-.pixel:nth-child(1392){background:#000000;}
-.pixel:nth-child(1393){background:#000000;}
-.pixel:nth-child(1394){background:#000000;}
-.pixel:nth-child(1399){background:#000000;}
-.pixel:nth-child(1419){background:#000000;}
-.pixel:nth-child(1423){background:#000000;}
-.pixel:nth-child(1424){background:#000000;}
-.pixel:nth-child(1425){background:#000000;}
-.pixel:nth-child(1432){background:#000000;}
-.pixel:nth-child(1433){background:#000000;}
-.pixel:nth-child(1437){background:#000000;}
-.pixel:nth-child(1456){background:#000000;}
-.pixel:nth-child(1457){background:#000000;}
-.pixel:nth-child(1458){background:#000000;}
-.pixel:nth-child(1459){background:#000000;}
-.pixel:nth-child(1460){background:#000000;}
-.pixel:nth-child(1470){background:#000000;}
-.pixel:nth-child(1471){background:#000000;}
-.pixel:nth-child(1472){background:#000000;}
-.pixel:nth-child(1473){background:#000000;}
-.pixel:nth-child(1474){background:#000000;}
+.pixel:nth-child(36){background-color: rgb(0,0,0);}
+.pixel:nth-child(37){background-color: rgb(0,0,0);}
+.pixel:nth-child(71){background-color: rgb(0,0,0);}
+.pixel:nth-child(72){background-color: rgb(0,0,0);}
+.pixel:nth-child(73){background-color: rgb(0,0,0);}
+.pixel:nth-child(74){background-color: rgb(0,0,0);}
+.pixel:nth-child(106){background-color: rgb(0,0,0);}
+.pixel:nth-child(107){background-color: rgb(0,0,0);}
+.pixel:nth-child(108){background-color: rgb(0,0,0);}
+.pixel:nth-child(109){background-color: rgb(0,0,0);}
+.pixel:nth-child(110){background-color: rgb(0,0,0);}
+.pixel:nth-child(111){background-color: rgb(0,0,0);}
+.pixel:nth-child(142){background-color: rgb(0,0,0);}
+.pixel:nth-child(146){background-color: rgb(0,0,0);}
+.pixel:nth-child(147){background-color: rgb(0,0,0);}
+.pixel:nth-child(148){background-color: rgb(0,0,0);}
+.pixel:nth-child(152){background-color: rgb(0,0,0);}
+.pixel:nth-child(153){background-color: rgb(0,0,0);}
+.pixel:nth-child(154){background-color: rgb(0,0,0);}
+.pixel:nth-child(155){background-color: rgb(0,0,0);}
+.pixel:nth-child(156){background-color: rgb(0,0,0);}
+.pixel:nth-child(157){background-color: rgb(0,0,0);}
+.pixel:nth-child(178){background-color: rgb(0,0,0);}
+.pixel:nth-child(183){background-color: rgb(0,0,0);}
+.pixel:nth-child(184){background-color: rgb(0,0,0);}
+.pixel:nth-child(189){background-color: rgb(0,0,0);}
+.pixel:nth-child(190){background-color: rgb(0,0,0);}
+.pixel:nth-child(191){background-color: rgb(0,0,0);}
+.pixel:nth-child(195){background-color: rgb(0,0,0);}
+.pixel:nth-child(196){background-color: rgb(0,0,0);}
+.pixel:nth-child(197){background-color: rgb(0,0,0);}
+.pixel:nth-child(198){background-color: rgb(0,0,0);}
+.pixel:nth-child(214){background-color: rgb(0,0,0);}
+.pixel:nth-child(220){background-color: rgb(0,0,0);}
+.pixel:nth-child(221){background-color: rgb(0,0,0);}
+.pixel:nth-child(228){background-color: rgb(0,0,0);}
+.pixel:nth-child(229){background-color: rgb(0,0,0);}
+.pixel:nth-child(236){background-color: rgb(0,0,0);}
+.pixel:nth-child(237){background-color: rgb(0,0,0);}
+.pixel:nth-child(238){background-color: rgb(0,0,0);}
+.pixel:nth-child(239){background-color: rgb(0,0,0);}
+.pixel:nth-child(241){background-color: rgb(0,0,0);}
+.pixel:nth-child(242){background-color: rgb(0,0,0);}
+.pixel:nth-child(243){background-color: rgb(0,0,0);}
+.pixel:nth-child(244){background-color: rgb(0,0,0);}
+.pixel:nth-child(245){background-color: rgb(0,0,0);}
+.pixel:nth-child(246){background-color: rgb(0,0,0);}
+.pixel:nth-child(247){background-color: rgb(0,0,0);}
+.pixel:nth-child(249){background-color: rgb(0,0,0);}
+.pixel:nth-child(250){background-color: rgb(0,0,0);}
+.pixel:nth-child(257){background-color: rgb(0,0,0);}
+.pixel:nth-child(266){background-color: rgb(0,0,0);}
+.pixel:nth-child(267){background-color: rgb(0,0,0);}
+.pixel:nth-child(277){background-color: rgb(0,0,0);}
+.pixel:nth-child(285){background-color: rgb(0,0,0);}
+.pixel:nth-child(293){background-color: rgb(0,0,0);}
+.pixel:nth-child(304){background-color: rgb(0,0,0);}
+.pixel:nth-child(305){background-color: rgb(0,0,0);}
+.pixel:nth-child(329){background-color: rgb(0,0,0);}
+.pixel:nth-child(342){background-color: rgb(0,0,0);}
+.pixel:nth-child(343){background-color: rgb(0,0,0);}
+.pixel:nth-child(363){background-color: rgb(0,0,0);}
+.pixel:nth-child(365){background-color: rgb(0,0,0);}
+.pixel:nth-child(381){background-color: rgb(0,0,0);}
+.pixel:nth-child(382){background-color: rgb(0,0,0);}
+.pixel:nth-child(384){background-color: rgb(0,0,0);}
+.pixel:nth-child(401){background-color: rgb(0,0,0);}
+.pixel:nth-child(408){background-color: rgb(0,0,0);}
+.pixel:nth-child(420){background-color: rgb(0,0,0);}
+.pixel:nth-child(438){background-color: rgb(0,0,0);}
+.pixel:nth-child(445){background-color: rgb(0,0,0);}
+.pixel:nth-child(446){background-color: rgb(0,0,0);}
+.pixel:nth-child(457){background-color: rgb(0,0,0);}
+.pixel:nth-child(475){background-color: rgb(0,0,0);}
+.pixel:nth-child(482){background-color: rgb(0,0,0);}
+.pixel:nth-child(484){background-color: rgb(0,0,0);}
+.pixel:nth-child(493){background-color: rgb(0,0,0);}
+.pixel:nth-child(513){background-color: rgb(0,0,0);}
+.pixel:nth-child(519){background-color: rgb(0,0,0);}
+.pixel:nth-child(522){background-color: rgb(0,0,0);}
+.pixel:nth-child(530){background-color: rgb(0,0,0);}
+.pixel:nth-child(550){background-color: rgb(0,0,0);}
+.pixel:nth-child(556){background-color: rgb(0,0,0);}
+.pixel:nth-child(560){background-color: rgb(0,0,0);}
+.pixel:nth-child(567){background-color: rgb(0,0,0);}
+.pixel:nth-child(587){background-color: rgb(0,0,0);}
+.pixel:nth-child(593){background-color: rgb(0,0,0);}
+.pixel:nth-child(598){background-color: rgb(0,0,0);}
+.pixel:nth-child(603){background-color: rgb(0,0,0);}
+.pixel:nth-child(625){background-color: rgb(0,0,0);}
+.pixel:nth-child(630){background-color: rgb(0,0,0);}
+.pixel:nth-child(636){background-color: rgb(0,0,0);}
+.pixel:nth-child(640){background-color: rgb(0,0,0);}
+.pixel:nth-child(662){background-color: rgb(0,0,0);}
+.pixel:nth-child(667){background-color: rgb(0,0,0);}
+.pixel:nth-child(674){background-color: rgb(0,0,0);}
+.pixel:nth-child(677){background-color: rgb(0,0,0);}
+.pixel:nth-child(699){background-color: rgb(0,0,0);}
+.pixel:nth-child(704){background-color: rgb(0,0,0);}
+.pixel:nth-child(712){background-color: rgb(0,0,0);}
+.pixel:nth-child(714){background-color: rgb(0,0,0);}
+.pixel:nth-child(736){background-color: rgb(0,0,0);}
+.pixel:nth-child(741){background-color: rgb(0,0,0);}
+.pixel:nth-child(750){background-color: rgb(0,0,0);}
+.pixel:nth-child(751){background-color: rgb(0,0,0);}
+.pixel:nth-child(752){background-color: rgb(0,0,0);}
+.pixel:nth-child(772){background-color: rgb(0,0,0);}
+.pixel:nth-child(778){background-color: rgb(0,0,0);}
+.pixel:nth-child(788){background-color: rgb(0,0,0);}
+.pixel:nth-child(789){background-color: rgb(0,0,0);}
+.pixel:nth-child(809){background-color: rgb(0,0,0);}
+.pixel:nth-child(816){background-color: rgb(0,0,0);}
+.pixel:nth-child(825){background-color: rgb(0,0,0);}
+.pixel:nth-child(827){background-color: rgb(0,0,0);}
+.pixel:nth-child(845){background-color: rgb(0,0,0);}
+.pixel:nth-child(854){background-color: rgb(0,0,0);}
+.pixel:nth-child(861){background-color: rgb(0,0,0);}
+.pixel:nth-child(863){background-color: rgb(0,0,0);}
+.pixel:nth-child(883){background-color: rgb(0,0,0);}
+.pixel:nth-child(892){background-color: rgb(0,0,0);}
+.pixel:nth-child(897){background-color: rgb(0,0,0);}
+.pixel:nth-child(900){background-color: rgb(0,0,0);}
+.pixel:nth-child(901){background-color: rgb(0,0,0);}
+.pixel:nth-child(920){background-color: rgb(0,0,0);}
+.pixel:nth-child(928){background-color: rgb(0,0,0);}
+.pixel:nth-child(933){background-color: rgb(0,0,0);}
+.pixel:nth-child(937){background-color: rgb(0,0,0);}
+.pixel:nth-child(957){background-color: rgb(0,0,0);}
+.pixel:nth-child(965){background-color: rgb(0,0,0);}
+.pixel:nth-child(971){background-color: rgb(0,0,0);}
+.pixel:nth-child(973){background-color: rgb(0,0,0);}
+.pixel:nth-child(994){background-color: rgb(0,0,0);}
+.pixel:nth-child(1003){background-color: rgb(0,0,0);}
+.pixel:nth-child(1009){background-color: rgb(0,0,0);}
+.pixel:nth-child(1010){background-color: rgb(0,0,0);}
+.pixel:nth-child(1032){background-color: rgb(0,0,0);}
+.pixel:nth-child(1041){background-color: rgb(0,0,0);}
+.pixel:nth-child(1047){background-color: rgb(0,0,0);}
+.pixel:nth-child(1069){background-color: rgb(0,0,0);}
+.pixel:nth-child(1079){background-color: rgb(0,0,0);}
+.pixel:nth-child(1083){background-color: rgb(0,0,0);}
+.pixel:nth-child(1084){background-color: rgb(0,0,0);}
+.pixel:nth-child(1106){background-color: rgb(0,0,0);}
+.pixel:nth-child(1117){background-color: rgb(0,0,0);}
+.pixel:nth-child(1121){background-color: rgb(0,0,0);}
+.pixel:nth-child(1143){background-color: rgb(0,0,0);}
+.pixel:nth-child(1153){background-color: rgb(0,0,0);}
+.pixel:nth-child(1158){background-color: rgb(0,0,0);}
+.pixel:nth-child(1180){background-color: rgb(0,0,0);}
+.pixel:nth-child(1191){background-color: rgb(0,0,0);}
+.pixel:nth-child(1195){background-color: rgb(0,0,0);}
+.pixel:nth-child(1217){background-color: rgb(0,0,0);}
+.pixel:nth-child(1229){background-color: rgb(0,0,0);}
+.pixel:nth-child(1230){background-color: rgb(0,0,0);}
+.pixel:nth-child(1232){background-color: rgb(0,0,0);}
+.pixel:nth-child(1254){background-color: rgb(0,0,0);}
+.pixel:nth-child(1268){background-color: rgb(0,0,0);}
+.pixel:nth-child(1269){background-color: rgb(0,0,0);}
+.pixel:nth-child(1270){background-color: rgb(0,0,0);}
+.pixel:nth-child(1290){background-color: rgb(0,0,0);}
+.pixel:nth-child(1307){background-color: rgb(0,0,0);}
+.pixel:nth-child(1327){background-color: rgb(0,0,0);}
+.pixel:nth-child(1345){background-color: rgb(0,0,0);}
+.pixel:nth-child(1363){background-color: rgb(0,0,0);}
+.pixel:nth-child(1383){background-color: rgb(0,0,0);}
+.pixel:nth-child(1388){background-color: rgb(0,0,0);}
+.pixel:nth-child(1389){background-color: rgb(0,0,0);}
+.pixel:nth-child(1390){background-color: rgb(0,0,0);}
+.pixel:nth-child(1391){background-color: rgb(0,0,0);}
+.pixel:nth-child(1392){background-color: rgb(0,0,0);}
+.pixel:nth-child(1393){background-color: rgb(0,0,0);}
+.pixel:nth-child(1394){background-color: rgb(0,0,0);}
+.pixel:nth-child(1399){background-color: rgb(0,0,0);}
+.pixel:nth-child(1419){background-color: rgb(0,0,0);}
+.pixel:nth-child(1423){background-color: rgb(0,0,0);}
+.pixel:nth-child(1424){background-color: rgb(0,0,0);}
+.pixel:nth-child(1425){background-color: rgb(0,0,0);}
+.pixel:nth-child(1432){background-color: rgb(0,0,0);}
+.pixel:nth-child(1433){background-color: rgb(0,0,0);}
+.pixel:nth-child(1437){background-color: rgb(0,0,0);}
+.pixel:nth-child(1456){background-color: rgb(0,0,0);}
+.pixel:nth-child(1457){background-color: rgb(0,0,0);}
+.pixel:nth-child(1458){background-color: rgb(0,0,0);}
+.pixel:nth-child(1459){background-color: rgb(0,0,0);}
+.pixel:nth-child(1460){background-color: rgb(0,0,0);}
+.pixel:nth-child(1470){background-color: rgb(0,0,0);}
+.pixel:nth-child(1471){background-color: rgb(0,0,0);}
+.pixel:nth-child(1472){background-color: rgb(0,0,0);}
+.pixel:nth-child(1473){background-color: rgb(0,0,0);}
+.pixel:nth-child(1474){background-color: rgb(0,0,0);}
 
-.pixel:nth-child(192){background:#ff9900;}
-.pixel:nth-child(193){background:#ff9900;}
-.pixel:nth-child(194){background:#ff9900;}
-.pixel:nth-child(219){background:#ff9900;}
-.pixel:nth-child(230){background:#cc6600;}
-.pixel:nth-child(235){background:#ff9900;}
-.pixel:nth-child(255){background:#ff9900;}
-.pixel:nth-child(256){background:#ff9900;}
-.pixel:nth-child(268){background:#cc6600;}
-.pixel:nth-child(269){background:#ff9900;}
-.pixel:nth-child(276){background:#ff9900;}
-.pixel:nth-child(286){background:#ff9900;}
-.pixel:nth-child(291){background:#ff9900;}
-.pixel:nth-child(292){background:#ff9900;}
-.pixel:nth-child(306){background:#ff9900;}
-.pixel:nth-child(307){background:#ff9900;}
-.pixel:nth-child(308){background:#ff9900;}
-.pixel:nth-child(326){background:#ff9900;}
-.pixel:nth-child(327){background:#ff9900;}
-.pixel:nth-child(328){background:#ff9900;}
-.pixel:nth-child(344){background:#ff9900;}
-.pixel:nth-child(345){background:#ff9900;}
-.pixel:nth-child(346){background:#ff9900;}
-.pixel:nth-child(347){background:#ff9900;}
-.pixel:nth-child(348){background:#ff9900;}
-.pixel:nth-child(362){background:#ff9900;}
-.pixel:nth-child(364){background:#ff9900;}
-.pixel:nth-child(383){background:#ff9900;}
-.pixel:nth-child(400){background:#ff9900;}
-.pixel:nth-child(483){background:#ff9900;}
-.pixel:nth-child(494){background:#ff9900;}
-.pixel:nth-child(512){background:#ff9900;}
-.pixel:nth-child(521){background:#ff9900;}
-.pixel:nth-child(559){background:#ff9900;}
-.pixel:nth-child(597){background:#ff9900;}
-.pixel:nth-child(635){background:#ff9900;}
-.pixel:nth-child(673){background:#ff9900;}
-.pixel:nth-child(711){background:#ff9900;}
-.pixel:nth-child(749){background:#ff9900;}
-.pixel:nth-child(787){background:#ff9900;}
-.pixel:nth-child(790){background:#ff9900;}
-.pixel:nth-child(808){background:#ff9900;}
-.pixel:nth-child(864){background:#ff9900;}
-.pixel:nth-child(872){background:#ff9900;}
-.pixel:nth-child(873){background:#ff9900;}
-.pixel:nth-child(874){background:#ff9900;}
-.pixel:nth-child(875){background:#ff9900;}
-.pixel:nth-child(882){background:#ff9900;}
-.pixel:nth-child(910){background:#ff9900;}
-.pixel:nth-child(911){background:#ff9900;}
-.pixel:nth-child(1044){background:#ff9900;}
-.pixel:nth-child(1045){background:#ff9900;}
-.pixel:nth-child(1046){background:#cc6600;}
-.pixel:nth-child(1051){background:#ff9900;}
-.pixel:nth-child(1066){background:#ff9900;}
-.pixel:nth-child(1080){background:#ff9900;}
-.pixel:nth-child(1081){background:#ff9900;}
-.pixel:nth-child(1082){background:#ff9900;}
-.pixel:nth-child(1088){background:#ff9900;}
-.pixel:nth-child(1103){background:#ff9900;}
-.pixel:nth-child(1118){background:#ff9900;}
-.pixel:nth-child(1119){background:#cc6600;}
-.pixel:nth-child(1120){background:#cc6600;}
-.pixel:nth-child(1126){background:#ff9900;}
-.pixel:nth-child(1139){background:#ff9900;}
-.pixel:nth-child(1154){background:#cc6600;}
-.pixel:nth-child(1155){background:#cc6600;}
-.pixel:nth-child(1156){background:#cc6600;}
-.pixel:nth-child(1157){background:#cc6600;}
-.pixel:nth-child(1164){background:#ff9900;}
-.pixel:nth-child(1175){background:#ff9900;}
-.pixel:nth-child(1192){background:#cc6600;}
-.pixel:nth-child(1193){background:#cc6600;}
-.pixel:nth-child(1194){background:#cc6600;}
-.pixel:nth-child(1231){background:#cc6600;}
-.pixel:nth-child(1233){background:#ff9900;}
-.pixel:nth-child(1308){background:#ff9900;}
-.pixel:nth-child(1352){background:#ff9900;}
-.pixel:nth-child(1353){background:#ff9900;}
-.pixel:nth-child(1354){background:#ff9900;}
-.pixel:nth-child(1355){background:#ff9900;}
-.pixel:nth-child(1356){background:#ff9900;}
-.pixel:nth-child(1384){background:#ff9900;}
-.pixel:nth-child(1386){background:#ff9900;}
-.pixel:nth-child(1387){background:#ff9900;}
-.pixel:nth-child(1395){background:#ff9900;}
-.pixel:nth-child(1396){background:#ff9900;}
-.pixel:nth-child(1398){background:#ff9900;}
+.pixel:nth-child(192){background-color: rgb(255,153,0);}
+.pixel:nth-child(193){background-color: rgb(255,153,0);}
+.pixel:nth-child(194){background-color: rgb(255,153,0);}
+.pixel:nth-child(219){background-color: rgb(255,153,0);}
+.pixel:nth-child(230){background-color: rgb(204,102,0);}
+.pixel:nth-child(235){background-color: rgb(255,153,0);}
+.pixel:nth-child(255){background-color: rgb(255,153,0);}
+.pixel:nth-child(256){background-color: rgb(255,153,0);}
+.pixel:nth-child(268){background-color: rgb(204,102,0);}
+.pixel:nth-child(269){background-color: rgb(255,153,0);}
+.pixel:nth-child(276){background-color: rgb(255,153,0);}
+.pixel:nth-child(286){background-color: rgb(255,153,0);}
+.pixel:nth-child(291){background-color: rgb(255,153,0);}
+.pixel:nth-child(292){background-color: rgb(255,153,0);}
+.pixel:nth-child(306){background-color: rgb(255,153,0);}
+.pixel:nth-child(307){background-color: rgb(255,153,0);}
+.pixel:nth-child(308){background-color: rgb(255,153,0);}
+.pixel:nth-child(326){background-color: rgb(255,153,0);}
+.pixel:nth-child(327){background-color: rgb(255,153,0);}
+.pixel:nth-child(328){background-color: rgb(255,153,0);}
+.pixel:nth-child(344){background-color: rgb(255,153,0);}
+.pixel:nth-child(345){background-color: rgb(255,153,0);}
+.pixel:nth-child(346){background-color: rgb(255,153,0);}
+.pixel:nth-child(347){background-color: rgb(255,153,0);}
+.pixel:nth-child(348){background-color: rgb(255,153,0);}
+.pixel:nth-child(362){background-color: rgb(255,153,0);}
+.pixel:nth-child(364){background-color: rgb(255,153,0);}
+.pixel:nth-child(383){background-color: rgb(255,153,0);}
+.pixel:nth-child(400){background-color: rgb(255,153,0);}
+.pixel:nth-child(483){background-color: rgb(255,153,0);}
+.pixel:nth-child(494){background-color: rgb(255,153,0);}
+.pixel:nth-child(512){background-color: rgb(255,153,0);}
+.pixel:nth-child(521){background-color: rgb(255,153,0);}
+.pixel:nth-child(559){background-color: rgb(255,153,0);}
+.pixel:nth-child(597){background-color: rgb(255,153,0);}
+.pixel:nth-child(635){background-color: rgb(255,153,0);}
+.pixel:nth-child(673){background-color: rgb(255,153,0);}
+.pixel:nth-child(711){background-color: rgb(255,153,0);}
+.pixel:nth-child(749){background-color: rgb(255,153,0);}
+.pixel:nth-child(787){background-color: rgb(255,153,0);}
+.pixel:nth-child(790){background-color: rgb(255,153,0);}
+.pixel:nth-child(808){background-color: rgb(255,153,0);}
+.pixel:nth-child(864){background-color: rgb(255,153,0);}
+.pixel:nth-child(872){background-color: rgb(255,153,0);}
+.pixel:nth-child(873){background-color: rgb(255,153,0);}
+.pixel:nth-child(874){background-color: rgb(255,153,0);}
+.pixel:nth-child(875){background-color: rgb(255,153,0);}
+.pixel:nth-child(882){background-color: rgb(255,153,0);}
+.pixel:nth-child(910){background-color: rgb(255,153,0);}
+.pixel:nth-child(911){background-color: rgb(255,153,0);}
+.pixel:nth-child(1044){background-color: rgb(255,153,0);}
+.pixel:nth-child(1045){background-color: rgb(255,153,0);}
+.pixel:nth-child(1046){background-color: rgb(204,102,0);}
+.pixel:nth-child(1051){background-color: rgb(255,153,0);}
+.pixel:nth-child(1066){background-color: rgb(255,153,0);}
+.pixel:nth-child(1080){background-color: rgb(255,153,0);}
+.pixel:nth-child(1081){background-color: rgb(255,153,0);}
+.pixel:nth-child(1082){background-color: rgb(255,153,0);}
+.pixel:nth-child(1088){background-color: rgb(255,153,0);}
+.pixel:nth-child(1103){background-color: rgb(255,153,0);}
+.pixel:nth-child(1118){background-color: rgb(255,153,0);}
+.pixel:nth-child(1119){background-color: rgb(204,102,0);}
+.pixel:nth-child(1120){background-color: rgb(204,102,0);}
+.pixel:nth-child(1126){background-color: rgb(255,153,0);}
+.pixel:nth-child(1139){background-color: rgb(255,153,0);}
+.pixel:nth-child(1154){background-color: rgb(204,102,0);}
+.pixel:nth-child(1155){background-color: rgb(204,102,0);}
+.pixel:nth-child(1156){background-color: rgb(204,102,0);}
+.pixel:nth-child(1157){background-color: rgb(204,102,0);}
+.pixel:nth-child(1164){background-color: rgb(255,153,0);}
+.pixel:nth-child(1175){background-color: rgb(255,153,0);}
+.pixel:nth-child(1192){background-color: rgb(204,102,0);}
+.pixel:nth-child(1193){background-color: rgb(204,102,0);}
+.pixel:nth-child(1194){background-color: rgb(204,102,0);}
+.pixel:nth-child(1231){background-color: rgb(204,102,0);}
+.pixel:nth-child(1233){background-color: rgb(255,153,0);}
+.pixel:nth-child(1308){background-color: rgb(255,153,0);}
+.pixel:nth-child(1352){background-color: rgb(255,153,0);}
+.pixel:nth-child(1353){background-color: rgb(255,153,0);}
+.pixel:nth-child(1354){background-color: rgb(255,153,0);}
+.pixel:nth-child(1355){background-color: rgb(255,153,0);}
+.pixel:nth-child(1356){background-color: rgb(255,153,0);}
+.pixel:nth-child(1384){background-color: rgb(255,153,0);}
+.pixel:nth-child(1386){background-color: rgb(255,153,0);}
+.pixel:nth-child(1387){background-color: rgb(255,153,0);}
+.pixel:nth-child(1395){background-color: rgb(255,153,0);}
+.pixel:nth-child(1396){background-color: rgb(255,153,0);}
+.pixel:nth-child(1398){background-color: rgb(255,153,0);}
 
-.pixel:nth-child(461){background:#000000;}
-.pixel:nth-child(462){background:#000000;}
-.pixel:nth-child(471){background:#000000;}
-.pixel:nth-child(472){background:#000000;}
-.pixel:nth-child(497){background:#000000;}
-.pixel:nth-child(498){background:#000000;}
-.pixel:nth-child(499){background:#ffffff;}
-.pixel:nth-child(500){background:#000000;}
-.pixel:nth-child(507){background:#000000;}
-.pixel:nth-child(508){background:#000000;}
-.pixel:nth-child(509){background:#ffffff;}
-.pixel:nth-child(510){background:#000000;}
-.pixel:nth-child(534){background:#000000;}
-.pixel:nth-child(535){background:#000000;}
-.pixel:nth-child(536){background:#000000;}
-.pixel:nth-child(537){background:#000000;}
-.pixel:nth-child(544){background:#000000;}
-.pixel:nth-child(545){background:#000000;}
-.pixel:nth-child(546){background:#000000;}
-.pixel:nth-child(547){background:#000000;}
-.pixel:nth-child(572){background:#000000;}
-.pixel:nth-child(573){background:#000000;}
-.pixel:nth-child(582){background:#000000;}
-.pixel:nth-child(583){background:#000000;}
-.pixel:nth-child(614){background:#000000;}
-.pixel:nth-child(615){background:#000000;}
-.pixel:nth-child(685){background:#000000;}
-.pixel:nth-child(688){background:#000000;}
-.pixel:nth-child(689){background:#000000;}
-.pixel:nth-child(692){background:#000000;}
-.pixel:nth-child(723){background:#000000;}
-.pixel:nth-child(724){background:#000000;}
-.pixel:nth-child(727){background:#000000;}
-.pixel:nth-child(728){background:#000000;}
-.pixel:nth-child(944){background:#000000;}
-.pixel:nth-child(951){background:#000000;}
-.pixel:nth-child(977){background:#000000;}
-.pixel:nth-child(981){background:#000000;}
-.pixel:nth-child(988){background:#000000;}
-.pixel:nth-child(992){background:#000000;}
-.pixel:nth-child(1014){background:#000000;}
-.pixel:nth-child(1019){background:#000000;}
-.pixel:nth-child(1024){background:#000000;}
-.pixel:nth-child(1029){background:#000000;}
-.pixel:nth-child(1052){background:#000000;}
-.pixel:nth-child(1056){background:#000000;}
-.pixel:nth-child(1061){background:#000000;}
-.pixel:nth-child(1065){background:#000000;}
-.pixel:nth-child(1089){background:#000000;}
-.pixel:nth-child(1093){background:#000000;}
-.pixel:nth-child(1098){background:#000000;}
-.pixel:nth-child(1102){background:#000000;}
-.pixel:nth-child(1127){background:#000000;}
-.pixel:nth-child(1130){background:#000000;}
-.pixel:nth-child(1135){background:#000000;}
-.pixel:nth-child(1138){background:#000000;}
-.pixel:nth-child(1165){background:#000000;}
-.pixel:nth-child(1166){background:#000000;}
-.pixel:nth-child(1173){background:#000000;}
-.pixel:nth-child(1174){background:#000000;}
+.pixel:nth-child(461){background-color: rgb(0,0,0);}
+.pixel:nth-child(462){background-color: rgb(0,0,0);}
+.pixel:nth-child(471){background-color: rgb(0,0,0);}
+.pixel:nth-child(472){background-color: rgb(0,0,0);}
+.pixel:nth-child(497){background-color: rgb(0,0,0);}
+.pixel:nth-child(498){background-color: rgb(0,0,0);}
+.pixel:nth-child(499){background-color: rgb(255,255,255);}
+.pixel:nth-child(500){background-color: rgb(0,0,0);}
+.pixel:nth-child(507){background-color: rgb(0,0,0);}
+.pixel:nth-child(508){background-color: rgb(0,0,0);}
+.pixel:nth-child(509){background-color: rgb(255,255,255);}
+.pixel:nth-child(510){background-color: rgb(0,0,0);}
+.pixel:nth-child(534){background-color: rgb(0,0,0);}
+.pixel:nth-child(535){background-color: rgb(0,0,0);}
+.pixel:nth-child(536){background-color: rgb(0,0,0);}
+.pixel:nth-child(537){background-color: rgb(0,0,0);}
+.pixel:nth-child(544){background-color: rgb(0,0,0);}
+.pixel:nth-child(545){background-color: rgb(0,0,0);}
+.pixel:nth-child(546){background-color: rgb(0,0,0);}
+.pixel:nth-child(547){background-color: rgb(0,0,0);}
+.pixel:nth-child(572){background-color: rgb(0,0,0);}
+.pixel:nth-child(573){background-color: rgb(0,0,0);}
+.pixel:nth-child(582){background-color: rgb(0,0,0);}
+.pixel:nth-child(583){background-color: rgb(0,0,0);}
+.pixel:nth-child(614){background-color: rgb(0,0,0);}
+.pixel:nth-child(615){background-color: rgb(0,0,0);}
+.pixel:nth-child(685){background-color: rgb(0,0,0);}
+.pixel:nth-child(688){background-color: rgb(0,0,0);}
+.pixel:nth-child(689){background-color: rgb(0,0,0);}
+.pixel:nth-child(692){background-color: rgb(0,0,0);}
+.pixel:nth-child(723){background-color: rgb(0,0,0);}
+.pixel:nth-child(724){background-color: rgb(0,0,0);}
+.pixel:nth-child(727){background-color: rgb(0,0,0);}
+.pixel:nth-child(728){background-color: rgb(0,0,0);}
+.pixel:nth-child(944){background-color: rgb(0,0,0);}
+.pixel:nth-child(951){background-color: rgb(0,0,0);}
+.pixel:nth-child(977){background-color: rgb(0,0,0);}
+.pixel:nth-child(981){background-color: rgb(0,0,0);}
+.pixel:nth-child(988){background-color: rgb(0,0,0);}
+.pixel:nth-child(992){background-color: rgb(0,0,0);}
+.pixel:nth-child(1014){background-color: rgb(0,0,0);}
+.pixel:nth-child(1019){background-color: rgb(0,0,0);}
+.pixel:nth-child(1024){background-color: rgb(0,0,0);}
+.pixel:nth-child(1029){background-color: rgb(0,0,0);}
+.pixel:nth-child(1052){background-color: rgb(0,0,0);}
+.pixel:nth-child(1056){background-color: rgb(0,0,0);}
+.pixel:nth-child(1061){background-color: rgb(0,0,0);}
+.pixel:nth-child(1065){background-color: rgb(0,0,0);}
+.pixel:nth-child(1089){background-color: rgb(0,0,0);}
+.pixel:nth-child(1093){background-color: rgb(0,0,0);}
+.pixel:nth-child(1098){background-color: rgb(0,0,0);}
+.pixel:nth-child(1102){background-color: rgb(0,0,0);}
+.pixel:nth-child(1127){background-color: rgb(0,0,0);}
+.pixel:nth-child(1130){background-color: rgb(0,0,0);}
+.pixel:nth-child(1135){background-color: rgb(0,0,0);}
+.pixel:nth-child(1138){background-color: rgb(0,0,0);}
+.pixel:nth-child(1165){background-color: rgb(0,0,0);}
+.pixel:nth-child(1166){background-color: rgb(0,0,0);}
+.pixel:nth-child(1173){background-color: rgb(0,0,0);}
+.pixel:nth-child(1174){background-color: rgb(0,0,0);}
 
-.pixel:nth-child(606){background:#ff0000;}
-.pixel:nth-child(607){background:#ff0000;}
-.pixel:nth-child(622){background:#ff0000;}
-.pixel:nth-child(623){background:#ff0000;}
-.pixel:nth-child(642){background:#ff0000;}
-.pixel:nth-child(643){background:#ff0000;}
-.pixel:nth-child(644){background:#ff0000;}
-.pixel:nth-child(645){background:#ff0000;}
-.pixel:nth-child(658){background:#ff0000;}
-.pixel:nth-child(659){background:#ff0000;}
-.pixel:nth-child(660){background:#ff0000;}
-.pixel:nth-child(661){background:#ff0000;}
-.pixel:nth-child(679){background:#ff0000;}
-.pixel:nth-child(680){background:#ff0000;}
-.pixel:nth-child(681){background:#ff0000;}
-.pixel:nth-child(682){background:#ff0000;}
-.pixel:nth-child(695){background:#ff0000;}
-.pixel:nth-child(696){background:#ff0000;}
-.pixel:nth-child(697){background:#ff0000;}
-.pixel:nth-child(698){background:#ff0000;}
-.pixel:nth-child(717){background:#ff0000;}
-.pixel:nth-child(718){background:#ff0000;}
-.pixel:nth-child(733){background:#ff0000;}
-.pixel:nth-child(734){background:#ff0000;}
+.pixel:nth-child(606){background-color: rgb(255,0,0);}
+.pixel:nth-child(607){background-color: rgb(255,0,0);}
+.pixel:nth-child(622){background-color: rgb(255,0,0);}
+.pixel:nth-child(623){background-color: rgb(255,0,0);}
+.pixel:nth-child(642){background-color: rgb(255,0,0);}
+.pixel:nth-child(643){background-color: rgb(255,0,0);}
+.pixel:nth-child(644){background-color: rgb(255,0,0);}
+.pixel:nth-child(645){background-color: rgb(255,0,0);}
+.pixel:nth-child(658){background-color: rgb(255,0,0);}
+.pixel:nth-child(659){background-color: rgb(255,0,0);}
+.pixel:nth-child(660){background-color: rgb(255,0,0);}
+.pixel:nth-child(661){background-color: rgb(255,0,0);}
+.pixel:nth-child(679){background-color: rgb(255,0,0);}
+.pixel:nth-child(680){background-color: rgb(255,0,0);}
+.pixel:nth-child(681){background-color: rgb(255,0,0);}
+.pixel:nth-child(682){background-color: rgb(255,0,0);}
+.pixel:nth-child(695){background-color: rgb(255,0,0);}
+.pixel:nth-child(696){background-color: rgb(255,0,0);}
+.pixel:nth-child(697){background-color: rgb(255,0,0);}
+.pixel:nth-child(698){background-color: rgb(255,0,0);}
+.pixel:nth-child(717){background-color: rgb(255,0,0);}
+.pixel:nth-child(718){background-color: rgb(255,0,0);}
+.pixel:nth-child(733){background-color: rgb(255,0,0);}
+.pixel:nth-child(734){background-color: rgb(255,0,0);}
 

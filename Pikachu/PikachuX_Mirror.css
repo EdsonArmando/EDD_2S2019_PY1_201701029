@@ -1,5 +1,5 @@
 body {
-  background: #333333;      /* Background color of the whole page */
+  background: #ffffff;      /* Background color of the whole page */
   height: 100vh;            /* 100 viewport heigh units */
   display: flex;            /* defines a flex container */
   justify-content: center;  /* centers the canvas horizontally */

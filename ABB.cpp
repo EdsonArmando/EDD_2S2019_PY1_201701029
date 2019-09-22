@@ -53,6 +53,7 @@ public:
         temp->list->mostrarLista();
 
     }
+
     void linearMatrix(string name){
         NodeImage *temp;
         temp=mostrarArbole(raiz,name);
@@ -72,6 +73,21 @@ public:
         NodeImage *temp;
         temp=mostrarArbole(raiz,name);
         temp->list->graficar(capa);
+    }
+    void imageMatrixFilter(string name,string nameFilter,string capa){
+      NodeFilter *tempFilter;
+      NodeList *temp3;
+      NodeListLayerFilter *tempoImage;
+      tempoImage = lista->returnNodo(name);
+      tempFilter=tempoImage->liSta->devolverNodo(name+nameFilter);
+      temp3=tempFilter->list->graficar(capa);
+
+    }
+    void filterLayer(string name,string capa,string filtro){
+      NodeImage *temp;
+      SparseMatrix *matrix;
+      temp=mostrarArbole(raiz,name);
+      temp->list->modificarPos(capa,filtro);
     }
     void graphDoubleList(string name){
         NodeListLayerFilter *temp=NULL;
@@ -245,7 +261,7 @@ public:
         file.close();
         file.open(name+"\\"+name+".scss");
         file<<"body {\n"
-              "  background: #333333;      /* Background color of the whole page */\n"
+              "  background: #ffffff;      /* Background color of the whole page */\n"
               "  height: 100vh;            /* 100 viewport heigh units */\n"
               "  display: flex;            /* defines a flex container */\n"
               "  justify-content: center;  /* centers the canvas horizontally */\n"
@@ -307,16 +323,16 @@ public:
         file.close();
         file.open(name+"\\"+name+nameFilter+".css");
         file<<"body {\n"
-              "  background: #333333;      /* Background color of the whole page */\n"
+              "  background: #ffffff;      /* Background color of the whole page */\n"
               "  height: 100vh;            /* 100 viewport heigh units */\n"
               "  display: flex;            /* defines a flex container */\n"
               "  justify-content: center;  /* centers the canvas horizontally */\n"
               "  align-items: center;      /* centers the canvas vertically */\n";
-              if(nameFilter=="negative"){
-                  file<<"filter:invert(75%);";
-              }else if(nameFilter=="grises"){
+              /*if(nameFilter=="negative"){
+                  file<<"filter:invert(100%);";
+              }/*else if(nameFilter=="grises"){
                   file<<"filter:grayscale(100%);";
-              }
+              }*/
              file<< "}\n";
         file<<".canvas {\n";
         file<< "width: "+ std::to_string((width)*temp2->listConfig->ultimo->siguiente->siguiente->size)+"px;\n";
@@ -373,7 +389,7 @@ public:
         file.close();
         file.open(name+"\\"+name+nameFilter+".scss");
         file<<"body {\n"
-              "  background: #333333;      /* Background color of the whole page */\n"
+              "  background: #ffffff;      /* Background color of the whole page */\n"
               "  height: 100vh;            /* 100 viewport heigh units */\n"
               "  display: flex;            /* defines a flex container */\n"
               "  justify-content: center;  /* centers the canvas horizontally */\n"

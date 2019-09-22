@@ -21,6 +21,7 @@ public:
     Node_Y *temp1;
     ListX *ejeX;
     ListY *ejeY;
+    int suma;
     NodeContent *content=NULL;
     SparseMatrix() {
         ejeX = new ListX();
@@ -141,7 +142,7 @@ public:
         while (temp1!=NULL){
             content=temp1->listX->first;
             while(content!=NULL){
-                int suma = (content->r*0.3)+ (content->r*0.5)+ (content->r*0.11);
+                suma = (content->r*0.3)+ (content->r*0.5)+ (content->r*0.11);
                 mirrorXs->add(content->x,content->y,suma,suma,suma);
                 content=content->derech;
             }
@@ -158,7 +159,7 @@ public:
         while (temp1!=NULL){
             content=temp1->listX->first;
             while(content!=NULL){
-                mirrorXs->add(content->x,content->y,content->r,content->g,content->b);
+                mirrorXs->add(content->x,content->y,255-(content->r),255-(content->g),255-(content->b));
                 content=content->derech;
             }
             temp1=temp1->siguiente;
@@ -241,9 +242,9 @@ public:
                 content=temp1->listX->first;
                 while(content!=NULL){
                     if(content->y!=1){
-                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas*content->y-columnas*(x)+(content->x))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
+                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas*content->y-columnas*(x)+(content->x))+"){background-color: rgb("+std::to_string(content->r)+","+std::to_string(content->g)+","+std::to_string(content->b)+")"+";}\n";
                     }else{
-                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas-columnas*(x)+(content->x))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
+                        pixel+=".pixel:nth-child("+std::to_string((valx)*columnas-columnas*(x)+(content->x))+"){background-color: rgb("+std::to_string(content->r)+","+std::to_string(content->g)+","+std::to_string(content->b)+")"+";}\n";
                     }
                     content=content->derech;
                 }
@@ -260,9 +261,9 @@ public:
                     content=temp1->listX->first;
                     while(content!=NULL){
                         if(content->y!=1){
-                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
+                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila-1)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background-color: rgb("+std::to_string(content->r)+","+std::to_string(content->g)+","+std::to_string(content->b)+")"+";}\n";
                         }else{
-                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila)+(content->x)+columnas*(x-1))+(columnas*valx*fila)*(y-1))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
+                            pixel+=".pixel:nth-child("+std::to_string(((valx)*columnas*(content->y+fila-1)+(content->x)+columnas*(x-1))+(columnas*valx*fila-1)*(y-1))+"){background-color: rgb("+std::to_string(content->r)+","+std::to_string(content->g)+","+std::to_string(content->b)+")"+";}\n";
                         }
                         content=content->derech;
                     }
@@ -277,24 +278,24 @@ public:
         return pixel;
     }
     string generateImages(int fila){
-        string pixel="";
-        Node_X *temp=NULL;
-        Node_Y *temp1=NULL;
-        temp1=ejeY->primero;
-        while (temp1!=NULL){
-            content=temp1->listX->first;
-            while(content!=NULL){
-                if(content->y!=1){
-                    pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
-                }else{
-                    pixel+=".pixel:nth-child("+std::to_string(content->x)+"){background:"+ convertToHexa(content->r,content->g,content->b)+";}\n";
-                }
-                content=content->derech;
-            }
-            temp1=temp1->siguiente;
-        }
-        return pixel;
-    }
+          string pixel="";
+          Node_X *temp=NULL;
+          Node_Y *temp1=NULL;
+          temp1=ejeY->primero;
+          while (temp1!=NULL){
+              content=temp1->listX->first;
+              while(content!=NULL){
+                  if(content->y!=1){
+                      pixel+=".pixel:nth-child("+std::to_string((content->x)+fila*(content->y-1))+"){background-color: rgb("+std::to_string(content->r)+","+std::to_string(content->g)+","+std::to_string(content->b)+")"+";}\n";
+                  }else{
+                      pixel+=".pixel:nth-child("+std::to_string(content->x)+"){background-color: rgb("+std::to_string(content->r)+","+std::to_string(content->g)+","+std::to_string(content->b)+")"+";}\n";
+                  }
+                  content=content->derech;
+              }
+              temp1=temp1->siguiente;
+          }
+          return pixel;
+      }
    std::string convertToHexa(int r, int g, int b){
         if(r==0 && g==0 && b==0){
 
@@ -306,10 +307,11 @@ public:
         return ss.str();
 
     }
+
     void imageSpaseMatrix(){
         Node_X *temp=NULL;
         Node_Y *temp1=NULL;
-        string header="digraph Sparce_Matrix {\n node [shape=box]\n  Mt[ label = \"0\", width = 1.5, style = filled, fillcolor = firebrick1, group = 1 ];"
+        string header="digraph Sparce_Matrix {\n node [shape=box]\n  Mt[ label = \"0\", width = 1.5, style = filled, fillcolor = yellow, group = 1 ];"
                       "\ne0[ shape = point, width = 0 ];\n e1[ shape = point, width = 0 ];\n";
         string listaX="";
         string listay="";
@@ -321,7 +323,7 @@ public:
         listaX+="A"+std::to_string(temp->x)+"->Mt"+"\n";
         while(temp!=NULL){
             rank+="A"+std::to_string(temp->x)+";";
-            listaX+="A"+std::to_string(temp->x)+"[label = \""+std::to_string(temp->x)+"\"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];\n";
+            listaX+="A"+std::to_string(temp->x)+"[label = \""+std::to_string(temp->x)+"\"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];\n";
             listaX+="A"+std::to_string(temp->x)+" -> N"+std::to_string(temp->listaY->first->x)+"_L"+std::to_string(temp->listaY->first->y)+"\n";
             listaX+="N"+std::to_string(temp->listaY->first->x)+"_L"+std::to_string(temp->listaY->first->y)+" -> A"+std::to_string(temp->x)+"\n";
             content=temp->listaY->first;
@@ -338,7 +340,7 @@ public:
 
             while(temp1!=NULL){
                 content = temp1->listX->first;
-                listay+="U"+std::to_string(temp1->y)+"[label = \""+std::to_string(temp1->y)+"\" pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];\n";
+                listay+="U"+std::to_string(temp1->y)+"[label = \""+std::to_string(temp1->y)+"\" pos = \"5.3,3.5!\" width = 1.5 style = filled, fillcolor = cyan4, group = 1 ];\n";
                 listay+="U"+std::to_string(temp1->y)+" -> N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"\n";
                 listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+" ->U"+std::to_string(temp1->y)+"\n";
                 if(temp1->siguiente!=NULL){
@@ -353,7 +355,7 @@ public:
                         listay+="N"+std::to_string(content->abajo->x)+"_L"+std::to_string(content->abajo->y)+" -> "+"N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"\n";
 
                     }
-                    listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"[label = \""+std::to_string(content->x)+"\" width = 1.5, group = 2 ];\n";
+                    listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"[label = \"("+std::to_string(content->r)+"-"+std::to_string(content->g)+"-"+std::to_string(content->b)+")\" width = 1.5, group = 2 ];\n";
                     listay+="{ rank = same; U"+std::to_string(temp1->y)+";N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+"; }\n";
                     if(content->derech!=NULL){
                         listay+="N"+std::to_string(content->x)+"_L"+std::to_string(temp1->y)+" -> N"+std::to_string(content->derech->x)+"_L"+std::to_string(temp1->y)+"\n";

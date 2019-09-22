@@ -1,14 +1,422 @@
 digraph {
  rankdir=LR; 
  node [shape=record]; 
- label="Liealizacion por columnas";
- null [label="NULL" shape=box];0[label="{<data>(7,12) 0-0-0| <ref>  }", width=1.2]
+ label="Liealizacion por filas";
+ null [label="NULL" shape=box];0[label="{<data>(6,1) 255-255-255| <ref>  }", width=1.2]
 0:ref:c->1:data
-1[label="{<data>(7,13) 0-0-0| <ref>  }", width=1.2]
+1[label="{<data>(7,1) 255-255-255| <ref>  }", width=1.2]
 1:ref:c->2:data
-2[label="{<data>(10,12) 0-0-0| <ref>  }", width=1.2]
+2[label="{<data>(8,1) 255-255-255| <ref>  }", width=1.2]
 2:ref:c->3:data
-3[label="{<data>(10,13) 0-0-0| <ref>  }", width=1.2]
+3[label="{<data>(9,1) 255-255-255| <ref>  }", width=1.2]
 3:ref:c->4:data
+4[label="{<data>(10,1) 255-255-255| <ref>  }", width=1.2]
+4:ref:c->5:data
+5[label="{<data>(11,1) 255-255-255| <ref>  }", width=1.2]
+5:ref:c->6:data
+6[label="{<data>(4,2) 255-255-255| <ref>  }", width=1.2]
+6:ref:c->7:data
+7[label="{<data>(5,2) 255-255-255| <ref>  }", width=1.2]
+7:ref:c->8:data
+8[label="{<data>(6,2) 255-255-255| <ref>  }", width=1.2]
+8:ref:c->9:data
+9[label="{<data>(7,2) 255-255-255| <ref>  }", width=1.2]
+9:ref:c->10:data
+10[label="{<data>(8,2) 255-255-255| <ref>  }", width=1.2]
+10:ref:c->11:data
+11[label="{<data>(9,2) 255-255-255| <ref>  }", width=1.2]
+11:ref:c->12:data
+12[label="{<data>(10,2) 255-255-255| <ref>  }", width=1.2]
+12:ref:c->13:data
+13[label="{<data>(11,2) 255-255-255| <ref>  }", width=1.2]
+13:ref:c->14:data
+14[label="{<data>(12,2) 255-255-255| <ref>  }", width=1.2]
+14:ref:c->15:data
+15[label="{<data>(13,2) 255-255-255| <ref>  }", width=1.2]
+15:ref:c->16:data
+16[label="{<data>(3,3) 255-255-255| <ref>  }", width=1.2]
+16:ref:c->17:data
+17[label="{<data>(4,3) 255-255-255| <ref>  }", width=1.2]
+17:ref:c->18:data
+18[label="{<data>(5,3) 255-255-255| <ref>  }", width=1.2]
+18:ref:c->19:data
+19[label="{<data>(6,3) 255-255-255| <ref>  }", width=1.2]
+19:ref:c->20:data
+20[label="{<data>(7,3) 255-255-255| <ref>  }", width=1.2]
+20:ref:c->21:data
+21[label="{<data>(8,3) 255-255-255| <ref>  }", width=1.2]
+21:ref:c->22:data
+22[label="{<data>(9,3) 255-255-255| <ref>  }", width=1.2]
+22:ref:c->23:data
+23[label="{<data>(10,3) 255-255-255| <ref>  }", width=1.2]
+23:ref:c->24:data
+24[label="{<data>(11,3) 255-255-255| <ref>  }", width=1.2]
+24:ref:c->25:data
+25[label="{<data>(12,3) 255-255-255| <ref>  }", width=1.2]
+25:ref:c->26:data
+26[label="{<data>(13,3) 255-255-255| <ref>  }", width=1.2]
+26:ref:c->27:data
+27[label="{<data>(14,3) 255-255-255| <ref>  }", width=1.2]
+27:ref:c->28:data
+28[label="{<data>(2,4) 255-255-255| <ref>  }", width=1.2]
+28:ref:c->29:data
+29[label="{<data>(3,4) 255-255-255| <ref>  }", width=1.2]
+29:ref:c->30:data
+30[label="{<data>(4,4) 255-255-255| <ref>  }", width=1.2]
+30:ref:c->31:data
+31[label="{<data>(5,4) 255-255-255| <ref>  }", width=1.2]
+31:ref:c->32:data
+32[label="{<data>(6,4) 255-255-255| <ref>  }", width=1.2]
+32:ref:c->33:data
+33[label="{<data>(7,4) 255-255-255| <ref>  }", width=1.2]
+33:ref:c->34:data
+34[label="{<data>(8,4) 255-255-255| <ref>  }", width=1.2]
+34:ref:c->35:data
+35[label="{<data>(9,4) 255-255-255| <ref>  }", width=1.2]
+35:ref:c->36:data
+36[label="{<data>(10,4) 255-255-255| <ref>  }", width=1.2]
+36:ref:c->37:data
+37[label="{<data>(11,4) 255-255-255| <ref>  }", width=1.2]
+37:ref:c->38:data
+38[label="{<data>(12,4) 255-255-255| <ref>  }", width=1.2]
+38:ref:c->39:data
+39[label="{<data>(13,4) 255-255-255| <ref>  }", width=1.2]
+39:ref:c->40:data
+40[label="{<data>(14,4) 255-255-255| <ref>  }", width=1.2]
+40:ref:c->41:data
+41[label="{<data>(15,4) 255-255-255| <ref>  }", width=1.2]
+41:ref:c->42:data
+42[label="{<data>(2,5) 255-255-255| <ref>  }", width=1.2]
+42:ref:c->43:data
+43[label="{<data>(3,5) 255-255-255| <ref>  }", width=1.2]
+43:ref:c->44:data
+44[label="{<data>(4,5) 255-255-255| <ref>  }", width=1.2]
+44:ref:c->45:data
+45[label="{<data>(5,5) 255-255-255| <ref>  }", width=1.2]
+45:ref:c->46:data
+46[label="{<data>(6,5) 255-255-255| <ref>  }", width=1.2]
+46:ref:c->47:data
+47[label="{<data>(7,5) 255-255-255| <ref>  }", width=1.2]
+47:ref:c->48:data
+48[label="{<data>(8,5) 255-255-255| <ref>  }", width=1.2]
+48:ref:c->49:data
+49[label="{<data>(9,5) 255-255-255| <ref>  }", width=1.2]
+49:ref:c->50:data
+50[label="{<data>(10,5) 255-255-255| <ref>  }", width=1.2]
+50:ref:c->51:data
+51[label="{<data>(11,5) 255-255-255| <ref>  }", width=1.2]
+51:ref:c->52:data
+52[label="{<data>(12,5) 255-255-255| <ref>  }", width=1.2]
+52:ref:c->53:data
+53[label="{<data>(13,5) 255-255-255| <ref>  }", width=1.2]
+53:ref:c->54:data
+54[label="{<data>(14,5) 255-255-255| <ref>  }", width=1.2]
+54:ref:c->55:data
+55[label="{<data>(15,5) 255-255-255| <ref>  }", width=1.2]
+55:ref:c->56:data
+56[label="{<data>(1,6) 255-255-255| <ref>  }", width=1.2]
+56:ref:c->57:data
+57[label="{<data>(2,6) 255-255-255| <ref>  }", width=1.2]
+57:ref:c->58:data
+58[label="{<data>(3,6) 255-255-255| <ref>  }", width=1.2]
+58:ref:c->59:data
+59[label="{<data>(4,6) 255-255-255| <ref>  }", width=1.2]
+59:ref:c->60:data
+60[label="{<data>(5,6) 255-255-255| <ref>  }", width=1.2]
+60:ref:c->61:data
+61[label="{<data>(6,6) 255-255-255| <ref>  }", width=1.2]
+61:ref:c->62:data
+62[label="{<data>(7,6) 255-255-255| <ref>  }", width=1.2]
+62:ref:c->63:data
+63[label="{<data>(8,6) 255-255-255| <ref>  }", width=1.2]
+63:ref:c->64:data
+64[label="{<data>(9,6) 255-255-255| <ref>  }", width=1.2]
+64:ref:c->65:data
+65[label="{<data>(10,6) 255-255-255| <ref>  }", width=1.2]
+65:ref:c->66:data
+66[label="{<data>(11,6) 255-255-255| <ref>  }", width=1.2]
+66:ref:c->67:data
+67[label="{<data>(12,6) 255-255-255| <ref>  }", width=1.2]
+67:ref:c->68:data
+68[label="{<data>(13,6) 255-255-255| <ref>  }", width=1.2]
+68:ref:c->69:data
+69[label="{<data>(14,6) 255-255-255| <ref>  }", width=1.2]
+69:ref:c->70:data
+70[label="{<data>(15,6) 255-255-255| <ref>  }", width=1.2]
+70:ref:c->71:data
+71[label="{<data>(16,6) 255-255-255| <ref>  }", width=1.2]
+71:ref:c->72:data
+72[label="{<data>(1,7) 255-255-255| <ref>  }", width=1.2]
+72:ref:c->73:data
+73[label="{<data>(2,7) 255-255-255| <ref>  }", width=1.2]
+73:ref:c->74:data
+74[label="{<data>(3,7) 255-255-255| <ref>  }", width=1.2]
+74:ref:c->75:data
+75[label="{<data>(4,7) 255-255-255| <ref>  }", width=1.2]
+75:ref:c->76:data
+76[label="{<data>(5,7) 255-255-255| <ref>  }", width=1.2]
+76:ref:c->77:data
+77[label="{<data>(6,7) 255-255-255| <ref>  }", width=1.2]
+77:ref:c->78:data
+78[label="{<data>(7,7) 255-255-255| <ref>  }", width=1.2]
+78:ref:c->79:data
+79[label="{<data>(8,7) 255-255-255| <ref>  }", width=1.2]
+79:ref:c->80:data
+80[label="{<data>(9,7) 255-255-255| <ref>  }", width=1.2]
+80:ref:c->81:data
+81[label="{<data>(10,7) 255-255-255| <ref>  }", width=1.2]
+81:ref:c->82:data
+82[label="{<data>(11,7) 255-255-255| <ref>  }", width=1.2]
+82:ref:c->83:data
+83[label="{<data>(12,7) 255-255-255| <ref>  }", width=1.2]
+83:ref:c->84:data
+84[label="{<data>(13,7) 255-255-255| <ref>  }", width=1.2]
+84:ref:c->85:data
+85[label="{<data>(14,7) 255-255-255| <ref>  }", width=1.2]
+85:ref:c->86:data
+86[label="{<data>(15,7) 255-255-255| <ref>  }", width=1.2]
+86:ref:c->87:data
+87[label="{<data>(16,7) 255-255-255| <ref>  }", width=1.2]
+87:ref:c->88:data
+88[label="{<data>(1,8) 255-255-255| <ref>  }", width=1.2]
+88:ref:c->89:data
+89[label="{<data>(2,8) 255-255-255| <ref>  }", width=1.2]
+89:ref:c->90:data
+90[label="{<data>(3,8) 255-255-255| <ref>  }", width=1.2]
+90:ref:c->91:data
+91[label="{<data>(4,8) 255-255-255| <ref>  }", width=1.2]
+91:ref:c->92:data
+92[label="{<data>(5,8) 255-255-255| <ref>  }", width=1.2]
+92:ref:c->93:data
+93[label="{<data>(6,8) 255-255-255| <ref>  }", width=1.2]
+93:ref:c->94:data
+94[label="{<data>(7,8) 255-255-255| <ref>  }", width=1.2]
+94:ref:c->95:data
+95[label="{<data>(8,8) 255-255-255| <ref>  }", width=1.2]
+95:ref:c->96:data
+96[label="{<data>(9,8) 255-255-255| <ref>  }", width=1.2]
+96:ref:c->97:data
+97[label="{<data>(10,8) 255-255-255| <ref>  }", width=1.2]
+97:ref:c->98:data
+98[label="{<data>(11,8) 255-255-255| <ref>  }", width=1.2]
+98:ref:c->99:data
+99[label="{<data>(12,8) 255-255-255| <ref>  }", width=1.2]
+99:ref:c->100:data
+100[label="{<data>(13,8) 255-255-255| <ref>  }", width=1.2]
+100:ref:c->101:data
+101[label="{<data>(14,8) 255-255-255| <ref>  }", width=1.2]
+101:ref:c->102:data
+102[label="{<data>(15,8) 255-255-255| <ref>  }", width=1.2]
+102:ref:c->103:data
+103[label="{<data>(16,8) 255-255-255| <ref>  }", width=1.2]
+103:ref:c->104:data
+104[label="{<data>(1,9) 255-255-255| <ref>  }", width=1.2]
+104:ref:c->105:data
+105[label="{<data>(2,9) 255-255-255| <ref>  }", width=1.2]
+105:ref:c->106:data
+106[label="{<data>(3,9) 255-255-255| <ref>  }", width=1.2]
+106:ref:c->107:data
+107[label="{<data>(4,9) 255-255-255| <ref>  }", width=1.2]
+107:ref:c->108:data
+108[label="{<data>(5,9) 255-255-255| <ref>  }", width=1.2]
+108:ref:c->109:data
+109[label="{<data>(6,9) 255-255-255| <ref>  }", width=1.2]
+109:ref:c->110:data
+110[label="{<data>(7,9) 255-255-255| <ref>  }", width=1.2]
+110:ref:c->111:data
+111[label="{<data>(8,9) 255-255-255| <ref>  }", width=1.2]
+111:ref:c->112:data
+112[label="{<data>(9,9) 255-255-255| <ref>  }", width=1.2]
+112:ref:c->113:data
+113[label="{<data>(10,9) 255-255-255| <ref>  }", width=1.2]
+113:ref:c->114:data
+114[label="{<data>(11,9) 255-255-255| <ref>  }", width=1.2]
+114:ref:c->115:data
+115[label="{<data>(12,9) 255-255-255| <ref>  }", width=1.2]
+115:ref:c->116:data
+116[label="{<data>(13,9) 255-255-255| <ref>  }", width=1.2]
+116:ref:c->117:data
+117[label="{<data>(14,9) 255-255-255| <ref>  }", width=1.2]
+117:ref:c->118:data
+118[label="{<data>(15,9) 255-255-255| <ref>  }", width=1.2]
+118:ref:c->119:data
+119[label="{<data>(16,9) 255-255-255| <ref>  }", width=1.2]
+119:ref:c->120:data
+120[label="{<data>(1,10) 255-255-255| <ref>  }", width=1.2]
+120:ref:c->121:data
+121[label="{<data>(2,10) 255-255-255| <ref>  }", width=1.2]
+121:ref:c->122:data
+122[label="{<data>(3,10) 255-255-255| <ref>  }", width=1.2]
+122:ref:c->123:data
+123[label="{<data>(4,10) 255-255-255| <ref>  }", width=1.2]
+123:ref:c->124:data
+124[label="{<data>(5,10) 255-255-255| <ref>  }", width=1.2]
+124:ref:c->125:data
+125[label="{<data>(6,10) 255-255-255| <ref>  }", width=1.2]
+125:ref:c->126:data
+126[label="{<data>(7,10) 255-255-255| <ref>  }", width=1.2]
+126:ref:c->127:data
+127[label="{<data>(8,10) 255-255-255| <ref>  }", width=1.2]
+127:ref:c->128:data
+128[label="{<data>(9,10) 255-255-255| <ref>  }", width=1.2]
+128:ref:c->129:data
+129[label="{<data>(10,10) 255-255-255| <ref>  }", width=1.2]
+129:ref:c->130:data
+130[label="{<data>(11,10) 255-255-255| <ref>  }", width=1.2]
+130:ref:c->131:data
+131[label="{<data>(12,10) 255-255-255| <ref>  }", width=1.2]
+131:ref:c->132:data
+132[label="{<data>(13,10) 255-255-255| <ref>  }", width=1.2]
+132:ref:c->133:data
+133[label="{<data>(14,10) 255-255-255| <ref>  }", width=1.2]
+133:ref:c->134:data
+134[label="{<data>(15,10) 255-255-255| <ref>  }", width=1.2]
+134:ref:c->135:data
+135[label="{<data>(16,10) 255-255-255| <ref>  }", width=1.2]
+135:ref:c->136:data
+136[label="{<data>(1,11) 255-255-255| <ref>  }", width=1.2]
+136:ref:c->137:data
+137[label="{<data>(2,11) 255-255-255| <ref>  }", width=1.2]
+137:ref:c->138:data
+138[label="{<data>(3,11) 255-255-255| <ref>  }", width=1.2]
+138:ref:c->139:data
+139[label="{<data>(4,11) 255-255-255| <ref>  }", width=1.2]
+139:ref:c->140:data
+140[label="{<data>(5,11) 255-255-255| <ref>  }", width=1.2]
+140:ref:c->141:data
+141[label="{<data>(6,11) 255-255-255| <ref>  }", width=1.2]
+141:ref:c->142:data
+142[label="{<data>(7,11) 255-255-255| <ref>  }", width=1.2]
+142:ref:c->143:data
+143[label="{<data>(8,11) 255-255-255| <ref>  }", width=1.2]
+143:ref:c->144:data
+144[label="{<data>(9,11) 255-255-255| <ref>  }", width=1.2]
+144:ref:c->145:data
+145[label="{<data>(10,11) 255-255-255| <ref>  }", width=1.2]
+145:ref:c->146:data
+146[label="{<data>(11,11) 255-255-255| <ref>  }", width=1.2]
+146:ref:c->147:data
+147[label="{<data>(12,11) 255-255-255| <ref>  }", width=1.2]
+147:ref:c->148:data
+148[label="{<data>(13,11) 255-255-255| <ref>  }", width=1.2]
+148:ref:c->149:data
+149[label="{<data>(14,11) 255-255-255| <ref>  }", width=1.2]
+149:ref:c->150:data
+150[label="{<data>(15,11) 255-255-255| <ref>  }", width=1.2]
+150:ref:c->151:data
+151[label="{<data>(16,11) 255-255-255| <ref>  }", width=1.2]
+151:ref:c->152:data
+152[label="{<data>(2,12) 255-255-255| <ref>  }", width=1.2]
+152:ref:c->153:data
+153[label="{<data>(3,12) 255-255-255| <ref>  }", width=1.2]
+153:ref:c->154:data
+154[label="{<data>(4,12) 255-255-255| <ref>  }", width=1.2]
+154:ref:c->155:data
+155[label="{<data>(5,12) 255-255-255| <ref>  }", width=1.2]
+155:ref:c->156:data
+156[label="{<data>(6,12) 255-255-255| <ref>  }", width=1.2]
+156:ref:c->157:data
+157[label="{<data>(7,12) 255-255-255| <ref>  }", width=1.2]
+157:ref:c->158:data
+158[label="{<data>(8,12) 255-255-255| <ref>  }", width=1.2]
+158:ref:c->159:data
+159[label="{<data>(9,12) 255-255-255| <ref>  }", width=1.2]
+159:ref:c->160:data
+160[label="{<data>(10,12) 255-255-255| <ref>  }", width=1.2]
+160:ref:c->161:data
+161[label="{<data>(11,12) 255-255-255| <ref>  }", width=1.2]
+161:ref:c->162:data
+162[label="{<data>(12,12) 255-255-255| <ref>  }", width=1.2]
+162:ref:c->163:data
+163[label="{<data>(13,12) 255-255-255| <ref>  }", width=1.2]
+163:ref:c->164:data
+164[label="{<data>(14,12) 255-255-255| <ref>  }", width=1.2]
+164:ref:c->165:data
+165[label="{<data>(15,12) 255-255-255| <ref>  }", width=1.2]
+165:ref:c->166:data
+166[label="{<data>(3,13) 255-255-255| <ref>  }", width=1.2]
+166:ref:c->167:data
+167[label="{<data>(4,13) 255-255-255| <ref>  }", width=1.2]
+167:ref:c->168:data
+168[label="{<data>(5,13) 255-255-255| <ref>  }", width=1.2]
+168:ref:c->169:data
+169[label="{<data>(6,13) 255-255-255| <ref>  }", width=1.2]
+169:ref:c->170:data
+170[label="{<data>(7,13) 255-255-255| <ref>  }", width=1.2]
+170:ref:c->171:data
+171[label="{<data>(8,13) 255-255-255| <ref>  }", width=1.2]
+171:ref:c->172:data
+172[label="{<data>(9,13) 255-255-255| <ref>  }", width=1.2]
+172:ref:c->173:data
+173[label="{<data>(10,13) 255-255-255| <ref>  }", width=1.2]
+173:ref:c->174:data
+174[label="{<data>(11,13) 255-255-255| <ref>  }", width=1.2]
+174:ref:c->175:data
+175[label="{<data>(12,13) 255-255-255| <ref>  }", width=1.2]
+175:ref:c->176:data
+176[label="{<data>(13,13) 255-255-255| <ref>  }", width=1.2]
+176:ref:c->177:data
+177[label="{<data>(14,13) 255-255-255| <ref>  }", width=1.2]
+177:ref:c->178:data
+178[label="{<data>(3,14) 255-255-255| <ref>  }", width=1.2]
+178:ref:c->179:data
+179[label="{<data>(4,14) 255-255-255| <ref>  }", width=1.2]
+179:ref:c->180:data
+180[label="{<data>(5,14) 255-255-255| <ref>  }", width=1.2]
+180:ref:c->181:data
+181[label="{<data>(6,14) 255-255-255| <ref>  }", width=1.2]
+181:ref:c->182:data
+182[label="{<data>(7,14) 255-255-255| <ref>  }", width=1.2]
+182:ref:c->183:data
+183[label="{<data>(8,14) 255-255-255| <ref>  }", width=1.2]
+183:ref:c->184:data
+184[label="{<data>(9,14) 255-255-255| <ref>  }", width=1.2]
+184:ref:c->185:data
+185[label="{<data>(10,14) 255-255-255| <ref>  }", width=1.2]
+185:ref:c->186:data
+186[label="{<data>(11,14) 255-255-255| <ref>  }", width=1.2]
+186:ref:c->187:data
+187[label="{<data>(12,14) 255-255-255| <ref>  }", width=1.2]
+187:ref:c->188:data
+188[label="{<data>(13,14) 255-255-255| <ref>  }", width=1.2]
+188:ref:c->189:data
+189[label="{<data>(14,14) 255-255-255| <ref>  }", width=1.2]
+189:ref:c->190:data
+190[label="{<data>(4,15) 255-255-255| <ref>  }", width=1.2]
+190:ref:c->191:data
+191[label="{<data>(5,15) 255-255-255| <ref>  }", width=1.2]
+191:ref:c->192:data
+192[label="{<data>(6,15) 255-255-255| <ref>  }", width=1.2]
+192:ref:c->193:data
+193[label="{<data>(7,15) 255-255-255| <ref>  }", width=1.2]
+193:ref:c->194:data
+194[label="{<data>(8,15) 255-255-255| <ref>  }", width=1.2]
+194:ref:c->195:data
+195[label="{<data>(9,15) 255-255-255| <ref>  }", width=1.2]
+195:ref:c->196:data
+196[label="{<data>(10,15) 255-255-255| <ref>  }", width=1.2]
+196:ref:c->197:data
+197[label="{<data>(11,15) 255-255-255| <ref>  }", width=1.2]
+197:ref:c->198:data
+198[label="{<data>(12,15) 255-255-255| <ref>  }", width=1.2]
+198:ref:c->199:data
+199[label="{<data>(13,15) 255-255-255| <ref>  }", width=1.2]
+199:ref:c->200:data
+200[label="{<data>(5,16) 255-255-255| <ref>  }", width=1.2]
+200:ref:c->201:data
+201[label="{<data>(6,16) 255-255-255| <ref>  }", width=1.2]
+201:ref:c->202:data
+202[label="{<data>(7,16) 255-255-255| <ref>  }", width=1.2]
+202:ref:c->203:data
+203[label="{<data>(8,16) 255-255-255| <ref>  }", width=1.2]
+203:ref:c->204:data
+204[label="{<data>(9,16) 255-255-255| <ref>  }", width=1.2]
+204:ref:c->205:data
+205[label="{<data>(10,16) 255-255-255| <ref>  }", width=1.2]
+205:ref:c->206:data
+206[label="{<data>(11,16) 255-255-255| <ref>  }", width=1.2]
+206:ref:c->207:data
+207[label="{<data>(12,16) 255-255-255| <ref>  }", width=1.2]
+207:ref:c->208:data
 null->0
 }

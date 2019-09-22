@@ -1,41 +1,185 @@
 digraph Sparce_Matrix {
  node [shape=box]
-  Mt[ label = "0", width = 1.5, style = filled, fillcolor = firebrick1, group = 1 ];
+  Mt[ label = "0", width = 1.5, style = filled, fillcolor = yellow, group = 1 ];
 e0[ shape = point, width = 0 ];
  e1[ shape = point, width = 0 ];
-U12[label = "12" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U12 -> N7_L12
-N7_L12 ->U12
-U12 -> U13
-U13 -> U12
-N7_L12 -> N7_L13
-N7_L13 -> N7_L12
-N7_L12[label = "7" width = 1.5, group = 2 ];
-{ rank = same; U12;N7_L12; }
-N7_L12 -> N10_L12
-N10_L12 -> N7_L12
-N10_L12 -> N10_L13
-N10_L13 -> N10_L12
-N10_L12[label = "10" width = 1.5, group = 2 ];
-{ rank = same; U12;N10_L12; }
-U13[label = "13" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = bisque1, group = 1 ];
-U13 -> N7_L13
-N7_L13 ->U13
-N7_L13[label = "7" width = 1.5, group = 2 ];
-{ rank = same; U13;N7_L13; }
-N7_L13 -> N10_L13
-N10_L13 -> N7_L13
-N10_L13[label = "10" width = 1.5, group = 2 ];
-{ rank = same; U13;N10_L13; }
-Mt->A7
-A7->Mt
-A7[label = "7"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
-A7 -> N7_L12
-N7_L12 -> A7
-A7 -> A10
-A10 -> A7
-A10[label = "10"   width = 1.5 style = filled, fillcolor = lightskyblue, group = 2 ];
-A10 -> N10_L12
-N10_L12 -> A10
- { rank = same; Mt;A7;A10;}
+U17[label = "17" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = cyan4, group = 1 ];
+U17 -> N14_L17
+N14_L17 ->U17
+U17 -> U18
+U18 -> U17
+N14_L17 -> N14_L18
+N14_L18 -> N14_L17
+N14_L17[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U17;N14_L17; }
+N14_L17 -> N15_L17
+N15_L17 -> N14_L17
+N15_L17 -> N15_L18
+N15_L18 -> N15_L17
+N15_L17[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U17;N15_L17; }
+N15_L17 -> N30_L17
+N30_L17 -> N15_L17
+N30_L17 -> N30_L18
+N30_L18 -> N30_L17
+N30_L17[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U17;N30_L17; }
+N30_L17 -> N31_L17
+N31_L17 -> N30_L17
+N31_L17 -> N31_L18
+N31_L18 -> N31_L17
+N31_L17[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U17;N31_L17; }
+U18[label = "18" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = cyan4, group = 1 ];
+U18 -> N13_L18
+N13_L18 ->U18
+U18 -> U19
+U19 -> U18
+N13_L18 -> N13_L19
+N13_L19 -> N13_L18
+N13_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N13_L18; }
+N13_L18 -> N14_L18
+N14_L18 -> N13_L18
+N14_L18 -> N14_L19
+N14_L19 -> N14_L18
+N14_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N14_L18; }
+N14_L18 -> N15_L18
+N15_L18 -> N14_L18
+N15_L18 -> N15_L19
+N15_L19 -> N15_L18
+N15_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N15_L18; }
+N15_L18 -> N16_L18
+N16_L18 -> N15_L18
+N16_L18 -> N16_L19
+N16_L19 -> N16_L18
+N16_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N16_L18; }
+N16_L18 -> N29_L18
+N29_L18 -> N16_L18
+N29_L18 -> N29_L19
+N29_L19 -> N29_L18
+N29_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N29_L18; }
+N29_L18 -> N30_L18
+N30_L18 -> N29_L18
+N30_L18 -> N30_L19
+N30_L19 -> N30_L18
+N30_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N30_L18; }
+N30_L18 -> N31_L18
+N31_L18 -> N30_L18
+N31_L18 -> N31_L19
+N31_L19 -> N31_L18
+N31_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N31_L18; }
+N31_L18 -> N32_L18
+N32_L18 -> N31_L18
+N32_L18 -> N32_L19
+N32_L19 -> N32_L18
+N32_L18[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U18;N32_L18; }
+U19[label = "19" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = cyan4, group = 1 ];
+U19 -> N13_L19
+N13_L19 ->U19
+U19 -> U20
+U20 -> U19
+N13_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N13_L19; }
+N13_L19 -> N14_L19
+N14_L19 -> N13_L19
+N14_L19 -> N14_L20
+N14_L20 -> N14_L19
+N14_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N14_L19; }
+N14_L19 -> N15_L19
+N15_L19 -> N14_L19
+N15_L19 -> N15_L20
+N15_L20 -> N15_L19
+N15_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N15_L19; }
+N15_L19 -> N16_L19
+N16_L19 -> N15_L19
+N16_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N16_L19; }
+N16_L19 -> N29_L19
+N29_L19 -> N16_L19
+N29_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N29_L19; }
+N29_L19 -> N30_L19
+N30_L19 -> N29_L19
+N30_L19 -> N30_L20
+N30_L20 -> N30_L19
+N30_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N30_L19; }
+N30_L19 -> N31_L19
+N31_L19 -> N30_L19
+N31_L19 -> N31_L20
+N31_L20 -> N31_L19
+N31_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N31_L19; }
+N31_L19 -> N32_L19
+N32_L19 -> N31_L19
+N32_L19[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U19;N32_L19; }
+U20[label = "20" pos = "5.3,3.5!" width = 1.5 style = filled, fillcolor = cyan4, group = 1 ];
+U20 -> N14_L20
+N14_L20 ->U20
+N14_L20[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U20;N14_L20; }
+N14_L20 -> N15_L20
+N15_L20 -> N14_L20
+N15_L20[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U20;N15_L20; }
+N15_L20 -> N30_L20
+N30_L20 -> N15_L20
+N30_L20[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U20;N30_L20; }
+N30_L20 -> N31_L20
+N31_L20 -> N30_L20
+N31_L20[label = "(255-0-0)" width = 1.5, group = 2 ];
+{ rank = same; U20;N31_L20; }
+Mt->A13
+A13->Mt
+A13[label = "13"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A13 -> N13_L18
+N13_L18 -> A13
+A13 -> A14
+A14 -> A13
+A14[label = "14"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A14 -> N14_L17
+N14_L17 -> A14
+A14 -> A15
+A15 -> A14
+A15[label = "15"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A15 -> N15_L17
+N15_L17 -> A15
+A15 -> A16
+A16 -> A15
+A16[label = "16"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A16 -> N16_L18
+N16_L18 -> A16
+A16 -> A29
+A29 -> A16
+A29[label = "29"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A29 -> N29_L18
+N29_L18 -> A29
+A29 -> A30
+A30 -> A29
+A30[label = "30"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A30 -> N30_L17
+N30_L17 -> A30
+A30 -> A31
+A31 -> A30
+A31[label = "31"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A31 -> N31_L17
+N31_L17 -> A31
+A31 -> A32
+A32 -> A31
+A32[label = "32"   width = 1.5 style = filled, fillcolor = darkseagreen, group = 2 ];
+A32 -> N32_L18
+N32_L18 -> A32
+ { rank = same; Mt;A13;A14;A15;A16;A29;A30;A31;A32;}
 }
